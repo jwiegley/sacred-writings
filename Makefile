@@ -1,14 +1,16 @@
-all: oneness-of-mankind.pdf
+PDF =	oneness-of-mankind.pdf \
+	memorization.pdf
 
-oneness-of-mankind.bcf: oneness-of-mankind.tex bahai.bib
-	xelatex oneness-of-mankind.tex
+all: $(PDF)
 
-oneness-of-mankind.bbl: oneness-of-mankind.bcf
-	biber oneness-of-mankind
+%.bcf: %.tex bahai.bib Makefile quotes.tex
+	xelatex $<
 
-oneness-of-mankind.pdf: oneness-of-mankind.bbl
-	xelatex oneness-of-mankind.tex
-	xelatex oneness-of-mankind.tex
+%.bbl: %.bcf
+	biber $*
+
+%.pdf: %.bbl
+	xelatex $*.tex && xelatex $*.tex
 
 clean:
 	rm *.aux *.bbl *.bcf *.blg *.log *.run.xml *.pdf

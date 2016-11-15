@@ -1,5 +1,6 @@
 PDF =	oneness-of-mankind.pdf \
-	memorization.pdf
+	memorization.pdf \
+	holy-day-2016-11-01.pdf
 
 all: $(PDF)
 

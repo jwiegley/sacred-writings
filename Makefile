@@ -14,4 +14,4 @@ all: $(PDF)
 	xelatex $*.tex && xelatex $*.tex
 
 clean:
-	rm *.aux *.bbl *.bcf *.blg *.log *.run.xml *.pdf
+	rm -f *.aux *.bbl *.bcf *.blg *.log *.run.xml *.pdf

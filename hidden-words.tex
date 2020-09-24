@@ -3,11 +3,16 @@
 \documentclass[11pt]{article}
 
 \usepackage[margin=1in,top=1.25in,bottom=1.25in]{geometry}
+\usepackage{soul}
 \usepackage{tabularx}
+\usepackage{fontspec}
+\usepackage{xunicode}
 \usepackage{setspace}
 \usepackage{arabxetex}
 
-\setmainfont{GaramondPremrPro}[
+\setuldepth{sh}
+
+\setmainfont[Ligatures=TeX]{GaramondPremrPro}[
   Path           = /Users/johnw/Library/Fonts/ ,
   Extension      = .otf ,
   BoldFont       = *-Smbd ,
@@ -20,6 +25,16 @@
   Extension   = .ttf ,
   UprightFont = *RegOT ,
   Script      = Arabic
+]
+
+\newfontfamily\headwordfont[Ligatures=TeX]{Georgia}[
+  Path           = /Users/johnw/Library/Fonts/ ,
+  Extension      = .ttf ,
+  UprightFont    = * ,
+  BoldFont       = * Bold ,
+  ItalicFont     = * Italic ,
+  BoldItalicFont = * Bold Italic ,
+  Script         = Arabic
 ]
 
 \newenvironment{orig}
@@ -37,6 +52,12 @@
 \newcommand{\ayat}[2]{\begin{orig}#1\end{orig} & \begin{trans}#2\end{trans}}
 \newcommand{\heading}[2]{\textsc{\textbf{#1}} % \ (\##2)
 }
+\newcommand{\define}[3]{\textfarsi[voc]{\Huge
+    \textbf{#1}}\hspace{3mm}{\headwordfont \large
+    \textit{#2}}\hspace{3mm}{\Large #3} \\[3ex]}
+\newcommand{\fulldefine}[3]{\textfarsi[voc]{\Huge
+    \textbf{#1}}\hspace{3mm}{\headwordfont \large
+    \textit{#2}}\vspace{-1ex}\begin{quote}\Large #3\end{quote}\vspace{1ex}}
 
 \title{
 \Huge
@@ -64,7 +85,7 @@ The Hidden Words \\
 
 \begin{word}
 \ayat{
-به نام گویاندۀ توانا
+به نام گویندۀ توانا
 }{
 In the Name of the Lord of Utterance, The Mighty.
 }
@@ -98,6 +119,39 @@ In the Name of the Lord of Utterance, The Mighty.
 }{Therein is thy habitation, if on the wings of thy soul thou soarest to the
   realm of the infinite and seekest to attain thy goal.}
 \end{word}
+
+\newpage
+
+\begin{minipage}[t]{0.5\textwidth}
+\define{صاحبان}{sá\d{h}ibán}{owners}
+\define{هوش}{hú\ul{sh}}{mind}
+\define{گوش}{gú\ul{sh}}{ear}
+\define{سروش}{surú\ul{sh}}{song}
+\define{بلبل}{bulbul}{nightingale}
+\define{معنوی}{ma`naví}{}
+\define{گُلبُن}{gulbun}{}
+\define{معانی}{ma`ání}{meaning}
+\define{مَگُزين}{maguzín}{}
+\fulldefine{هدهد}{hudhud}{The hoopoe bird, often a guide in Sufi literature.}
+\define{سلیمان}{Sulaymán}{King Solomon}
+\define{عشق}{`i\ul{sh}q}{love}
+\define{سبا}{Sabá}{Sheba}
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\define{جانان}{jánán}{The Beloved}
+\define{وطن}{va\d{t}an}{homeland}
+\define{عَنقا}{`anqá}{phoenix}
+\define{بقا}{baqá}{eternity}
+\fulldefine{قاف}{Qáf}{The fabled mount Qáf, thought to symbolize the Holy Qur'án.}
+\define{وفا}{vafá}{faithfulness}
+\define{محلّ}{ma\d{h}all}{place}
+\define{مپذیر}{mapa\ul{dh}ír}{}
+\define{مکان}{makán}{place}
+\define{بِلامَکان}{bi-lá-makán}{lit.~``to no place''}
+\define{آهنگ}{áhang}{}
+\define{مقام}{maqám}{station}
+\define{رایگان نمودن}{ráyigán namúdan}{}
+\end{minipage}
 
 \newpage
 
@@ -656,56 +710,72 @@ In the Name of the Lord of Utterance, The Mighty.
 \pagebreak
 
 \begin{word}
-\ayat{ای خاک متحرّک}{\heading{O Moving Form of Dust!}{}} \\ \ayat{
+\ayat{ای خاکِ مُتَحَرِّک}{\heading{O Moving Form of Dust!}{}} \\ \ayat{
 من بتو مأنوسم
 
 و تو از من مأيوس
 }{I desire communion with thee, but thou wouldst put no trust in Me.} \\ \ayat{
 سيفِ عصيان
 
-شجرهِ اميدِ ترا بريده
+شجرهِ اميدِ تُرا بُريده
 }{The sword of thy rebellion hath felled the tree of thy hope.} \\ \ayat{
-و در جميع حال بتو نزديکم
+و در جميعِ حال بتو نزديکم
 
-و تو در جميع احوال از من دور
+و تو در جميعِ احوال از من دور
 }{At all times I am near unto thee, but thou art ever far from Me.} \\ \ayat{
-و من عزّت بيزوال
+و من عزّتِ بيزوال
 
-برای تو اختيار نمودم
+برای تو اختيار نِمودم
 
-و تو ذلّت بی منتهی
+و تو ذلّتِ بی منتهیٰ
 
 برای خود پسنديدی
 }{Imperishable glory I have chosen for thee, yet boundless shame thou hast
   chosen for thyself.} \\ \\ \ayat{
 آخر تا وقت باقی مانده
 
-رجوع کن
+رُجوع کن
 
-و فرصت را مگذار
+و فُرصت را مگذار
 }{While there is yet time, return, and lose not thy chance.}
 \end{word}
 
+\pagebreak
+
+\begin{word}
+\ayat{ای پسرِ هویٰ}{\heading{O Son of Desire!}{}} \\ \ayat{
+اهلِ دانش و بينش سالها کوشيدند
+
+و بِوِصالِ ذَی الجلال فائز نگشتند
+}{The learned and the wise have for long years striven and failed to attain
+  the presence of the All-Glorious;} \vspace{-1ex}\\ \ayat{
+و عُمرها دويدند
+
+و بِلِقایِ ذَی الجمال نرسيدند
+}{they have spent their lives in search of Him, yet did not behold the beauty
+  of His countenance.} \vspace{-1ex}\\ \ayat{
+و تو نادويده بمنزل رسيده
+
+و ناطَلَبيده بِمَطلَب واصل شدی
+}{Thou without the least effort didst attain thy goal, and without search hast
+  obtained the object of thy quest.} \vspace{-1ex}\\ \ayat{
+و بعد از جميعِ اين مقام و رتبه
+}{} \vspace{-1ex}\\ \ayat{
+بحجابِ نفسِ خود
+
+چُنان مُحتَجِب ماندی
+}{Yet, notwithstanding, thou didst remain so wrapt in the veil of
+  self,} \\ \ayat{
+که چشمت بجمالِ دوست نَيُفتاد
+
+و دستت بدامنِ يار نرسيد
+}{that thine eyes beheld not the beauty of the Beloved, nor did thy hand touch
+  the hem of His robe.} \vspace{-1ex}\\ \ayat{
+فَتَعَجَّبُوا مِن ذلکَ يا اُولِی الأَبصَار
+}{Ye that have eyes, behold and wonder.}
+\end{word}
+
 %todo%
-% \pagebreak
-
-% \begin{word}
-% \ayat{ای پسر هوی}{\heading{O Son of Desire!}{}} \\ \ayat{
-% اهل دانش و بينش سالها کوشيدند و بوصال ذی الجلال فائز نگشتند و عمرها دويدند و بلقای ذی الجمال نرسيدند
-% و تو نادويده بمنزل رسيده و ناطلبيده بمطلب واصل شدی
-% و بعد از جميع اين مقام و رتبه بحجاب نفس خود چنان محتجب ماندی که چشمت بجمال دوست نيفتاد و دستت بدامن يار نرسيد
-% فتعجّبوا من ذلک يا اولی الأبصار
-% }{
-%   The learned and the wise have for long years striven and failed to attain
-%   the presence of the All-Glorious; they have spent their lives in search of
-%   Him, yet did not behold the beauty of His countenance. Thou without the
-%   least effort didst attain thy goal, and without search hast obtained the
-%   object of thy quest. Yet, notwithstanding, thou didst remain so wrapt in the
-%   veil of self, that thine eyes beheld not the beauty of the Beloved, nor did
-%   thy hand touch the hem of His robe. Ye that have eyes, behold and wonder.
-% }
-% \end{word}
-
 % \pagebreak
 
 % \begin{word}

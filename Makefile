@@ -1,4 +1,4 @@
-PDF = hidden-words.pdf
+PDF = memorize.pdf hidden-words.pdf
 DIR = "/Users/johnw/Library/Mobile Documents/JFJWWP64QD~com~goodiware~GoodReader/Documents/Bahá’í Faith"
 
 all: $(PDF)
@@ -11,7 +11,7 @@ all: $(PDF)
 %.bbl: %.bcf
 	biber $*
 
-%.pdf: # %.bbl
+%.pdf: %.tex bahai.bib Makefile
 	xelatex $*.tex && xelatex $*.tex
 
 clean:

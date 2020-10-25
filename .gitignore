@@ -1,1 +1,3 @@
-/hidden-words.log
+*.log
+*.aux
+/auto/

@@ -1,0 +1,376 @@
+% -*- bidi-paragraph-direction: left-to-right -*-
+
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in,top=1.25in,bottom=1.25in]{geometry}
+\usepackage{soul}
+\usepackage{tabularx}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{setspace}
+\usepackage{arabxetex}
+
+\setuldepth{sh}
+
+\setmainfont[Ligatures=TeX]{GaramondPremrPro}[
+  Path           = /Users/johnw/Library/Fonts/ ,
+  Extension      = .otf ,
+  BoldFont       = *-Smbd ,
+  ItalicFont     = *-It ,
+  BoldItalicFont = *-SmbdIt
+]
+
+\newfontfamily\arabicfont{Scheherazade}[
+  Path        = /Users/johnw/Library/Fonts/ ,
+  Extension   = .ttf ,
+  UprightFont = *RegOT ,
+  Script      = Arabic
+]
+
+\newfontfamily\headwordfont[Ligatures=TeX]{Georgia}[
+  Path           = /Users/johnw/Library/Fonts/ ,
+  Extension      = .ttf ,
+  UprightFont    = * ,
+  BoldFont       = * Bold ,
+  ItalicFont     = * Italic ,
+  BoldItalicFont = * Bold Italic ,
+  Script         = Arabic
+]
+
+\newenvironment{orig}
+  {\begin{farsi}[voc]}
+  {\end{farsi}}
+
+\newenvironment{trans}
+  {\Large\begin{spacing}{1.2}\raggedright}
+  {\end{spacing}}
+
+\newenvironment{word}
+  {\begin{tabular}[t]{p{2.75in}@{\hspace{3em}}p{2.75in}}}
+  {\end{tabular}}
+
+\newcommand{\ayat}[2]{\begin{orig}#1\end{orig} & \begin{trans}#2\end{trans}}
+\newcommand{\heading}[2]{\textsc{\textbf{#1}} % \ (\##2)
+}
+\newcommand{\define}[3]{\textfarsi[voc]{\Huge
+    \textbf{#1}}\hspace{3mm}{\headwordfont \large
+    \textit{#2}}\hspace{3mm}{\Large #3} \\[3ex]}
+\newcommand{\fulldefine}[3]{\textfarsi[voc]{\Huge
+    \textbf{#1}}\hspace{3mm}{\headwordfont \large
+    \textit{#2}}\vspace{-1ex}\begin{quote}\Large #3\end{quote}\vspace{1ex}}
+
+\title{
+\Huge
+\vspace*{2in}
+Selections from \\
+the Sacred Writings \\
+\vspace{.25in}
+\fontsize{48}{36}
+\begin{arab}
+\end{arab}
+\vspace{1in}}
+\author{\LARGE Bahá’u’lláh and `Abdu'l-Bahá}
+\date{}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\newpage
+
+\fontsize{24}{32}
+
+\begin{word}
+\ayat{
+اِلهَا پَروَردِگارا مَحبوبا مَقصُودا
+}{O God, O God, my Beloved, the Goal of my Desire!} \\ \ayat{
+به تو آمده ام و از تو می طلبم
+
+آنچه را كه سببِ بخششِ تو است
+}{I stand before Thee and beseech Thee by reason of Thy forgiveness,} \\ \ayat{
+توئی بحرِ جود و مالكِ وجود
+}{O Thou Who art the Ocean of bounty and the King of existence,} \\ \ayat{
+لازال
+
+لحاظتِ علّتِ ظهورِ بخشش و عطا
+}{O Thou Who hast caused both forgiveness and tenderness to appear.} \\ \ayat{
+عبادِ خود را محروم منما
+}{Deny not Thy servants} \\ \ayat{
+و از بِساطِ قُدس و قُرب منع مفرما
+}{and withhold them not from Thy holiness and nearness.} \\ \ayat{
+توئی بخشنده و مهربان
+}{Thou art the Forgiving and the Kind.} \\ \ayat{
+لا اِلهَ اِلّا اَنتَ العَزيزُ المَنّان
+}{No God is there but Thee, the Almighty, the Most Bountiful.}
+\end{word}
+
+\newpage
+
+\begin{word}
+\ayat{
+ای احبّای حقّ
+}{O ye the beloved of the one true God!} \vspace{-1ex}\\ \ayat{
+از مَفازَۀِ ضَیِّقِۀِ نفس و هویٰ
+}{Pass beyond the narrow retreats of your evil and corrupt desires,} \vspace{-1ex}\\ \ayat{
+به فَضاهایِ مُقَدَّسِۀِ اَحَدِیِّه بِشتابید
+}{and advance into the vast immensity of the realm of God,} \vspace{-1ex}\\ \ayat{
+و در حَدِیقِۀِ تَقدیس و تَنزیه
+
+مَأویٰ گیرید
+}{and abide ye in the meads of sanctity and of detachment,} \\ \ayat{
+تا از نَفَحاتِ اَعمالِیِّه کُلّ بَرِیِّه
+
+بشاطیِ عِزِّ اَحَدِیِّه تَوَجُّه نمایند
+}{that the fragrance of your deeds may lead the whole of mankind to the ocean
+  of God’s unfading glory.} \vspace{-1ex}\\ \ayat{
+اَبَداً در اُمورِ دُنیا و مَا یَتَعَلَّقُ بها
+
+و رُؤسایِ ظاهِرۀِ آن تَکَلُّم جایز نه
+}{Forbear ye from concerning yourselves with the affairs of this world and all
+  that pertaineth unto it, or from meddling with the activities of those who
+  are its outward leaders.}
+\end{word}
+
+% \newpage
+
+% \begin{minipage}[t]{0.48\textwidth}
+% \define{صاحبان}{sá\d{h}ibán}{owners}
+% \fulldefine{هدهد}{hudhud}{The hoopoe bird, often a guide in Sufi literature.}
+% \end{minipage}
+
+\newpage
+
+\begin{word}
+\ayat{
+اللّه ابهی
+}{} \vspace{-1ex}\\ \ayat{
+ای متوجّه اِلی اللّه
+}{O thou who art turning thy face towards God!} \vspace{-1ex}\\ \ayat{
+چشم از جميعِ ماسِوی بَر بَند
+}{Close thine eyes to all things else,} \vspace{-1ex}\\ \ayat{
+و به مَلَکوتِ ابهی بَر گشا
+}{and open them to the realm of the All-Glorious.} \vspace{-1ex}\\ \ayat{
+آنچه خواهی از او خواه
+}{Ask whatsoever thou wishest of Him alone;} \vspace{-1ex}\\ \ayat{
+و آنچه طلبی از او طلب
+}{seek whatsoever thou seekest from Him alone.} \vspace{-1ex}\\ \ayat{
+به نظری
+
+صد هزار حاجاتت روا نمايد
+}{With a look He granteth a hundred thousand hopes,} \vspace{-1ex}\\ \ayat{
+و به التفاتی
+
+صد هزار درد بی درمان دوا کند
+}{with a glance He healeth a hundred thousand incurable ills,} \vspace{-1ex}\\ \ayat{
+و به انعطافی
+
+زخم‌ها را مَرهم نهد
+}{with a nod He layeth balm on every wound,} \vspace{-1ex}\\ \ayat{
+و به نگاهی
+
+دل‌ها را از قيدِ غم برهاند
+}{with a glimpse He freeth the hearts from the shackles of grief.}
+\end{word}
+
+\newpage
+
+\begin{word}
+\ayat{
+آنچه کند او کند
+}{He doeth as He doeth,} \vspace{-1ex}\\ \ayat{
+ما چه توانيم کرد
+}{and what recourse have we?} \vspace{-1ex}\\ \ayat{
+يَفعل ما يَشاء
+}{He carrieth out His Will,} \vspace{-1ex}\\ \ayat{
+و يَحکُمُ ما يُريد است
+}{He ordaineth what He pleaseth.} \vspace{-1ex}\\ \ayat{
+پس سَرِ تسليم نـِه
+}{Then better for thee to bow down thy head in submission,} \vspace{-1ex}\\ \ayat{
+و توکّل بر رَبِّ رحيم بـِه
+}{and put thy trust in the All-Merciful Lord.} \vspace{-1ex}\\ \ayat{
+والبهاء عليک
+
+ع ع
+}{}
+\end{word}
+
+\newpage
+
+\begin{word}
+\ayat{
+حکایت آورده‌اند
+}{The story is told} \vspace{-1ex}\\ \ayat{
+که عارف الهی با عالم نحوی
+
+همراه شدند و همراز گشتند
+}{of a mystic knower who went on a journey with a learned grammarian for a
+  companion.} \vspace{-1ex}\\ \ayat{
+تا رسیدند بشاطی بحر العظمة
+}{They came to the shore of the Sea of Grandeur.} \vspace{-1ex}\\ \ayat{
+عارف بی ‌تأمّل توسّل فرموده
+
+بر آب راند
+}{The knower, putting his trust in God, straightway ﬂung himself into the
+  waves,} \vspace{-1ex}\\ \ayat{
+و عالم نحو
+
+چون نقشِ بر آب محو گشته
+
+مبهوت ماند
+}{but the grammarian stood bewildered and lost in thoughts that were as words
+  traced upon the water.} \\ \ayat{
+بانگ زد عارف
+
+که چون عنان پیچیدی
+}{The mystic called out to him, “Why dost thou not follow?”}
+\end{word}
+
+\newpage
+
+\begin{word}
+\ayat{
+گفت
+}{The grammarian answered,} \vspace{-1ex}\\ \ayat{
+ای برادر چه کنم
+}{“O brother, what can I do?} \vspace{-1ex}\\ \ayat{
+چون پای رفتنم نیست
+
+سَرْ نَهادن اولیٰ بود
+}{As I dare not advance, I must needs go back again.”} \\ \ayat{
+گفت
+}{Then the mystic cried,} \vspace{-1ex}\\ \ayat{
+آنچه از سیبویه و قولویه
+
+اَخْذ نموده‌ئی
+
+و یا از مطالب ابن حاجب
+
+و ابن مالک
+
+حَمْل فرموده ئی
+
+بریز و از آب بگذر
+}{“Cast aside what thou hast learned from Síbavayh and Qawlavayh, from
+  Ibn-i-Hájib and Ibn-i-Málik, and cross the water!”\vspace{15ex}} \\ \ayat{
+محو میباید نه نحو این را بدان
+}{With renunciation, not with grammar’s rules, one must be armed:} \vspace{-1ex}\\ \ayat{
+گر تو محوی بی خطر در آب ران
+}{Be nothing, then, and cross this sea unharmed.}
+\end{word}
+
+\newpage
+
+\begin{word}
+\ayat{
+هو الله
+
+ای طالب ملکوت
+
+به الطاف حضرت پروردگار
+
+اميدوار باش
+
+و از مَصائِبِ شَديدۀِ اين جهان
+
+نااميد مگرد
+
+الحمدلله
+
+خدای مهربان داری
+
+که طَبيبِ هر بيمار است
+
+و غَمخوارِ هر مُبتَلا
+
+پَناهِ يَتيمان است
+
+و مُعين بيکَسان
+
+و بينهايت مِهرِبان
+}{}
+\end{word}
+
+\newpage
+
+\begin{word}
+\ayat{
+اگر بدانی که قلب عبد البهاء
+
+چه قَدر مهربان است
+
+البتّه از شِدَّتِ فَرَح و سُرور
+
+پَرواز نمائی
+
+و فَريادِ واطوبىٰ
+
+به اُوجِ آسمان رِسانی
+
+
+والبهاو عَلَیکْ
+
+عبد البهاء عبّاس
+}{}
+\end{word}
+
+\newpage
+
+% }{} \\ \ayat{
+\begin{word}
+\ayat{
+زبانِ خِرَد میگوید
+}{The Tongue of Wisdom proclaimeth:} \vspace{-1ex}\\ \ayat{
+هر که دارایِ من نباشد
+
+دارایِ هیچ نه
+}{He that hath Me not is bereft of all things.} \vspace{-1ex}\\ \ayat{
+از هر چه هست بگذرید
+
+و مرا بیابید
+}{Turn ye away from all that is on earth and seek none else but Me.} \\ \ayat{
+منم آفتابِ بینش
+
+و دریایِ دانش
+}{I am the Sun of Wisdom and the Ocean of Knowledge.} \vspace{-1ex}\\ \ayat{
+پژمردگان را تازه نمایم
+
+و مردگان را زنده کنم
+}{I cheer the faint and revive the dead.} \\ \ayat{
+منم آن روشنائی
+
+که راهِ دیده بنمایم
+}{I am the guiding Light that illumineth the way.} \vspace{-1ex}\\ \ayat{
+و منم شاهبازِ دستِ بینیاز
+}{I am the royal Falcon on the arm of the Almighty.} \vspace{-1ex}\\ \ayat{
+پرِ بستگان را بگشایم
+
+و پرواز بیاموزم
+}{I unfold the drooping wings of every broken bird and start it on its
+  flight.}
+\end{word}
+
+\newpage
+
+% }{} \\ \ayat{
+\begin{word}
+\ayat{
+و بقدم یقین
+}{Thus with steadfast steps} \vspace{-1ex}\\ \ayat{
+در صراط حقّ الیقین
+
+قدم گذاریم
+}{we may tread the Path of certitude,} \\ \ayat{
+که لعلّ نسیم رضا
+}{that perchance the breeze that bloweth
+from the meads of the good-pleasure of God} \vspace{-1ex}\\ \ayat{
+از ریاض قبول الهی بوزد
+}{may waft upon us the sweet savours
+    of divine acceptance,} \vspace{-1ex}\\ \ayat{
+و این فانیان را
+}{and cause us, vanishing mortals that we are,} \vspace{-1ex}\\ \ayat{
+بملکوت جاودانی رساند
+}{to attain unto the Kingdom of everlasting glory.}
+\end{word}
+
+\end{document}

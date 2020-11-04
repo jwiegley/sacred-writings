@@ -1,0 +1,1716 @@
+% -*- bidi-paragraph-direction: left-to-right -*-
+
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in,top=1.25in,bottom=1.25in]{geometry}
+\usepackage{soul}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{setspace}
+\usepackage{arabxetex}
+
+\setuldepth{sh}
+
+\setmainfont[Ligatures=TeX]{GaramondPremrPro}[
+  Path           = /Users/johnw/Library/Fonts/ ,
+  Extension      = .otf ,
+  BoldFont       = *-Smbd ,
+  ItalicFont     = *-It ,
+  BoldItalicFont = *-SmbdIt
+]
+
+\newfontfamily\arabicfont{Scheherazade}[
+  Path        = /Users/johnw/Library/Fonts/ ,
+  Extension   = .ttf ,
+  UprightFont = *RegOT ,
+  Script      = Arabic
+]
+
+\newfontfamily\headwordfont[Ligatures=TeX]{Georgia}[
+  Path           = /Users/johnw/Library/Fonts/ ,
+  Extension      = .ttf ,
+  UprightFont    = * ,
+  BoldFont       = * Bold ,
+  ItalicFont     = * Italic ,
+  BoldItalicFont = * Bold Italic ,
+  Script         = Arabic
+]
+
+\newenvironment{orig}
+  {\begin{farsi}[voc]}
+  {\end{farsi}}
+
+\newenvironment{trans}
+  {\Large\begin{spacing}{1.2}\raggedright\vspace{1.75ex}}
+  {\end{spacing}\vspace{-1ex}}
+
+\newenvironment{word}
+  {\begin{longtable}[t]{p{2.75in}@{\hspace{3em}}p{2.875in}}}
+  {\end{longtable}}
+
+\newcommand{\ayat}[2]{\begin{orig}#1\end{orig} & \begin{trans}#2\end{trans}}
+\newcommand{\heading}[2]{\textsc{\textbf{#1}} % \ (\##2)
+}
+\newcommand{\define}[3]{\textfarsi[voc]{\Huge
+    \textbf{#1}}\hspace{3mm}{\headwordfont \large
+    \textit{#2}}\hspace{3mm}{\Large #3} \\[3ex]}
+\newcommand{\fulldefine}[3]{\textfarsi[voc]{\Huge
+    \textbf{#1}}\hspace{3mm}{\headwordfont \large
+    \textit{#2}}\vspace{-1ex}\begin{quote}\Large #3\end{quote}\vspace{1ex}}
+
+\title{
+\Huge
+\vspace*{2in}
+The Seven Valleys \\
+\vspace{.25in}
+\fontsize{48}{36}
+\begin{arab}
+هفت وادی
+\end{arab}
+\vspace{1in}}
+\author{\LARGE by Bahá’u’lláh}
+\date{}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\newpage
+
+\fontsize{24}{32}
+
+\vspace*{3in}
+
+\begin{word}
+\ayat{بِسْمِ ٱلْلّٰهِ ٱلْرَّحْمٰنِ ٱلْرَّحِيمِ}{In the Name of God, the Clement, the Merciful}
+\end{word}
+
+\pagebreak
+
+\begin{word}
+\ayat{أَلْحَمْدُ لِلّٰهِ اَلَّذِي اَظْهَرَ ٱلْوُجُودَ مِنْ أَلْعَدَمِ}
+     {Praise be to God Who hath made being to come forth from nothingness;}
+     \\
+\ayat{وَرَقَمَ عَلىٰ لَوْحِ ٱلْاِنْسَانِ مِنْ اَسْرَارِ ٱلْقِدَمِ}
+     {graven upon the tablet of man the secrets of preexistence;}
+     \\
+\ayat{وَعَلَمَهُ مِنْ أَلْبَيَانِ مَا لَا يُعْلَمُ}
+     {taught him from the mysteries of divine utterance that which he knew not;}
+     \\
+\ayat{وَجَعَلَهُ کِتَاباً مُبِيناً لِمَنْ آمَنَ وَ اَسْتَسْلَمَ}
+     {made him a Luminous Book unto those who believed and surrendered themselves;}
+     \\
+\ayat{وَاَشْهَدَ خَلْقَ کُلٍّ شَيْئٍ فِي هٰذَا أَلْزَّمَانِ ٱلْمُظْلَمِ ٱلْصَّيْلَمِ}
+     {caused him to witness the creation of all things in this black and ruinous age,}
+     \\
+\ayat{وَاَنْطَقَهُ فِي قُطْبِ ٱلْبَقَائِ عَلىٰ أَلْلَحْنِ ٱلْبَدِيعِ}
+     {and to speak forth from the apex of eternity with a wondrous voice in the Excellent Temple:}
+     \\
+\ayat{فِي أَلْهَيْکَلِ ٱلْمُکَرَّمُ لَيَشْهَدَ ٱلْکُلَّ فِي نَفْسِهِ بِنَفْسِهِ فِي مَقَامٍ تَجَلِّيٍ رَبِّهِ}
+     {to the end that every man may testify, in himself, by himself, in the station of the Manifestation of his Lord,}
+     \\
+\ayat{بِاَنَّهُ لَا اِلٰهَ اِلَّا هُوَ}
+     {that verily there is no God save Him,}
+     \\
+\ayat{وَلَيُصِلَ ٱلْکُلُّ بِذٰلِکَ اِلىٰ ذُرْوَةِ ٱلْحَقَائِقِ}
+     {and that every man may thereby win his way to the summit of realities,}
+     \\
+\ayat{حَتّىٰ لَا يُشَاهِدَ اَحَدٌ شَيْأً اِلَّا وَ قَدْ يَرىٰ أَلْلّٰهَ فِيهِ}
+     {until none shall contemplate anything whatsoever but that he shall see God therein.}
+     \\
+\ayat{وَؤُصَلّىٰ وَؤُسَلَّمَ عَلىٰ اَوَّلٍ بَحْرٍ تَشَعَّبَ مِنْ بَحْرِ ٱلْهَوِييَهْ}
+     {And I praise and glorify the first sea which hath branched from the ocean of the Divine Essence,}
+     \\
+\ayat{وَاَوَّلٍ صُبْحٍ لَا حَ عَنْ اُفُقِ ٱلْاَحَدِيَّةِ}
+     {and the first morn which hath glowed from the Horizon of Oneness,}
+     \\
+\ayat{وَاَوَّلٍ شَمْسٍ اَشْرَقَتْ فِي سَمَائِ ٱلْاَزَلِيَّةِ}
+     {and the first sun which hath risen in the Heaven of Eternity,}
+     \\
+\ayat{وَاَوَّلٍ نَارٍ اُوْقَدَتْ مِنْ مِصْبَاحِ ٱلْقِدَمِيَّةِ فِي مِشْکُوةِ ٱلْوَاحِدِيَّةِ}
+     {and the first fire which was lit from the Lamp of Preexistence in the lantern of singleness:}
+     \\
+\ayat{اَلَّذِي کَانَ اَحْمَداً فِي مَلَکُوتِ ٱلْعَالَمِينِ}
+     {He who was Aḥmad in the kingdom of the exalted ones,}
+     \\
+\ayat{وَمُحَمَّداً فِي مَلَائِ ٱلْمُقَرَّبِينِ}
+     {and Muḥammad amongst the concourse of the near ones,}
+     \\
+\ayat{وَمَحْمُوداً فِي جَبَرُوتِ ٱلْمُخْلِصِينِ}
+     {and Maḥmúd in the realm of the sincere ones.}
+     \\
+\ayat{« وَاِيَّاماً تَدَعُو فَلَهُ ٱلْاَسْمَائِ ٱلْحُسْنىِٰ فِي قُلُوبِ ٱلْعَارِفِينِ »}
+     {“… by whichsoever (name) ye will, invoke Him: He hath most excellent names” in the hearts of those who know.}
+     \\
+\ayat{وَعَلىٰ آلِهِ وَصَحْبِهِ تَسْلِيماً کَثِيراً دَائِماً اَبَداً}
+     {And upon His household and companions be abundant and abiding and eternal peace!}
+     \\
+\ayat{وَ بَعْدَ قَدْ سَمِعْتَ مَاغَنَّتْ وَرْقَائِ ٱلْعِرْفَانُ عَلىٰ اَفْنَانٍ سِدْرَةٍ فُوَادِکَ}
+     {Further, we have harkened to what the nightingale of knowledge sang on the boughs of the tree of thy being,}
+     \\
+\ayat{وَ عَرَفْتَ مَاغَرَّدَتْ حَمَامَةِ ٱلْاِيقَانُ عَلىٰ اَغْصَانٍ شَجَرَةٍ قَلْبِکَ}
+     {and learned what the dove of certitude cried on the branches of the bower of thy heart.}
+     \\
+\ayat{کَ اِنِّي وَجْدَتُ رَوَائِحِ ٱلْطَّيِبَ مِنْ قَمِيصٍ حُبِّکَ}
+     {Methinks I verily inhaled the pure fragrances of the garment of thy love,}
+     \\
+\ayat{وَ اَدْرَکْتَ تَمَامِ لِقَائِکَ فِي مُلَاحِظَةٍ کِتَابِکَ}
+     {and attained thy very meeting from perusing thy letter.}
+     \\
+\ayat{وَ لَمَّا بَلَغْتَ اِشَارَاتِکَ فِي فَنَائِکِ فِي أَلْلّٰهِ}
+     {And since I noted thy mention of thy death in God, and thy life through Him,}
+     \\
+\ayat{وَبَقَائِکَ بِهِ وَحُبِّکَ اَحِبَّائِ ٱلْلّٰهِ وَ مَظَاهِرٍ اَسْمَاءُهِ وَمَطَالِعٍ صِفَاتِهِ}
+     {and thy love for the beloved of God and the Manifestations of His Names and the Dawning-Points of His Attributes—}
+     \\
+\ayat{لِذَا اَذْکُرُلَکَ اِشَارَاتِ قُدْسِييَةاً شَعْشَعَانِييِةاً مِنْ مَرَاتِبِ ٱلْجَلَالْ}
+     {I therefore reveal unto thee sacred and resplendent tokens from the planes of glory,}
+     \\
+\ayat{لِتَجْذِبِکَ اِلىٰ سَاحَةِ ٱلْقُدْسِ وَ ٱلْقُرْبِ وَ ٱلْجَمَالْ}
+     {to attract thee into the court of holiness and nearness and beauty,}
+     \\
+\ayat{وَ تَوَصَلَکَ اِلىٰ مَقَامٍ لَاتُرىٰ فِي أَلْوُجُودْ اِلَّا طَلْعَةِ حَضْرَةِ مَحْبُوبِکَ}
+     {and draw thee to a station wherein thou shalt see nothing in creation save the Face of thy Beloved One, the Honored,}
+     \\
+\ayat{وَ لَنْ تَرىٰ أَلْخَلْقْ اِلَّا کَيُوْمٍ لَمْ يَکُنْ اَحَدٍ مَذْکُوراً}
+     {and behold all created things only as in the day wherein none hath a mention.}
+     \\
+\ayat{وَهِيَ مَاغَنَّ بُلْبُلُ ٱلْاَحَدِيَّةُ فِي أَلْرِيَاضِ ٱلْغَوْثِيِّهِ}
+     {Of this hath the nightingale of oneness sung in the garden of Ghawthíyyih.}
+     \\
+\ayat{« قَوْلَهُ وَتَظْهَرَ عَلىٰ لَوْحِ قَلْبِکَ}
+     {He saith: “And there shall appear upon the tablet of thine heart}
+     \\
+\ayat{رَقَوْمَ لَطَائِفِ اَسْرَارِ « اِتَّقَوْ أَلْلّٰهَ يُعَلِمُکُمُ ٱلْلّٰهُ »}
+     {a writing of the subtle mysteries of `Fear God and God will give you knowledge’;}
+     \\
+\ayat{وَيَتَذَکَّرَ طَائِرِ رُوحِکَ حَظَائِرِ ٱلْقِدَمِ}
+     {and the bird of thy soul shall recall the holy sanctuaries of preexistence}
+     \\
+\ayat{وَيَطِيرَ فِي فَضَائِ « فَاسْلَکِي سُبُلِ رَبِّکَ » ذُلِلاً بِجَنَاحِ ٱلْشُوْقْ}
+     {and soar on the wings of longing in the heaven of `walk the beaten paths of thy Lord’,}
+     \\
+\ayat{وَتَجْتَنِي مِنْ اَثْمَارُ ٱلْؤُنْسْ فِي بَسَاتِينْ « کُلِي مِنْ کُلِّ ٱلْثَّمَرَاتْ »  »}
+     {and gather the fruits of communion in the gardens of `Then feed on every kind of fruit.’”}
+     \\
+\ayat{اِنْتَهىٰ وَعَمْرِي يَا حَبِيبَ لَوْتَذُوقَ هٰذِهِ ٱلْثَّمَرَاتْ}
+     {By My life, O friend, wert thou to taste of these fruits,}
+     \\
+\ayat{مِنْ خَضْرِ هٰذِهِ ٱلْسُّنْبُلَاتِ ٱلْلَّتِي نَبَتَتْ فِي اَرَاضِيِ ٱلْمَعْرِفَةْ}
+     {from the green garden of these blossoms which grow in the lands of knowledge,}
+     \\
+\ayat{عِنْدَ تَجَلِّيِ اَنْوَارِ ٱلْذَّاتْ فِي مَرَايَا أَلْاَسْمَاءُ وَ ٱلْصِّفَاتْ}
+     {beside the orient lights of the Essence in the mirrors of names and attributes—}
+     \\
+\ayat{لَيَاخُذَ ٱلْشُّوْقْ زَمَامِ ٱلْصَّبْرْ وَ ٱلْاِصْطِبَارْ عَنْ کَفِّکَ}
+     {yearning would seize the reins of patience and reserve from out thy hand,}
+     \\
+\ayat{وَ يَهْتَزَ رُوحِکَ مِنْ بَوَارِقِ ٱلْاَنْوَارْ}
+     {and make thy soul to shake with the flashing light,}
+     \\
+\ayat{وَ تُجْذِبَکَ مِنْ أَلْوَطَنِ ٱلْتُّرَابِي اِلىٰ أَلْوَطَنِ ٱلْاَصْلِيَ ٱلْاِلٰهِي فِي قُطْبِ ٱلْمَعَانِي}
+     {and draw thee from the earthly homeland to the first, heavenly abode in the Center of Realities,}
+     \\
+\ayat{وَ تَصْعَدُکَ اِلىٰ مَقَامٍ تَطِيرَ فِي أَلْهَوَاءْ کَمَاتَمْشِيَ عَلىٰ أَلْتُّرَابْ}
+     {and lift thee to a plane wherein thou wouldst soar in the air even as thou walkest upon the earth,}
+     \\
+\ayat{وَ تَرْکَضَ عَلىٰ أَلْمَاءْ کَمَا تَرْکَضَ عَلىٰ أَلْاَرْضْ}
+     {and move over the water as thou runnest on the land.}
+     \\
+\ayat{فَهَنِيءاً لِي وَ لَکَ وَ لِمَنْ سَمَا اِلىٰ سَمَائِ ٱلْعِرْفَانْ وَ صَبَائِ قَلْبِهُ بِمَاهَبَّ عَلىٰ رِيَاضِ}
+     {Wherefore, may it rejoice Me, and thee, and whosoever mounteth into the heaven of knowledge, and whose heart is refreshed by this,}
+     \\
+\ayat{سَرِّهُ صَبَائِ ٱلْاِيقَانْ مِنْ سَبَائِ ٱلْرَّحْمَنْ}
+     {that the wind of certitude hath blown over the garden of his being, from the Sheba of the All-Merciful.}
+     \\
+\ayat{وَ ٱلْسَّلَامُ عَلىٰ مَنْ اِتَّبَعَ ٱلْهُدىٰ}
+     {Peace be upon him who followeth the Right Path!}
+     \\
+\ayat{وادی طلب}
+     {\heading{The Valley of Search}{}}
+     \\
+\ayat{وَ بَعد مَراتِبِ سِيرِ سالِکان را}
+     {And further: The stages that mark the wayfarer’s journey}
+     \\
+\ayat{اَز مَسکَنِ خاکی بِوَطَنِ اِلٰهی}
+     {from the abode of dust to the heavenly homeland}
+     \\
+\ayat{هَفت رُتبِه مُعَيَن نَمودِه اَند}
+     {are said to be seven.}
+     \\
+\ayat{چُنانچِه بَعضی هَفت وادی وَ بَعضی هَفت شَهر ذِکر کَردِه اَند}
+     {Some have called these Seven Valleys, and others, Seven Cities.}
+     \\
+\ayat{وَ گُفتِه اَند کِه سالِک تا اَز نَفس هِجرَت نَنَمايَد وَ اين اَسفار را طِی نَکُنَد}
+     {And they say that until the wayfarer taketh leave of self, and traverseth these stages,}
+     \\
+\ayat{بِبَحرِ قُرب وَ وِصال وارِد نَشَوَد وَ اَز خَمرِ بيمِثال نَچِشَد}
+     {he shall never reach to the ocean of nearness and union, nor drink of the peerless wine.}
+     \\
+\ayat{اَوَّل وادی طَلَب اَست مَرکَبِ اين وادی صَبر اَست}
+     {The first is the Valley of Search. The steed of this Valley is patience;}
+     \\
+\ayat{وَ مُسافِر دَر اين سَفَر بی صَبر بِجای نَرِسَد وَ بِمَقصود واصِل نَشَوَد}
+     {without patience the wayfarer on this journey will reach nowhere and attain no goal.}
+     \\
+\ayat{وَ بايَد هَرگِز اَفسُردِه نَگَردَد اَگَر صَد هِزار سال سَعی کُنَد وَ جَمالِ دوست نَبينَد پَژمُردِه نَشَوَد}
+     {Nor should he ever be downhearted; if he strive for a hundred thousand years and yet fail to behold the beauty of the Friend, he should not falter.}
+     \\
+\ayat{زيرا مُجاهِدينِ کَعبِۀِ « فِينَا » بِبِشارَتِ « لَنَهْدِيَنَّهُمْ سُبُلَنَا » مَسرور اَند}
+     {For those who seek the Ka`bih of “for Us” rejoice in the tidings: “In our ways will We guide them.”}
+     \\
+\ayat{وَ کَمَرِ خِدمَت دَر طَلَب بِغايَت مُحکَم بَستِه اَند وَ دَر هَر آن اَز مَکانِ غَفلَت بِاِمکانِ طَلَب سَفَر کُنَند}
+     {In their search, they have stoutly girded up the loins of service, and seek at every moment to journey from the plane of heedlessness into the realm of being.}
+     \\
+\ayat{هيچ بَندی ايشان را مَنع نَنَمايَد وَ هيچ پَندی سَد نَکُنَد}
+     {No bond shall hold them back, and no counsel shall deter them.}
+     \\
+\ayat{وَ شَرط اَست اين عِباد را کِه دِل را کِه مَنبَعِ خَزينِۀِ اِلٰهِيِّه اَست اَز هَر نَقشی پاک کُنَند}
+     {It is incumbent on these servants that they cleanse the heart — which is the wellspring of divine treasures — from every marking,}
+     \\
+\ayat{وَ اَز تَقليد کِه اَز اَثَرِ آباء وَ اَجداد اَست اِعراض نَمايَند}
+     {and that they turn away from imitation, which is following the traces of their forefathers and sires,}
+     \\
+\ayat{وَ اَبوابِ دوستی وَ دُشمَنی را با کُلِّ اَهلِ اَرض مَسدود کُنَند}
+     {and shut the door of friendliness and enmity upon all the people of the earth.}
+     \\
+\ayat{وَ طالِب دَر اين سَفَر بِمَقامی رِسَد کِه هَمِۀِ مُوجودات را دَر طَلَبِ دوست سَرگَشتِه بينَد}
+     {In this journey the seeker reacheth a stage wherein he seeth all created things wandering distracted in search of the Friend.}
+     \\
+\ayat{چِه يَعقوبها بينَد کِه دَر طَلَبِ يوسُف آوارِه ماندِه اَند}
+     {How many a Jacob will he see, hunting after his Joseph;}
+     \\
+\ayat{عالَمی حَبيب بينَد کِه دَر طَلَبِ مَحبوب دَوان اَند}
+     {he will behold many a lover, hasting to seek the Beloved,}
+     \\
+\ayat{وَ جَهانی عاشِق مُلاحِظِه کُنَد کِه دَر پِیِ مَعشوق رَوان}
+     {he will witness a world of desiring ones searching after the one Desired.}
+     \\
+\ayat{وَ دَر هَر آنی اَمری مُشاهِدِه کُنَد}
+     {At every moment he findeth a weighty matter,}
+     \\
+\ayat{وَ دَر هَر ساعَتی بَر سِرّی مُطَلِع گَردَد}
+     {in every hour he becometh aware of a mystery;}
+     \\
+\ayat{زيرا کِه دِل اَز هَر دو جَهان بَرداشتِه وَ عَزمِ کَعبِۀِ جانان نَمودِه}
+     {for he hath taken his heart away from both worlds, and set out for the Ka`bih of the Beloved.}
+     \\
+\ayat{وَ دَر هَر قَدَمی اِعانَتِ غِيبی او را شامِل شَوَد وَ جوشِ طَلَبَش زيادِه گَردَد}
+     {At every step, aid from the Invisible Realm will attend him and the heat of his search will grow.}
+     \\
+\ayat{طَلَب را بايَد اَز مَجنونِ عِشق اَندازِه گِرِفت}
+     {One must judge of search by the standard of the Majnún of Love.}
+     \\
+\ayat{حِکايَت کُنَند کِه روزی مَجنون را ديدَند خاک ميبيخت وَ اَشگ ميريخت}
+     {It is related that one day they came upon Majnún sifting the dust, and his tears flowing down.}
+     \\
+\ayat{گُفتَند چِه ميکُنی گُفت لِيلی را ميجويَم}
+     {They said, “What doest thou?” He said, “I seek for Laylí.”}
+     \\
+\ayat{گُفتَند وای بَر تو لِيلی اَز روحِ پاک وَ تو اَز خاک طَلَب ميکُنی}
+     {They cried, “Alas for thee!  Laylí is of pure spirit, and thou seekest her in the dust!”}
+     \\
+\ayat{گُفت هَمِه جا دَر طَلَبَش ميکوشَم شايَد دَر جای بِجويَم}
+     {He said, “I seek her everywhere; haply somewhere I shall find her.”}
+     \\
+\ayat{بَلی دَر تُراب رَبُّ ٱلْاَرباب جُستَن اَگَر چِه نَزدِ عاقِل قَبيح اَست لٰکِن بَر کَمالِ جِدّ وَ طَلَب دَليل اَست}
+     {Yea, although to the wise it be shameful to seek the Lord of Lords in the dust, yet this betokeneth intense ardor in searching.}
+     \\
+\ayat{« مَنْ طَلَبَ شَيْأً وَجَدَّ وَجَدْ »}
+     {“Whoso seeketh out a thing with zeal shall find it.”}
+     \\
+\ayat{طالِبِ صادِق جُز وِصالِ مَطلوب چيزی نَجويَد وَ حَبيب را جُز وِصالِ مَحبوب مَقصودی نَباشَد}
+     {The true seeker hunteth naught but the object of his quest, and the lover hath no desire save union with his beloved.}
+     \\
+\ayat{وَ اين طَلَبِ طالِب را حاصِل نَشَوَد مَگَر بِنِثار آنچِه هَست}
+     {Nor shall the seeker reach his goal unless he sacrifice all things.}
+     \\
+\ayat{يَعنی آنچِه ديدِه وَ شَنيدِه وَ فَهميدِه هَمِه را بِنَفی « لا » مَنفی سازَد تا بِشَهرِستانِ جان کِه مَدينِۀِ « اِلّا » اَست واصِل شَوَد}
+     {That is, whatever he hath seen, and heard, and understood, all must he set at naught, that he may enter the realm of the spirit, which is the City of God.}
+     \\
+\ayat{هِمَّتی بايَد تا دَر طَلَبَش کوشيم}
+     {Labor is needed, if we are to seek Him;}
+     \\
+\ayat{وَ جَهدی بايَد تا اَز شَهدِ وَصلَش نوشيم}
+     {ardor is needed, if we are to drink of the honey of reunion with Him;}
+     \\
+\ayat{اَگَر اَز اين جام نوش کُنيم}
+     {and if we taste of this cup,}
+     \\
+\ayat{عالَمی فَراموش کُنيم}
+     {we shall cast away the world.}
+     \\
+\ayat{وَ سالِک دَر اين سَفَر بَر هَر خاکی جالِس شَوَد وَ دَر هَر بِلادی ساکِن گَردَد}
+     {On this journey the traveler abideth in every land and dwelleth in every region.}
+     \\
+\ayat{اَز هَر وَجه ای طَلَبِ جَمالِ دوست کُنَد وَ دَر هَر ديار طَلَبِ يار نَمايَد}
+     {In every face, he seeketh the beauty of the Friend; in every country he looketh for the Beloved.}
+     \\
+\ayat{با هَر جَمعی مُجتَمِع شَوَد وَ با هَر سَری هَمسَری نَمايَد}
+     {He joineth every company, and seeketh fellowship with every soul,}
+     \\
+\ayat{کِه شايَد دَر سَری سِرِّ مَحبوب بينَد وَ يا اَز صورَتی جَمالِ مَحبوب مُشاهِدِه کُنَد}
+     {that haply in some mind he may uncover the secret of the Friend, or in some face he may behold the beauty of the Loved one.}
+     \\
+\ayat{وادی عشق}
+     {\heading{The Valley of Love}{}}
+     \\
+\ayat{وَ اَگَر دَر اين سَفَر بِاِعانَتِ باری اَز يارِ بينِشان نِشان يافت}
+     {And if, by the help of God, he findeth on this journey a trace of the traceless Friend,}
+     \\
+\ayat{وَ بویِ يوسُفِ گُمگَشتِه اَز بَشيرِ اَحَدِيِّه شَنيد}
+     {and inhaleth the fragrance of the long-lost Joseph from the heavenly messenger,}
+     \\
+\ayat{فُوراً بِوادی عِشق قَدَم گُذارَد وَ اَز نارِ عِشق بِگُدازَد}
+     {he shall straightway step into the Valley of Love and be dissolved in the fire of love.}
+     \\
+\ayat{دَر اين شَهر آسمانِ جَذب بُلَند شَوَد وَ آفتابِ جَهانتابِ شُوق طالِع گَردَد وَ نارِ عِشق بَر اَفروزَد}
+     {In this city the heaven of ecstasy is upraised and the world-illuming sun of yearning shineth, and the fire of love is ablaze;}
+     \\
+\ayat{وَ چون نارِ عِشق بَر اَفروخت خَرمَنِ عَقل بِکُلی بِسوخت}
+     {and when the fire of love is ablaze, it burneth to ashes the harvest of reason.}
+     \\
+\ayat{دَر اين وَقت سالِک اَز خُود وَ غِيرِ خُود بيخَبَر اَست}
+     {Now is the traveler unaware of himself, and of aught besides himself.}
+     \\
+\ayat{نَه جَهل وَ عِلم دانَد وَ نَه شَکّ وَ يَقين نَه صُبحِ هِدايَت شِناسَد وَ نَه شامِ ضِلالَت}
+     {He seeth neither ignorance nor knowledge, neither doubt nor certitude; he knoweth not the morn of guidance from the night of error.}
+     \\
+\ayat{اَز کُفر وَ ايمان هَر دو دَر گَريز وَ سَمِّ قاتِلَش دِل پَذير}
+     {He fleeth both from unbelief and faith, and deadly poison is a balm to him.}
+     \\
+\ayat{اينَست کِه عَطّار گُفتِه}
+     {Wherefore `Aṭṭár saith:}
+     \\
+\ayat{کُفرِ کافِر را وَ دينِ ديندار را}
+     {For the infidel, error—for the faithful, faith;}
+     \\
+\ayat{ذَرِّۀِ دَردَت دِلِ عَطّار را}
+     {For `Aṭṭár’s heart, an atom of Thy pain.}
+     \\
+\ayat{مَرکَبِ اين وادی دَرد اَست}
+     {The steed of this Valley is pain;}
+     \\
+\ayat{وَ اَگَر دَرد نَباشَد هَرگِز اين سَفَر تَمام نَشَوَد}
+     {and if there be no pain this journey will never end.}
+     \\
+\ayat{وَ عاشِق دَر اين رُتبِه جُز مَعشوق خيالی نَدارَد وَ جُز مَحبوب پَناهی نَجويَد}
+     {In this station the lover hath no thought save the Beloved, and seeketh no refuge save the Friend.}
+     \\
+\ayat{وَ دَر هَر آن صَد جان رايِگان دَر رَۀِ جانان دَهَد وَ دَر هَر قَدَمی هِزار سَر دَر پایِ دوست اَندازَد}
+     {At every moment he offereth a hundred lives in the path of the Loved one, at every step he throweth a thousand heads at the feet of the Beloved.}
+     \\
+\ayat{اِی بَرادَرِ مَن تا بِمِصرِ عِشق دَرنيای بِيوسُفِ جَمالِ دوست واصِل نَشَوی}
+     {O My Brother! Until thou enter the Egypt of love, thou shalt never come to the Joseph of the Beauty of the Friend;}
+     \\
+\ayat{وَ تا چون يَعقوب اَز چَشمِ ظاهِری نَگُذَری چَشمِ باطِن نَگُشائی}
+     {and until, like Jacob, thou forsake thine outward eyes, thou shalt never open the eye of thine inward being;}
+     \\
+\ayat{وَ تا بِنارِ عِشق نَيَفروزی بِيارِ شُوق نَياميزی}
+     {and until thou burn with the fire of love, thou shalt never commune with the Lover of Longing.}
+     \\
+\ayat{وَ عاشِق را اَز هيچ چيز پَروا نيست وَ اَز هيچ ضُرّی ضَرَر نَه}
+     {A lover feareth nothing and no harm can come nigh him:}
+     \\
+\ayat{اَز نار سَردَش بينی وَ اَز دَريا خُشکَش يابی}
+     {Thou seest him chill in the fire and dry in the sea.}
+     \\
+\ayat{نِشانِ عاشِق آن باشَد کِه سَردَش بينی اَز دوزَخ}
+     {A lover is he who is chill in hell fire;}
+     \\
+\ayat{نِشانِ عارِف آن باشَد کِه خُشکَش بينی اَز دَريا}
+     {A knower is he who is dry in the sea.}
+     \\
+\ayat{عِشق هَستی قَبول نَکُنَد وَ زِندِگی نَخواهَد}
+     {Love accepteth no existence and wisheth no life:}
+     \\
+\ayat{حَيات دَر مَمات بينَد وَ عِزَّت اَز ذِلَّت جويَد}
+     {He seeth life in death, and in shame seeketh glory.}
+     \\
+\ayat{بِسيار هوش بايَد تا لايِقِ جوشِ عِشق شَوَد}
+     {To merit the madness of love, man must abound in sanity;}
+     \\
+\ayat{وَ بِسيار سَر بايَد تا قابِلِ کَمَندِ دوست گَردَد}
+     {to merit the bonds of the Friend, he must be full of spirit.}
+     \\
+\ayat{مُبارَک گَردَنی کِه دَر کَمَندَش اُفتَد وَ فَر خَندِه سَری کِه دَر راهِ مُحَبَّتَش بِخاک اُفتَد}
+     {Blessed the neck that is caught in His noose, happy the head that falleth on the dust in the pathway of His love.}
+     \\
+\ayat{پَس اِی دوست اَز نَفس بيگانِه شو تا بِيِگانِه پِی بَری وَ اَز خاکدانِ فانی بُگذَر تا دَر آشيانِ اِلٰهی جای گيری}
+     {Wherefore, O friend, give up thy self that thou mayest find the Peerless one, pass by this mortal earth that thou mayest seek a home in the nest of heaven.}
+     \\
+\ayat{نيستی بايَد تا نارِ هَستی بَر اَفروزی وَ مَقبولِ راهِ عِشق شَوی}
+     {Be as naught, if thou wouldst kindle the fire of being and be fit for the pathway of love.}
+     \\
+\ayat{نَکُنَد عِشق نَفسِ زِندِه قَبول}
+     {Love seizeth not upon a living soul,}
+     \\
+\ayat{نَکُنَد باز موشِ مُردِه شِکار}
+     {The falcon preyeth not on a dead mouse.}
+     \\
+\ayat{عِشق دَر هَر آنی عالَمی بِسوزَد وَ دَر هَر ديار کِه عَلَم بَر اَفرازَد ويران سازَد}
+     {Love setteth a world aflame at every turn, and he wasteth every land where he carrieth his banner.}
+     \\
+\ayat{دَر مَملِکَتَش هَستی را وُجودی نَه وَ دَر سَلطَنَتَش عاقِلان را مَقَرّی نَه}
+     {Being hath no existence in his kingdom; the wise wield no command within his realm.}
+     \\
+\ayat{نَهَنگِ عِشق اَديبِ عَقل را بِبَلعَد وَ لَبيبِ دانِش بِشکُرَد}
+     {The leviathan of love swalloweth the master of reason and destroyeth the lord of knowledge.}
+     \\
+\ayat{هَفت دَريا بياشامَد وَ عَطَشِ قَلبَش نَيَفسُرَد وَ هَلْ مِنْ مَزِيدْ گويَد}
+     {He drinketh the seven seas, but his heart’s thirst is still unquenched, and he saith, “Is there yet any more?”}
+     \\
+\ayat{اَز خويش بيگانِه شَوَد وَ اَز هَر چِه دَر عالَم اَست کِنارِه گيرَد}
+     {He shunneth himself and draweth away from all on earth.}
+     \\
+\ayat{با دو عالَم عِشق را بيگانِگی}
+     {Love’s a stranger to earth and heaven too;}
+     \\
+\ayat{اَندَر او هَفتاد و دو ديوانِگی}
+     {In him are lunacies seventy-and-two.}
+     \\
+\ayat{صَد هِزار مَظلومان دَر کَمَندَش بَستِه وَ صَد هِزار عارِفان بِتيرَش خَستِه}
+     {He hath bound a myriad victims in his fetters, wounded a myriad wise men with his arrow.}
+     \\
+\ayat{هَر سُرخی کِه دَر عالَم بينی اَز قَهرَش دان وَ هَر زَردی کِه دَر رُخسار بينی اَز زَهرَش شُمُر}
+     {Know that every redness in the world is from his anger, and every paleness in men’s cheeks is from his poison.}
+     \\
+\ayat{جُز فَنا دَوائی نَبَخشَد وَ جُز دَر وادی عَدَم قَدَم نَگُذارَد}
+     {He yieldeth no remedy but death, he walketh not save in the valley of the shadow;}
+     \\
+\ayat{وَ لٰکِن زَهرَش دَر کامِ عاشِق اَز شَهد خُوش تَر وَ فَناَش دَر نَظَرِ طالِب اَز صَد هِزار بَقا مَحبوب تَر اَست}
+     {yet sweeter than honey is his venom on the lover’s lips, and fairer his destruction in the seeker’s eyes than a hundred thousand lives.}
+     \\
+\ayat{پَس بايَد بِنارِ عِشق حِجاب هایِ نَفسِ شِيطانی سوختِه شَوَد}
+     {Wherefore must the veils of the satanic self be burned away at the fire of love,}
+     \\
+\ayat{تا روح بَرایِ اِدراک مَراتِبِ سِيِّدِ « لُولاک » لَطيف وَ پاکيزِه گَردَد}
+     {that the spirit may be purified and cleansed and thus may know the station of the Lord of the Worlds.}
+     \\
+\ayat{نارِ عِشقی بَر فُروز و جُملِه هَستیها بِسوز}
+     {Kindle the fire of love and burn away all things,}
+     \\
+\ayat{پَس قَدَم بَردار و اَندَر کوی عُشّاقان گُذار}
+     {Then set thy foot into the land of the lovers.}
+     \\
+\ayat{مملکت معرفت}
+     {\heading{The Valley of Knowledge}{}}
+     \\
+\ayat{وَ اَگَر عاشِق بِتائيدات خالِق اَز مِنقارِ شاهينِ عِشق بِسَلامَت بُگذَرَد دَر مَملِکَتِ مَعرِفَت وارِد شَوَد}
+     {And if, confirmed by the Creator, the lover escapes from the claws of the eagle of love, he will enter the Valley of Knowledge}
+     \\
+\ayat{وَ اَز شَک بِيَقين آيَد وَ اَز ظُلمَتِ ضِلالَتِ هَوىٰ بِنورِ هِدايَتِ تَقوىٰ راجِع گَردَد}
+     {and come out of doubt into certitude, and turn from the darkness of illusion to the guiding light of the fear of God.}
+     \\
+\ayat{وَ چَشمِ بَصيرَتَش باز شَوَد وَ با حَبيبِ خُود بِراز مَشغول گَردَد}
+     {His inner eyes will open and he will privily converse with his Beloved;}
+     \\
+\ayat{دَرِ حَقيقَت وَ نِياز بِگُشايَد وَ اَبوابِ مَجاز دَر بَندَد دَر اين رُتبِه قَضا را رِضا دَهَد}
+     {he will set ajar the gate of truth and piety, and shut the doors of vain imaginings. He in this station is content with the decree of God,}
+     \\
+\ayat{وَ جَنگ را صُلح بينَد وَ دَر فَنا مَعانی بَقا دَرک نَمايَد}
+     {and seeth war as peace, and findeth in death the secrets of everlasting life.}
+     \\
+\ayat{وَ بِچَشمِ سَر وَ سِرّ دَر آفاق ايجاد وَ اَنفُسِ عِباد اَسرارِ مُعاد بينَد}
+     {With inward and outward eyes he witnesseth the mysteries of resurrection in the realms of creation and the souls of men,}
+     \\
+\ayat{وَ حِکمَتِ صَمَدانی را بِقَلبِ روحانی دَر مَظاهِر نامُتِناهی اِلٰهی سِير فَرمايَد}
+     {and with a pure heart apprehendeth the divine wisdom in the endless Manifestations of God.}
+     \\
+\ayat{دَر بَحر قَطرِه بينَد وَ دَر قَطرِه اَسرارِ بَحر مُلاحِظِه کُنَد}
+     {In the ocean he findeth a drop, in a drop he beholdeth the secrets of the sea.}
+     \\
+\ayat{دِلِ هَر ذَرِّه ای کِه بِشکافی}
+     {Split the atom’s heart, and lo!}
+     \\
+\ayat{آفتابيش دَر ميان بينی}
+     {Within it thou wilt find a sun.}
+     \\
+\ayat{وَ سالِک دَر اين وادی دَر آفَرينِشِ حَقّ بِبينِشِ مُطلَق مَخالِف وَ مُغايِر نَبينَد}
+     {The wayfarer in this Valley seeth in the fashionings of the True one nothing save clear providence,}
+     \\
+\ayat{وَ دَر هَر آن « ما تَرىٰ فی خَلقِ ٱلْرَّحمٰن مِن تَفاوُتِ فارِجَعِ ٱلْبَصَر هَل تَرىٰ مِن فُطور » گويَد}
+     {and at every moment saith: “No defect canst thou see in the creation of the God of Mercy: Repeat the gaze: Seest thou a single flaw?”}
+     \\
+\ayat{دَر ظُلم عَدل بينَد وَ دَر عَدل فَضل مُشاهِدِه کُنَد}
+     {He beholdeth justice in injustice, and in justice, grace.}
+     \\
+\ayat{دَر جَهل عِلمها مَستور بينَد وَ دَر عِلمها صَد هِزار حِکمَتها آشِکار وَ هُوِيدا اِدراک نَمايَد}
+     {In ignorance he findeth many a knowledge hidden, and in knowledge a myriad wisdoms manifest.}
+     \\
+\ayat{وَ قَفَسِ تَن وَ هَوىٰ بِشکَنَد وَ بِنَفَسِ اَهلِ بَقا اُنس گيرَد}
+     {He breaketh the cage of the body and the passions, and consorteth with the people of the immortal realm.}
+     \\
+\ayat{بِنَردِ بان هایِ مَعنَوی صُعود نَمايَد وَ بِسَماء مَعانی بِشِتابَد}
+     {He mounteth on the ladders of inner truth and hasteneth to the heaven of inner significance.}
+     \\
+\ayat{دَر فُلکِ « سَنَرْيَهُمْ آيَاتَنَا فِي أَلْآفَاقْ وَ فِي اَنْفُسِهُمْ » ساکِن شَوَد}
+     {He rideth in the ark of “we shall show them our signs in the regions and in themselves,”}
+     \\
+\ayat{وَ بَر بَحرِ « حَتّىٰ يَتَبَّيِّنَ لَهُمْ اِنَهُ ٱلْحَقْ » سائِر گَردَد}
+     {and journeyeth over the sea of “until it become plain to them that (this Book) is the truth.”}
+     \\
+\ayat{وَ اَگَر ظُلمی بينَد صَبر نَمايَد وَ اَگَر قَهر بينَد مِهر آرَد}
+     {And if he meeteth with injustice he shall have patience, and if he cometh upon wrath he shall manifest love.}
+     \\
+\ayat{حِکايَت کُنَند عاشِقی سالها دَر هِجرِ مَعشوقَش جان ميباخت وَ دَر آتِشِ فَراقَش ميگُداخت}
+     {There was once a lover who had sighed for long years in separation from his beloved, and wasted in the fire of remoteness.}
+     \\
+\ayat{اَز غَلَبِۀِ عِشق صَدرَش اَز صَبر خالی ماند وَ جِسمَش اَز روح بيزاری جُست}
+     {From the rule of love, his heart was empty of patience, and his body weary of his spirit;}
+     \\
+\ayat{وَ زِندِگی دَر فَراق را اَز نِفاق ميشُمُرد وَ اَز آفاق بِغايَت دَر اِحتِراق بود}
+     {he reckoned life without her as a mockery, and time consumed him away.}
+     \\
+\ayat{چِه روزها کِه اَز هِجرَش راحَت نَجُستِه وَ بَسا شَبها کِه اَز دَردَش نَخُفتِه}
+     {How many a day he found no rest in longing for her; how many a night the pain of her kept him from sleep;}
+     \\
+\ayat{اَز ضَعف بَدَن چون آهی گَشتِه وَ اَز دَردِ دِل چون وای شُدِه}
+     {his body was worn to a sigh, his heart’s wound had turned him to a cry of sorrow.}
+     \\
+\ayat{بِيِک شُربِۀِ وَصلَش هِزار جان رايِگان ميداد وَ مُيَسَّر نِميشُد}
+     {He had given a thousand lives for one taste of the cup of her presence, but it availed him not.}
+     \\
+\ayat{طَبيبان اَز عِلاجَش دَر ماندَند وَ مُؤانِسان اَز اُنسَش دوری جُستَند}
+     {The doctors knew no cure for him, and companions avoided his company;}
+     \\
+\ayat{بَلی مَريضِ عِشق را طَبيب چارِه نَدانَد مَگَر عِنايَتِ حَبيب دَستَش گيرَد}
+     {yea, physicians have no medicine for one sick of love, unless the favor of the beloved one deliver him.}
+     \\
+\ayat{باری عاقِبَت شَجَرِ رِجاَش ثَمَرِ يَأس بَخشيد وَ نارِ اُميدَش بِيَفسُرد}
+     {At last, the tree of his longing yielded the fruit of despair, and the fire of his hope fell to ashes.}
+     \\
+\ayat{تا آنکِه شَبی اَز جان بيزار شُد وَ اَز خانِه بِبازار رَفت}
+     {Then one night he could live no more, and he went out of his house and made for the marketplace.}
+     \\
+\ayat{ناگاه او را عَسَسی تَعاقُب نَمود}
+     {on a sudden, a watchman followed after him.}
+     \\
+\ayat{او اَز پيش تازان وَ عَسَس اَز پِی دَوان}
+     {He broke into a run, with the watchman following;}
+     \\
+\ayat{تا آنکِه عَسَسها جَمع شُدَند وَ اَز هَر طَرَف راهِ فَرار بَر آن بيقَرار بَستَند}
+     {then other watchmen came together, and barred every passage to the weary one.}
+     \\
+\ayat{وَ آن فَقير اَز دِل ميناليد وَ بِاَطراف ميدَويد وَ با خُود ميگُفت}
+     {And the wretched one cried from his heart, and ran here and there, and moaned to himself:}
+     \\
+\ayat{اين عَسَس عِزرائيلِ مَن اَست کِه بِاين تَعجيل دَر طَلَبِ مَن اَست وَ يا شَدّادِ بِلاد اَست کِه دَر کينِ عِباد اَست}
+     {“Surely this watchman is `Izrá’íl, my angel of death, following so fast upon me; or he is a tyrant of men, seeking to harm me.”}
+     \\
+\ayat{آن خَستِۀِ تيرِ عِشق بِپا دَوان بود وَ بِدِل نالان}
+     {His feet carried him on, the one bleeding with the arrow of love, and his heart lamented.}
+     \\
+\ayat{تا بِديوارِ باغی رَسيد وَ بِهِزار زَحمَت وَ مِحنَت بالایِ ديوار رَفت ديواری بِغايَت بُلَند ديد}
+     {Then he came to a garden wall, and with untold pain he scaled it, for it proved very high;}
+     \\
+\ayat{اَز جان گُذَشت وَ خُود را دَر باغ اَنداخت}
+     {and forgetting his life, he threw himself down to the garden.}
+     \\
+\ayat{ديد مَعشوقَش دَر دَست چِراغی دارَد وَ تَفَحُصِ اَنگُشتَری مينَمايَد کِه اَز او گُم شُدِه بود}
+     {And there he beheld his beloved with a lamp in her hand, searching for a ring she had lost.}
+     \\
+\ayat{چون آن عاشِقِ دِل دادِه مَعشوقِ دِل بُردِه را ديد آهی بَر کَشيد وَ دَست بِدُعا بَر داشت}
+     {When the heart-surrendered lover looked on his ravishing love, he drew a great breath and raised up his hands in prayer, crying:}
+     \\
+\ayat{کِه اِی خُدا اين عَسَس را عِزَّت دِه وَ دُولَت بَخش وَ باقی دار}
+     {“o God! Give Thou glory to the watchman, and riches and long life.}
+     \\
+\ayat{کِه اين عَسَس جِبرِئيل بود کِه دَليلِ اين عَليل گَشت يا اِسرافيل بود کِه حَيات بَخشِ اين ذَليل شُد}
+     {For the watchman was Gabriel, guiding this poor one; or he was  Isráfíl, bringing life to this wretched one!”}
+     \\
+\ayat{وَ آنچِه گُفت فی أَلْحَقيقِه دُرُست بود زيرا مُلاحِظِه شُد کِه اين ظُلم مُنکِرِ عَسَس چِقَدر عَدلها دَر سَر داشت}
+     {Indeed, his words were true, for he had found many a secret justice in this seeming tyranny of the watchman,}
+     \\
+\ayat{وَ چِه رَحمَتها دَر پَردِه پَنهان نَمودِه بود}
+     {and seen how many a mercy lay hid behind the veil.}
+     \\
+\ayat{بِيِک قَهر تَشنِۀِ صَحرایِ عِشق را بِبَحرِ مَعشوق واصِل نَمود وَ ظُلمَتِ فَراق را بِنورِ وِصال رُوشَن فَرمود}
+     {Out of wrath, the guard had led him who was athirst in love’s desert to the sea of his loved one, and lit up the dark night of absence with the light of reunion.}
+     \\
+\ayat{بَعيدی را بِبُستانِ قُرب جای داد وَ عَليلی را بِطَبيبِ قَلب راه نَمود}
+     {He had driven one who was afar, into the garden of nearness, had guided an ailing soul to the heart’s physician.}
+     \\
+\ayat{حال آن عاشِق اَگَر آخِر بين بود دَر اَوَّل بَر عَسَس رَحمَت مينَمود وَ دُعاَش ميگُفت وَ آن ظُلم را عَدل ميديد}
+     {Now if the lover could have looked ahead, he would have blessed the watchman at the start, and prayed on his behalf, and he would have seen that tyranny as justice;}
+     \\
+\ayat{چون اَز آخِر مَحجوب بود دَر اَوَّل نالِه آغاز نَمود وَ بِشِکايَت زَبان گُشود}
+     {but since the end was veiled to him, he moaned and made his plaint in the beginning.}
+     \\
+\ayat{وَ لٰکِن مُسافِرانِ حَديقِۀِ عِرفان چون آخِر را دَر اَوَّل بينَند}
+     {Yet those who journey in the garden land of knowledge, because they see the end in the beginning,}
+     \\
+\ayat{لَهٰذا دَر جَنگ صُلح وَ دَر قَهر آشتی مُلاحِظِه کُنَند}
+     {see peace in war and friendliness in anger.}
+     \\
+\ayat{وَ اين رُتبِه اَهلِ اين وادی اَست}
+     {Such is the state of the wayfarers in this Valley;}
+     \\
+\ayat{وَ اَهلِ وادي هایِ فُوق اين وادی اَوَّل وَ آخِر را يِک بينَند بَلکِه نَه اَوَّل بينَند نَه آخِر لا اَوَّل وَ لا آخِر بينَند}
+     {but the people of the Valleys above this see the end and the beginning as one; nay, they see neither beginning nor end, and witness neither “first” nor “last.”}
+     \\
+\ayat{بَلکِه اَهلِ مَدينِۀِ بَقا کِه دَر رُوضِۀِ خَضرا ساکِنَند لا اَوَّل وَ لا آخِر هَم نَبينَند اَز اَوَّلها دَر گُريزَند وَ بِآخِرها دَرسِتيز}
+     {Nay rather, the denizens of the undying city, who dwell in the green garden land, see not even “neither first nor last”; they fly from all that is first, and repulse all that is last.}
+     \\
+\ayat{زيرا کِه عَوالِمِ اَسماء را طِی نَمودِه اَند وَ اَز عَوالِمِ صِفات چون بَرق دَر گُذَشتِه اَند}
+     {For these have passed over the worlds of names, and fled beyond the worlds of attributes as swift as lightning.}
+     \\
+\ayat{چِنانچِه ميفَرمايَد « کَمالِ ٱلْتُوحيد نَفیِ ٱلْصِّفات عَنهُ »}
+     {Thus is it said: “Absolute Unity excludeth all attributes.”}
+     \\
+\ayat{وَ دَر ظِلِّ ذات مَسکَن گِرِفتِه اَند}
+     {And they have made their dwelling-place in the shadow of the Essence.}
+     \\
+\ayat{اينَست کِه خواجِه عَبدُل لّٰه قَدَسَ ٱلْلٰه تَعالىٰ سِرِّهُ ٱلْعَزيز}
+     {Wherefore, relevant to this, Khájih `Abdu’l-lláh—may God the Most High sanctify his beloved spirit—}
+     \\
+\ayat{دَر اين مَقام نُکتِۀِ دَقيقی وَ کَلَمِۀِ بَليغی دَر مَعنی « اِهدِنا أَلْصِّراطَ ٱلْمُستَقيم » فَرمودِه اَند}
+     {hath made a subtle point and spoken an eloquent word as to the meaning of “Guide Thou us on the straight path,”}
+     \\
+\ayat{وَ آن اينَست کِه بِنَمای بِما راهِ راست}
+     {which is: “Show us the right way,}
+     \\
+\ayat{يَعنی بِمُحِبَتِ ذاتِ خُود مُشَرَّف دار تا اَز اِلتِفات بِخُود وَ غِيرِ تو آزاد گَشتِه}
+     {that is, honor us with the love of Thine Essence, that we may be freed from turning toward ourselves and toward all else save Thee,}
+     \\
+\ayat{بِتَمامی گِرِفتارِ تو گَرديم جُز تو نَدانيم جُز تو نَبينيم وَ جُز تو نَيَنديشيم}
+     {and may become wholly Thine, and know only Thee, and see only Thee, and think of none save Thee.”}
+     \\
+\ayat{بَلکِه اَز اين مَقام هَم بالا رَوَند}
+     {Nay, these even mount above this station,}
+     \\
+\ayat{چِنانچِه ميفَرمايَد « أَلْمُحَبَّةِ حِجابٍ بَينَ ٱلْمُحِبِّ وَ ٱلْمَحبوب » بيش اَز اين گُفتَن مَرا دَستور نيست}
+     {wherefore it is said: “Love is a veil betwixt the lover and the loved one; more than this I am not permitted to tell.”}
+     \\
+\ayat{دَر اين وَقت صُبحِ مَعرِفَت طالِع شُد وَ چِراغ هایِ سِير وَ سُلوک خاموش گَشت}
+     {At this hour the morn of knowledge hath arisen and the lamps of wayfaring and wandering are quenched.}
+     \\
+\ayat{وَهمِ موسىٰ با هَمِه نور و هُنَر}
+     {Veiled from this was Moses,}
+     \\
+\ayat{شُد اَز آن مَحجوب تو بی پَر مَپَر}
+     {Though all strength and light;}
+     \\
+\ayat{}
+     {Then thou who hast no wings at all,}
+     \\
+\ayat{}
+     {Attempt not flight.}
+     \\
+\ayat{اَگَر اَهلِ راز وَ نيازی بِپَر هایِ هِمَّتِ اُوليا پَرواز کُن}
+     {If thou be a man of communion and prayer, soar up on the wings of assistance from Holy Souls,}
+     \\
+\ayat{تا اَسرارِ دوست بينی وَ بِاَنوارِ مَحبوب رَسی اِنَالِلّٰهِ وَ اِنَّا اِلَيْهِ رَاجِعُونْ}
+     {that thou mayest behold the mysteries of the Friend and attain to the lights of the Beloved, “Verily, we are from God and to Him shall we return.”}
+     \\
+\ayat{مقام توحيد}
+     {\heading{The Valley of Unity}{}}
+     \\
+\ayat{وَ سالِک بَعد اَز سِيرِ وادی مَعرِفَت کِه آخِرِ مَقامِ تَحديد اَست بِاَوَّلِ مَقامِ تُوحيد واصِل شَوَد}
+     {After passing through the Valley of knowledge, which is the last plane of limitation, the wayfarer cometh to the Valley of Unity}
+     \\
+\ayat{وَ اَز کَأسِ تَجريد بِنوشَد وَ دَر مَظاهِرِ تَفريد سِير نَمايَد}
+     {and drinketh from the cup of the Absolute, and gazeth on the Manifestations of Oneness.}
+     \\
+\ayat{دَر اين مَقام حِجابِ کِثرَت بَر دِرَد وَ اَز عَوالِمِ شَهوَت بَر پَرَد وَ دَر سَمای وَحدَت عُروج نَمايَد}
+     {In this station he pierceth the veils of plurality, fleeth from the worlds of the flesh, and ascendeth into the heaven of singleness.}
+     \\
+\ayat{بِگوشِ اِلٰهی بِشنَوَد وَ بِچَشمِ رَبّانی اَسرارِ صَنعِ صَمدانی بينَد}
+     {With the ear of God he heareth, with the eye of God he beholdeth the mysteries of divine creation.}
+     \\
+\ayat{بِخَلوَت خانِۀِ دوست قَدَم گُذارَد وَ مَحرَمِ سُرادِقِ مَحبوب شَوَد}
+     {He steppeth into the sanctuary of the Friend, and shareth as an intimate the pavilion of the Loved One.}
+     \\
+\ayat{وَ دَستِ حَق اَز جِيبِ مُطلَق بَر آرَد وَ اَسرارِ قُدرَت ظاهِر نَمايَد}
+     {He stretcheth out the hand of truth from the sleeve of the Absolute; he revealeth the secrets of power.}
+     \\
+\ayat{وَصف وَ اِسم وَ رَسم اَز خُود نَبينَد وَصفِ خُود را دَر وَصفِ حَق بينَد}
+     {He seeth in himself neither name nor fame nor rank, but findeth his own praise in praising God.}
+     \\
+\ayat{وَ اِسمِ حَق را دَر اِسمِ خُود مُلاحِظِه نَمايَد}
+     {He beholdeth in his own name the name of God;}
+     \\
+\ayat{هَمِه آوازها اَز شَه دانَد وَ جَميعِ نَغمات را اَز او شِنَوَد}
+     {to him, “all songs are from the King,” and every melody from Him.}
+     \\
+\ayat{بَر کُرسی « قُلْ کُلّْ مِنْ عِنْدَ ٱلْلّٰهْ » جالِس شَوَد وَ بَر بَساطِ « لَا حُولَ وَ لَا قُوَةِ اِلَّا بِأَلْلّٰهْ » راحَت گيرَد}
+     {He sitteth on the throne of “Say, all is from God,” and taketh his rest on the carpet of “There is no power or might but in God.”}
+     \\
+\ayat{وَ دَر اَشياء بِنَظَرِ تُوحيد مُشاهِدِه کُنَد}
+     {He looketh on all things with the eye of oneness,}
+     \\
+\ayat{وَ اِشراقِ تَجَلّی شَمسِ اِلٰهی را اَز مَشرِقِ هُوييَت بَر هَمِۀِ مُمکِنات يِک سان بينَد}
+     {and seeth the brilliant rays of the divine sun shining from the dawning-point of Essence alike on all created things,}
+     \\
+\ayat{وَ اَنوارِ تُوحيد را بَر جَميعِ مُوجودات مُوجود وَ ظاهِر مُشاهِدِه کُنَد}
+     {and the lights of singleness reflected over all creation.}
+     \\
+\ayat{وَ مَعلومِ آن جَناب بودِه کِه جَميعِ اِختِلافات عَوالِم کُون کِه دَر مَراتِبِ سُلوک سالِک مُشاهِدِه ميکُنَد اَز نَظَرِ خُودِ سالِک اَست}
+     {It is clear to thine Eminence that all the variations which the wayfarer in the stages of his journey beholdeth in the realms of being, proceed from his own vision.}
+     \\
+\ayat{مَثالی دَر اين مَقام ذِکر ميشَوَد تا اين مَعنىٰ تَمام مَعلوم گَردَد}
+     {We shall give an example of this, that its meaning may become fully clear:}
+     \\
+\ayat{مُلاحِظِه دَر شَمسِ ظاهِری فَرمائيد کِه بَر هَمِۀِ مُوجودات وَ مُمکِنات بِيِک اِشراق تَجَلّی مينَمايَد}
+     {Consider the visible sun; although it shineth with one radiance upon all things,}
+     \\
+\ayat{وَ اِفاضِۀِ نور بِاَمرِ سُلطانِ ظُهور بَر هَمِۀِ اَشياء ميفَرمايَد}
+     {and at the behest of the King of Manifestation bestoweth light on all creation,}
+     \\
+\ayat{وَ ليکُن دَر هَر مُحَلّ بِاِقتِضایِ اِستَعداد آن مُحَلّ ظاهِر ميشَوَد وَ اَعطایِ فِيض ميکُنَد}
+     {yet in each place it becometh manifest and sheddeth its bounty according to the potentialities of that place.}
+     \\
+\ayat{مِثلِ اين کِه دَر مِر آت بِقَرصها وَ هِيَأتها جِلوِه مينَمايَد وَ اين بِواسطِۀِ لِطافَتِ خُودِ مِرات اَست}
+     {For instance, in a mirror it reflecteth its own disk and shape, and this is due to the sensitivity of the mirror;}
+     \\
+\ayat{وَ دَر بَلور نار اِحداث ميکُنَد وَ دَر سايِرِ اَشيا هَمان اَثَرِ تَجَلّی ظاهِر اَست نَه قُرص}
+     {in a crystal it maketh fire to appear, and in other things it showeth only the effect of its shining, but not its full disk.}
+     \\
+\ayat{وَ بِآن اَثَر هَر شَيئی را بِاَمرِ مُؤَثِّر بِاِستِعدادِ او تَربييَت ميکُنَد چِنانچِه مُشاهِدِه ميکُنيد}
+     {And yet, through that effect, by the command of the Creator, it traineth each thing according to the quality of that thing, as thou observest.}
+     \\
+\ayat{وَ هَمچِنين اَلوان هَم بِاِقتِضایِ مُحَلّ ظاهِر ميشَوَد}
+     {In like manner, colors become visible in every object according to the nature of that object.}
+     \\
+\ayat{مِثلِ اين کِه دَر زُجاجِۀِ زَرد تَجَلّی زَرد وَ دَر سِفيد تَجَلّی سِفيد وَ دَر سُرخ تَجَلّی سُرخ مُلاحِظِه ميشَوَد}
+     {For instance, in a yellow globe, the rays shine yellow; in a white the rays are white; and in a red, the red rays are manifest.}
+     \\
+\ayat{پَس اين اِختِلافات اَز مُحَلّ اَست نَه اَز اِشراقِ ضيياء}
+     {Then these variations are from the object, not from the shining light.}
+     \\
+\ayat{وَ اَگَر مُحَلّ مانِع داشتِه باشَد مِثلِ جِدار وَ سَقف آن مُحَلّ بِأَلْمَرِّه اَز تَجَلّی شَمس مَحروم مانَد وَ آفتاب بَر آن نَتابَد}
+     {And if a place be shut away from the light, as by walls or a roof, it will be entirely bereft of the splendor of the light, nor will the sun shine thereon.}
+     \\
+\ayat{اينَست کِه بَعضی اَز نُفوسِ ضَعيفِه چون اَراضی مَعرِفَت را بِجَدارِ نَفس وَ هَوىٰ}
+     {Thus it is that certain invalid souls have confined the lands of knowledge within the wall of self and passion,}
+     \\
+\ayat{وَ حِجابِ غَفلَت وَ عَمىٰ حايِل نَمودِه اَند}
+     {and clouded them with ignorance and blindness,}
+     \\
+\ayat{لِهِذا اَز اِشراقِ شَمس مَعانی وَ اَسرارِ مَحبوب لايَزالی مَحجوب ماندِه اَند}
+     {and have been veiled from the light of the mystic sun and the mysteries of the Eternal Beloved;}
+     \\
+\ayat{وَ اَز جَواهِرِ حِکمَتِ دينِ مُبينِ سِيِّدَ ٱلْمُر سَلين دور ماندِه اَند}
+     {they have strayed afar from the jewelled wisdom of the lucid Faith of the Lord of Messengers,}
+     \\
+\ayat{وَ اَز حَرَمِ جَمال مَحروم شُدَند}
+     {have been shut out of the sanctuary of the All-Beauteous One,}
+     \\
+\ayat{وَ اَز کَعبِۀِ جَلال مَهجور}
+     {and banished from the Ka`bih of splendor.}
+     \\
+\ayat{اينَست رُتبِۀِ اَهلِ زَمان}
+     {Such is the worth of the people of this age!}
+     \\
+\ayat{وَ اَگَر بُلبُلی اَز گِلِ نَفس بَر خيزَد وَ بَر شاخسارِ گُلِ قَلب جای گيرَد}
+     {And if a nightingale soar upward from the clay of self and dwell in the rose bower of the heart,}
+     \\
+\ayat{وَ بِنِغَماتِ حِجازی وَ آواز هایِ خُوشِ عَراقی اَسرارِ اِلٰهی ذِکر نَمايَد}
+     {and in Arabian melodies and sweet Íránn songs recount the mysteries of God—}
+     \\
+\ayat{کِه حَرفی اَز آن جَميعِ جَسَد هایِ مُردِه را حَياتِ تازِۀِ جَديد بَخشَد}
+     {a single word of which quickeneth to fresh, new life the bodies of the dead,}
+     \\
+\ayat{وَ روحِ قُدسی بَر عَظامِ رَميمِۀِ مُمکِنات مَبذول دارَد}
+     {and bestoweth the Holy Spirit upon the moldering bones of this existence—}
+     \\
+\ayat{هِزار چَنگالِ حَسَد وَ مِنقارِ بُغض بينی کِه قَصدِ او نَمايَند وَ با تَمامِ جِدّ دَر هَلاکَش کوشَند}
+     {thou wilt behold a thousand claws of envy, a myriad beaks of rancor hunting after Him and with all their power intent upon His death.}
+     \\
+\ayat{بَلی جُعَل را بویِ خُوش نا خُوش آيَد وَ مَزکوم را رايِحِۀِ طَيِب ثَمَر نَدَهَد}
+     {Yea, to the beetle a sweet fragrance seemeth foul, and to the man sick of a rheum a pleasant perfume is as naught.}
+     \\
+\ayat{اينَست کِه بَرایِ اِرشادِ عَوام گُفتِه اَند}
+     {Wherefore, it hath been said for the guidance of the ignorant:}
+     \\
+\ayat{دَفع کُن اَز مَغز و اَز بينی زُکام}
+     {Cleanse thou the rheum from out thine head}
+     \\
+\ayat{تا کِه ريحُ ٱلْلّٰه دَر آيَد دَر مَشام}
+     {And breathe the breath of God instead.}
+     \\
+\ayat{باری اِختِلافِ مُحَلّ واضِح وَ مُبَرهَن شُد}
+     {In sum, the differences in objects have now been made plain.}
+     \\
+\ayat{وَ اَمّا نَظَرِ سالِک وَقتی دَر مُحَلّ مَحدود اَست يَعنی دَر زُجاجاتِ سِير مينَمايَد}
+     {Thus when the wayfarer gazeth only upon the place of appearance—that is, when he seeth only the many-colored globes—}
+     \\
+\ayat{اينَست کِه زَرد وَ سُرخ وَ سِفيد بينَد}
+     {he beholdeth yellow and red and white;}
+     \\
+\ayat{بِاين جَهَت اَست کِه جِدال بِينِ عِباد بَر پا شُدِه}
+     {hence it is that conflict hath prevailed among the creatures,}
+     \\
+\ayat{وَ عالَم را غُبار تيرِه اَز اَنفُسِ مَحدودِه فَراگ رَفتِه}
+     {and a darksome dust from limited souls hath hid the world.}
+     \\
+\ayat{وَ بَعضی نَظَر بِاِشراقِ ضُوء دارَند وَ بَرخی اَز خَمَرِ وَحدَت نوشيدِه اَند جُز شَمس چيزی نَبينَند}
+     {And some do gaze upon the effulgence of the light; and some have drunk of the wine of oneness and these see nothing but the sun itself.}
+     \\
+\ayat{پَس بِسَبَبِ سِيرِ اين سِه مَقامِ مُختَلِف فَهمِ سالِکين وَ بَيانِ ايشان مُختَلِف ميشَوَد}
+     {Thus, for that they move on these three differing planes, the understanding and the words of the wayfarers have differed;}
+     \\
+\ayat{اينَست کِه اَثَرِ اِختِلاف دَر عالَم ظاهِر شُدِه وَ ميشَوَد}
+     {and hence the sign of conflict doth continually appear on earth.}
+     \\
+\ayat{زيرا کِه بَعضی دَر رُتبِۀِ تُوحيد واقِفَند وَ اَز آن عالَم سُخَن گويَند}
+     {For some there are who dwell upon the plane of oneness and speak of that world,}
+     \\
+\ayat{وَ بَرخی دَر عَوالِمِ تَحديد قائِم اَند وَ بَعضی دَر مَراتِبِ نَفس وَ بَرخی بِأَلْاَمرِه مُحتَجِب اَند}
+     {and some inhabit the realms of limitation, and some the grades of self, while others are completely veiled.}
+     \\
+\ayat{اينَست کِه جُهّالِ عَصر کِه اَز پَرتُوِ جَمال نَصيب نَبُردِه اَند بِبَعضی مَقال تَکَلُّم مينَمايَند}
+     {Thus do the ignorant people of the day, who have no portion of the radiance of Divine Beauty, make certain claims,}
+     \\
+\ayat{وَ دَر هَر عَصر وَ زَمان بَر اَهلِ لَجِّۀِ تُوحيد وارِد مي آوَرَند آنچِه را کِه خُود بِآن لايِق وَ سِزا وارَند}
+     {and in every age and cycle inflict on the people of the sea of oneness what they themselves deserve.}
+     \\
+\ayat{« وَلَوْ يُؤَا خِذُ ٱلْلّٰهُ ٱلْنَّاسَ بِمَاکَسَبُو مَاتَرَکَ عَلىٰ ظَهْرِهَا مِنْ دَ ءَابَّةٍ وَلٰکِنْ يُؤَخِّرُهُمْ إِلىٰ أَجَلٍ مُسَمّىٰاً »}
+     {“Should God punish men for their perverse doings, He would not leave on earth a moving thing! But to an appointed term doth He respite them…”}
+     \\
+\ayat{اِی بَرادَرِ مَن قَلبِ لَطيف بِمَنزَلِۀِ آئينِه اَست}
+     {O My Brother! A pure heart is as a mirror;}
+     \\
+\ayat{آن را بِصيقَلِ حُبّ وَ اِنقِطاع اَز ماسَوی أَلْلّٰه پاک کُن}
+     {cleanse it with the burnish of love and severance from all save God,}
+     \\
+\ayat{تا اَفتابِ حَقيقی دَر آن جِلوِه نَمايَد وَ صُبحِ اَزَلی طالِع شَوَد}
+     {that the true sun may shine within it and the eternal morning dawn.}
+     \\
+\ayat{مَعنی « لا يَسعَنی اَرضی وَ لا سَمائی وَ لٰکِن يَسعَنی قَلبِ عَبدی أَلْمُؤمِن » را آشِکار وَ هُوِيدا بينی}
+     {Then wilt thou clearly see the meaning of “Neither doth My earth nor My heaven contain Me, but the heart of My faithful servant containeth Me.”}
+     \\
+\ayat{وَ جان دَر دَست گيری وَ بِهِزار حَسرَت نِثارِ يارِ تازِه نَمائی}
+     {And thou wilt take up thy life in thine hand, and with infinite longing cast it before the new Beloved One.}
+     \\
+\ayat{وَ چون اَنوارِ تَجَلّی سُلطانِ اَحَدِيِّه بَر عَرشِ قَلب وَ دِل جُلوس نَمود}
+     {Whensoever the light of Manifestation of the King of Oneness settleth upon the throne of the heart and soul,}
+     \\
+\ayat{نورِ او دَر جَميعِ اَعضا وَ اَرکان ظاهِر ميشَوَد}
+     {His shining becometh visible in every limb and member.}
+     \\
+\ayat{آن وَقت سِرِّ حَديثِ مَشهور سَر اَز حَجابِ دِيجور بَر آرَد}
+     {At that time the mystery of the famed tradition gleameth out of the darkness:}
+     \\
+\ayat{« لَا زَالْ أَلْعَبْدْ يَتَقَرَّبَ اِلَيَّ بِٱلْنَّوَافِلْ حَتّىٰ اَحْبَبْتَهُ فَ اِذَا اَحْبَبْتَهُ کُنْ تُ سَمْعِهِ اَلَذِي يَسْمَعَ بِهِ » اَلخ}
+     {“A servant is drawn unto Me in prayer until I answer him; and when I have answered him, I become the ear wherewith he heareth…”}
+     \\
+\ayat{زيرا کِه صاحِبِ بَيت دَر بَيتِ خُود تَجَلّی نَمودِه}
+     {For thus the Master of the house hath appeared within His home,}
+     \\
+\ayat{وَ اَرکانِ بَيت هَمِه اَز نورِ او رُوشَن وَ مُنَوَّر شُدِه}
+     {and all the pillars of the dwelling are ashine with His light.}
+     \\
+\ayat{وَ فِعل وَ اَثَرِ نور اَز مُنير اَست}
+     {And the action and effect of the light are from the Light-Giver;}
+     \\
+\ayat{اينَست کِه هَمِه بِه او حَرکَت نَمايَند وَ بِاِرادِۀِ او قيام کُنَند}
+     {so it is that all move through Him and arise by His will.}
+     \\
+\ayat{وَ اينَست آن چَشمِه ای کِه مُقَرَبين اَز آن مينوشَند}
+     {And this is that spring whereof the near ones drink,}
+     \\
+\ayat{چِنانچِه ميفَرمايَد « عَيْناً يَشْرِبَ بِهَا أَلْمُقَرِّبُونْ »}
+     {as it is said: “A fount whereof the near unto God shall drink…”}
+     \\
+\ayat{وَ ديگَر آنکِه مَبادا دَر اين بَيانات رايِحِۀِ حُلول}
+     {However, let none construe these utterances to be anthropomorphism,}
+     \\
+\ayat{وَ يا تَنَزُّلاتِ عَوالِمِ حَق دَر مَراتِبِ خَلق رَود وَ بَر آن جِناب شُبهِه شَوَد}
+     {nor see in them the descent of the worlds of God into the grades of the creatures; nor should they lead thine Eminence to such assumptions.}
+     \\
+\ayat{زيرا کِه بِذاتِه مُقَدَّس اَست اَز صُعود وَ نَزول وَ اَز دَخول وَ خُروج}
+     {For God is, in His Essence, holy above ascent and descent, entrance and exit;}
+     \\
+\ayat{لَم يَزَل اَز صِفاتِ خَلق غَنی بودِه وَ خواهَد بُد}
+     {He hath through all eternity been free of the attributes of human creatures, and ever will remain so.}
+     \\
+\ayat{وَ نَشناختِه او را اَحَدی وَ بِکُنۀِ او راه نَيافتِه نَفسی}
+     {No man hath ever known Him; no soul hath ever found the pathway to His Being.}
+     \\
+\ayat{کُلِّ عُرَفا دَر وادی مَعرِفَتَش سَر گَردان وَ کُلِّ اولِيا دَر اِدراکِ ذاتَش حِيران مَنَزِّه اَست}
+     {Every mystic knower hath wandered far astray in the valley of the knowledge of Him; every saint hath lost his way in seeking to comprehend His Essence.}
+     \\
+\ayat{اَز اِدراکِ هَر مُدرِکی وَ مُتَعالی اَست اَز عِرفان هَر عارِفی}
+     {Sanctified is He above the understanding of the wise; exalted is He above the knowledge of the knowing!}
+     \\
+\ayat{أَلْسَّبيلُ مَسدود وَ ٱلْطَّلَبُ مَردود}
+     {The way is barred and to seek it is impiety;}
+     \\
+\ayat{دَليلِه آياتِه وَ وُجودِه اِثباتِه}
+     {His proof is His signs; His being is His evidence.}
+     \\
+\ayat{اينَست کِه عاشِقان رویِ جانان گُفتِه اَند « يَامَنْ دَلَّ عَلىٰ ذَاتِهِ بِذَاتِهِ وَ تَنَزَّهَ عَنْ مُجَانِسَةِ مُخْلُوقَاتِهِ »}
+     {Wherefore, the lovers of the face of the Beloved have said: “O Thou, the One Whose Essence alone showeth the way to His Essence, and Who is sanctified above any likeness to His creatures.”}
+     \\
+\ayat{عَدَمِ صِرف کُجا تَوانَد دَر مَيدانِ قِدَم اَسب دَوانَد وَ سايِۀِ فانی کُجا بِخُورشيدِ باقی رِسَد}
+     {How can utter nothingness gallop its steed in the field of preexistence, or a fleeting shadow reach to the everlasting sun?}
+     \\
+\ayat{حَبيبِ « لُوْلَاکْ », « مَا عَرَفْنَاکَ » فَرمودِه}
+     {The Friend hath said, “But for Thee, we had not known Thee,”}
+     \\
+\ayat{وَ مَحبوبِ « اُوَادْنىٰ », « مَابِلَغْنَاکَ » گُفتِه}
+     {and the Beloved hath said, “nor attained Thy presence.”}
+     \\
+\ayat{بَلی اين ذِکرها کِه دَر مَراتِبِ عِرفان ذِکر ميشَوَد}
+     {Yea, these mentionings that have been made of the grades of knowledge}
+     \\
+\ayat{مَعرِفَتِ تَجَلّياتِ آن شَمسِ حَقيقَت اَست کِه دَر مَرايا تَجَلّی ميفَرمايَد}
+     {relate to the knowledge of the Manifestations of that Sun of Reality, which casteth Its light upon the Mirrors.}
+     \\
+\ayat{وَ تَجَلّی آن نور دَر قُلوب هَست وَ لٰکِن بِحُجِباتِ نَفسانِيِّه وَ شُؤوناتِ عَرَضِيِّه مَحجوب اَست}
+     {And the splendor of that light is in the hearts, yet it is hidden under the veilings of sense and the conditions of this earth,}
+     \\
+\ayat{چون شَمع زيرِ فانوسِ حَديد چون فانوس مُرتَفِع شُد نورِ شَمع ظاهِر گَردَد}
+     {even as a candle within a lantern of iron, and only when the lantern is removed doth the light of the candle shine out.}
+     \\
+\ayat{وَ هَمچِنين چون خَرقِ حُجِباتِ اَفکِيِّه اَز وَجۀِ قَلب نَمائی اَنوارِ اَحَدِيِّه طالِع شَوَد}
+     {In like manner, when thou strippest the wrappings of illusion from off thine heart, the lights of oneness will be made manifest.}
+     \\
+\ayat{پَس مَعلوم شُد کِه اَز بَرایِ تَجَلّيات هَم دُخول وَ خُروج نيست}
+     {Then it is clear that even for the rays there is neither entrance nor exit—}
+     \\
+\ayat{تا چِه رِسَد بِآن جُوهَرِ وُجود وَ سِرِّ مَقصود}
+     {how much less for that Essence of Being and that longed-for Mystery.}
+     \\
+\ayat{اِی بَرادَر مَن دَر اين مَراتِب اَز رویِ تَحقيق سِير نَما نَه اَز رویِ تَقليد}
+     {O My Brother, journey upon these planes in the spirit of search, not in blind imitation.}
+     \\
+\ayat{وَ سالِک را دور باشِ کَلِمات مَنع نَکُنَد وَ هِيمَنِۀِ اِشارَت سَد نَنَمايَد}
+     {A true wayfarer will not be kept back by the bludgeon of words nor debarred by the warning of allusions.}
+     \\
+\ayat{پَردِه چِه باشَد ميانِ عاشِق و مَعشوق}
+     {How shall a curtain part the lover and the loved one?}
+     \\
+\ayat{سَدِّ سِکَندَر نَه مانِع اَست و نَه حائِل}
+     {Not Alexander’s wall can separate them!}
+     \\
+\ayat{اَسرار بِسيار وَ اَغيار بيشُمار}
+     {Secrets are many, but strangers are myriad.}
+     \\
+\ayat{سِرِّ مَحبوب را دَفتَرها کِفايَت نَکُنَد وَ بِاين اَلواح اِتمام نَيابَد با اين کِه حَرفی بيش نيست وَ رَمزی بيش نَه}
+     {Volumes will not suffice to hold the mystery of the Beloved One, nor can it be exhausted in these pages, although it be no more than a word, no more than a sign.}
+     \\
+\ayat{« أَلْعِلْمُ نُقْطَةٌ کَثَّرِهُ ٱلْجَاهِلُونْ »}
+     {“Knowledge is a single point, but the ignorant have multiplied it.”}
+     \\
+\ayat{وَ اَز هَمين مَقام اِختِلافاتِ عَوالِم را هَم مُلاحِظِه کُن}
+     {On this same basis, ponder likewise the differences among the worlds.}
+     \\
+\ayat{اَگَر چِه عَوالِمِ اِلٰهی نامُتِناهی اَست وَ لٰکِن بَعضی چِهار رُتبِه ذِکر نَمودِه اَند}
+     {Although the divine worlds be never ending, yet some refer to them as four:}
+     \\
+\ayat{عالَمِ زَمان وَ آن آن اَست کِه اَز بَرایِ او اَوَّل وَ آخِر باشَد}
+     {The world of time (zamán), which is the one that hath both a beginning and an end;}
+     \\
+\ayat{وَ عالَمِ دَهر يَعنی اَوَّل داستِه باشَد وَ آخِرَش پَديد نَباشَد}
+     {the world of duration (dahr), which hath a beginning, but whose end is not revealed;}
+     \\
+\ayat{وَ عالَمِ سَرمَد کِه اَوَّلی مُلاحِظِه نَشَوَد وَ آخِرَش مَفهوم شَوَد}
+     {the world of perpetuity (sarmad), whose beginning is not to be seen but which is known to have an end;}
+     \\
+\ayat{وَ عالَمِ اَزَل کِه نَه اَوَّلی مُشاهِدِه شَوَد وَ نَه آخِری}
+     {and the world of eternity (azal), neither a beginning nor an end of which is visible.}
+     \\
+\ayat{اَگَر چِه دَر اين بَيانات اِختِلاف بِسيار اَست اَگَر تَقصيل ذِکر شَود کِسالَت اَفزايَد}
+     {Although there are many differing statements as to these points, to recount them in detail would result in weariness.}
+     \\
+\ayat{چِنانچِه بَعضی عالَمِ سَرمَد را بی اِبتِدا وَ اِنتَها گُفتِه اَند}
+     {Thus, some have said that the world of perpetuity hath neither beginning nor end,}
+     \\
+\ayat{وَ عالَمِ اَزَل را غِيبِ مَنيعِ لا يُدرَک ذِکر نَمودِه اَند}
+     {and have named the world of eternity as the invisible, impregnable Empyrean.}
+     \\
+\ayat{وَ بَعضی عَوالِمِ لاهوت وَ جَبَروت وَ مَلَکوت وَ ناسوت گُفتِه اَند}
+     {Others have called these the worlds of the Heavenly Court (Láhút), of the Empyrean Heaven (Jabarút), of the Kingdom of the Angels (Malakút), and of the mortal world (Násút).}
+     \\
+\ayat{سَفَر هایِ سَبيلِ عِشق را چِهار شُمُردِه اَند}
+     {The journeys in the pathway of love are reckoned as four:}
+     \\
+\ayat{مِنْ أَلْخَلْقِ اِلِي أَلْحَقّْ وَ مِنْ أَلْحَقِّ اِلِي أَلْخَلْقْ وَ مِنْ أَلْخَلْقِ اِلِي أَلْخَلْقْ وَ مِنْ أَلْحَقِّ اِلِي أَلْحَقْ}
+     {From the creatures to the True One; from the True One to the creatures; from the creatures to the creatures; from the True One to the True One.}
+     \\
+\ayat{وَ هَمچِنين بِسيار بَيانات اَز عُرَفا وَ حُکَمایِ قَبل هَست کِه بَندِه مُتَعرِض نَشُدَم}
+     {There is many an utterance of the mystic seers and doctors of former times which I have not mentioned here,}
+     \\
+\ayat{وَ دوست نَدارَم کِه اَذکار قَبل بِسيار اِظهار شَوَد}
+     {since I mislike the copious citation from sayings of the past;}
+     \\
+\ayat{زيرا کِه اَقوال غِير را ذِکر نَمودَن دَليل اَست بَر عُلومِ کَسبی نَه بَر مُوهِبَت اِلٰهی}
+     {for quotation from the words of others proveth acquired learning, not the divine bestowal.}
+     \\
+\ayat{وَ لٰکِن اين قَدر هَم کِه ذِکر شُد بِواسطِۀِ عادَتِ ناس اَست}
+     {Even so much as We have quoted here is out of deference to the wont of men and after the manner of the friends.}
+     \\
+\ayat{وَ تَ اَسّی بِاَصحاب وَ عَلاوِه بَر اين دَرين رِسالِه اين بَيانات نَگُنجَد}
+     {Further, such matters are beyond the scope of this epistle.}
+     \\
+\ayat{وَ عَدَمِ اِقبال بِذِکرِ اَقوالِ ايشان نَه اَز غُرور اَست بَل بِواسطِۀِ ظُهورِ حِکمَت وَ تَجَلّی مُوهِبَت اَست}
+     {Our unwillingness to recount their sayings is not from pride, rather is it a manifestation of wisdom and a demonstration of grace.}
+     \\
+\ayat{گَر خِضر دَر بَحر کَشتی را شِکَست}
+     {If Khiḍr did wreck the vessel on the sea,}
+     \\
+\ayat{صَد دُرُستی دَر شِکَستِ خِضر هَست}
+     {Yet in this wrong there are a thousand rights.}
+     \\
+\ayat{وَ اِلّا اين بَندِه خُود را دَر ساحَتِ يِکی اَز اَحِبایِ خُدا مَعدوم ميدانَم وَ مَفقود ميشُمُرَم تا چِه رِسَد دَر بَساطِ اوليا}
+     {Otherwise, this Servant regardeth Himself as utterly lost and as nothing, even beside one of the beloved of God, how much less in the presence of His holy ones.}
+     \\
+\ayat{فَسُبْحَانَ رَبِّي أَلْاَعْلىٰ}
+     {Exalted be My Lord, the Supreme!}
+     \\
+\ayat{وَ اَز اينها گُذَشتِه مَقصود ذِکرِ مَراتِبِ سالِکين اَست نَه بَيانِ اَقوالِ عارِفين}
+     {Moreover, our aim is to recount the stages of the wayfarer’s journey, not to set forth the conflicting utterances of the mystics.}
+     \\
+\ayat{اَگَر چِه مِثالِ مُختَصَری دَر اَوَّل وَ آخِرِ عالَم نِسبی وَ اِضافی زَدِه شُد}
+     {Although a brief example hath been given concerning the beginning and ending of the relative world, the world of attributes,}
+     \\
+\ayat{مُجَدَّد مِثالی ديگَر ذِکر ميشَوَد تا تَمامِ مَعانی دَر قَميصِ مِثالی ظاهِر شَوَد}
+     {yet a second illustration is now added, that the full meaning may be manifest.}
+     \\
+\ayat{مَثَلاً آن جِناب دَر خُود مُلاحِظِه فَرمايَند}
+     {For instance, let thine Eminence consider his own self;}
+     \\
+\ayat{کِه نِسبَت بِپَسَرِ خُود اَوَّلَند وَ نِسبَت بِپِدَرِ خُود آخِر}
+     {thou art first in relation to thy son, last in relation to thy father.}
+     \\
+\ayat{وَ دَر ظاهِر حِکايَت اَز ظاهِرِ قُدرَت ميکُنيد دَر عَوالِمِ صُنعِ اِلٰهی}
+     {In thine outward appearance, thou tellest of the appearance of power in the realms of divine creation;}
+     \\
+\ayat{وَ دَر باطِن بَر اَسرارِ باطِن کِه وَديعِۀِ اِلٰهِيِّه اَست}
+     {in thine inward being thou revealest the hidden mysteries which are the divine trust deposited within thee.}
+     \\
+\ayat{دَر شُما پَس صِدقِ اَوَّلِيَّت وَ آخِرِيَّت وَ ظاهِرِيَّت وَ باطِنِيَّت بِاين مَعنىٰ کِه ذِکر شُد بَر شُما ميکُنَد}
+     {And thus firstness and lastness, outwardness and inwardness are, in the sense referred to, true of thyself,}
+     \\
+\ayat{تا دَر اين چِهار رُتبِه کِه بِشُما عِنايَت شُد چِهار رُتبِۀِ اِلٰهِيِّه را اِدراک فَرمائيد}
+     {that in these four states conferred upon thee thou shouldst comprehend the four divine states,}
+     \\
+\ayat{تا بُلبُلِ قَلب بَر جَميعِ شاخسار هایِ گُلِ وُجود اَز غِيب وَ شُهود نِدا کُنَد}
+     {and that the nightingale of thine heart on all the branches of the rosetree of existence, whether visible or concealed, should cry out:}
+     \\
+\ayat{بِاَنَه « هُوْ أَلْاَوَّلْ وَ ٱلْآخِرْ وَ ٱلْظَّاهِرْ وَ ٱلْبَاطِنْ »}
+     {“He is the first and the last, the Seen and the Hidden…”}
+     \\
+\ayat{وَ اين ذِکرها دَر مَراتِبِ عَوالِمِ نِسبَت ذِکر ميشَوَد}
+     {These statements are made in the sphere of that which is relative, because of the limitations of men.}
+     \\
+\ayat{وَ اِلّا آن رِجالی کِه بِقَدَمی عالَمِ نِسبَت وَ تَقييد را طِی نَمودِه اَند}
+     {Otherwise, those personages who in a single step have passed over the world of the relative and the limited,}
+     \\
+\ayat{وَ بَر بَساطِ خُوشِ تَجريد ساکِن شُدِه اَند}
+     {and dwelt on the fair plane of the Absolute,}
+     \\
+\ayat{وَ دَر عالَم هایِ اِطلاق وَ اَمر خِيمِه بَر اَفراختِه اَند}
+     {and pitched their tent in the worlds of authority and command—}
+     \\
+\ayat{جَميعِ اين نِسبَت ها را بِناری سوختِه اَند}
+     {have burned away these relativities with a single spark,}
+     \\
+\ayat{وَ هَمِۀِ اين اَلفاظ را بِنَمی مَحو نَمودِه اَند}
+     {and blotted out these words with a drop of dew.}
+     \\
+\ayat{وَ دَر يَمِ روح شِناوَری مينَمايَند وَ دَر هَوایِ قُدسِ نور سِير ميکُنَند}
+     {And they swim in the sea of the spirit, and soar in the holy air of light.}
+     \\
+\ayat{ديگَر اَلفاظ دَر اين رُتبِه کُجا وُجود دارَد تا اَوَّل يا آخِر يا غِيرِ اينها مَعلوم شَود وَ مَذکور آيَد}
+     {Then what life have words, on such a plane, that “first” and “last” or other than these be seen or mentioned!}
+     \\
+\ayat{دَر اين مَقام اَوَّل نَفسِ آخِر وَ آخِر نَفسِ اَوَّل اَست}
+     {In this realm, the first is the last itself, and the last is but the first.}
+     \\
+\ayat{آتِشی اَز عِشقِ جانان بَر فُروز}
+     {In thy soul of love build thou a fire}
+     \\
+\ayat{سَر بِسَر فِکر و عِبادَت را بِسوز}
+     {And burn all thoughts and words entire.}
+     \\
+\ayat{اِی دوستِ مَن دَر خُود مُلاحِظِه فَرما}
+     {O my friend, look upon thyself:}
+     \\
+\ayat{کِه اَگَر پِدَر نِميشُدی وَ پِسَر نَديدِه بودی اين اَلفاظ هَم نَشَنيدِه بودی}
+     {Hadst thou not become a father nor begotten a son, neither wouldst thou have heard these sayings.}
+     \\
+\ayat{پَس حال هَمِه را فَراموش کُن تا دَر مُصطَبِۀِ تُوحيد نَزدِ اَديبِ عِشق بِياموزی}
+     {Now forget them all, that thou mayest learn from the Master of Love in the schoolhouse of oneness,}
+     \\
+\ayat{وَ اَز « اِنَّا » بِه « راجِعون » رِجعَت کُنی}
+     {and return unto God,}
+     \\
+\ayat{وَ اَز باطِنِ مَجازی بِمَقامِ حَقِقی خُود واصِل گَردی}
+     {and forsake the inner land of unreality for thy true station,}
+     \\
+\ayat{وَ دَر ظِلِ شَجَرِۀِ دانِش ساکِن شَوی}
+     {and dwell within the shadow of the tree of knowledge.}
+     \\
+\ayat{اِی عَزيز نَفس را فَقير نِما تا دَر عَرصِۀِ بُلَندِ غَنا وارَد شَوی}
+     {O thou dear one! Impoverish thyself, that thou mayest enter the high court of riches;}
+     \\
+\ayat{وَ جِسَد را ذَليل کُن تا اَز شَريعِۀِ عِزَّت بِياشامی}
+     {and humble thy body, that thou mayest drink from the river of glory,}
+     \\
+\ayat{وَ بِجَميعِ مَعانی اَشعار کِه سُؤال فَرمودی بِرَسی}
+     {and attain to the full meaning of the poems whereof thou hadst asked.}
+     \\
+\ayat{پَس مَعلوم شُد کِه اين مَراتِب بَستِه بِسِيرِ سالِک اَست}
+     {Thus it hath been made clear that these stages depend on the vision of the wayfarer.}
+     \\
+\ayat{وَ دَر هَر مَدينِه عالَمی بينَد وَ دَر هَر وادی بِچَشمِه ای رِسَد وَ دَر هَر صَحرا نَغمِه ای شِنَوَد}
+     {In every city he will behold a world, in every Valley reach a spring, in every meadow hear a song.}
+     \\
+\ayat{وَلی شاه بازِ هَوایِ مَعنَوی را شَهناز هایِ بَديعِ روحانی دَر دِل اَست}
+     {But the falcon of the mystic heaven hath many a wondrous carol of the spirit in His breast,}
+     \\
+\ayat{وَ مُرغِ عَراقی را آواز هایِ خُوشِ حِجازی دَر سَر}
+     {and the Persian bird keepeth in His soul many a sweet Arab melody;}
+     \\
+\ayat{وَ لٰکِن مَستور بودِه وَ مَستور خواهَد بود}
+     {yet these are hidden, and hidden shall remain.}
+     \\
+\ayat{گَر بِگويَم عَقلها بَر هَم زَنَد}
+     {If I speak forth, many a mind will shatter,}
+     \\
+\ayat{وَر نِويسَم بَس قَلَمها بِشکَنَد}
+     {And if I write, many a pen will break.}
+     \\
+\ayat{وَ ٱلْسَّلَامُ عَلىٰ مَنْ قَطَعَ هٰذَ ٱلْسَّفَرِ ٱلْاَعْلىٰ وَ اِتَّبَعَ ٱلْحَقِّ بِاَنْوَارِ ٱلْهُدىٰ}
+     {Peace be upon him who concludeth this exalted journey and followeth the True One by the lights of guidance.}
+     \\
+\ayat{مدينۀ استغنا}
+     {\heading{The Valley of Contentment}{}}
+     \\
+\ayat{وَ سالِک بَعد اَز قَطعِ مَعارِجِ اين سَفَرِ بُلَندِ اَعلىٰ دَر مَدينِۀِ اِستِغنا وارِد ميشَوَد}
+     {And the wayfarer, after traversing the high planes of this supernal journey, entereth the Valley of Contentment.}
+     \\
+\ayat{وَ دَر اين وادی نَسائِمِ اِستِغنایِ اِلٰهی را بِبينَد کِه اَز بَيدایِ روح ميوَزَد}
+     {In this Valley he feeleth the winds of divine contentment blowing from the plane of the spirit.}
+     \\
+\ayat{وَ حِجاب هایِ فَقر را ميسوزَد}
+     {He burneth away the veils of want,}
+     \\
+\ayat{وَ « يُومِ يَغْنِي أَلْلّٰهْ کُلاً مِنْ سَعَتِهِ » را بِچَشمِ ظاهِر وَ باطِن دَر غِيب وَ شِهادَة اَشياء مُشاهِدِه فَرمايَد}
+     {and with inward and outward eye, perceiveth within and without all things the day of: “God will compensate each one out of His abundance.”}
+     \\
+\ayat{اَز حُزن بِسُرور آيَد وَ اَز غَم بِفَرَح راجِع شَوَد}
+     {From sorrow he turneth to bliss, from anguish to joy.}
+     \\
+\ayat{قَبض وَ اِنقِباض را بِبَسط وَ اِنبِساط تَبديل نَمايَد}
+     {His grief and mourning yield to delight and rapture.}
+     \\
+\ayat{مُسافِرانِ اين وادی اَگَر دَر ظاهِر بَر خاک ساکِن اَند}
+     {Although to outward view, the wayfarers in this Valley may dwell upon the dust,}
+     \\
+\ayat{اَمّا دَر باطِن بَر رَفرَفِ مَعانی جالِس}
+     {yet inwardly they are throned in the heights of mystic meaning;}
+     \\
+\ayat{وَ اَز نِعمَت هایِ بی زَوال مَعنَوی مَرزوق اَند}
+     {they eat of the endless bounties of inner significances,}
+     \\
+\ayat{وَ اَز شَراب هایِ لَطيفِ روحانی مَشروب}
+     {and drink of the delicate wines of the spirit.}
+     \\
+\ayat{زَبان دَر تَفصيلِ اين سِه وادی عاجِز اَست وَ بَيان بِغايَت قاصِر}
+     {The tongue faileth in describing these three Valleys, and speech falleth short.}
+     \\
+\ayat{قَلَم دَر اين عَرصِه قَدَم نَگُذارَد وَ مِداد جُز سَواد ثَمَر نَيارَد}
+     {The pen steppeth not into this region, the ink leaveth only a blot.}
+     \\
+\ayat{بُلبُلِ قَلب را دَر اين مَقامات نَوا هایِ ديگَر اَست وَ اَسرارِ ديگَر}
+     {In these planes, the nightingale of the heart hath other songs and secrets,}
+     \\
+\ayat{کِه دِل اَز او بِجوش وَ روح دَر خُروش}
+     {which make the heart to stir and the soul to clamor,}
+     \\
+\ayat{وَ لٰکِن اين مُعَمّایِ مَعانی را دِل بِدِل بايَد گُفت وَ سينِه بِسينِه بايَد سِپُرد}
+     {but this mystery of inner meaning may be whispered only from heart to heart, confided only from breast to breast.}
+     \\
+\ayat{شَرحِ حالِ عارِفان دِل بِدِل تَوانَد گُفت}
+     {Only heart to heart can speak the bliss of mystic knowers;}
+     \\
+\ayat{اين نَه شيوِۀِ قاصِد و اين نَه حَدِّ مَکتوب اَست}
+     {No messenger can tell it and no missive bear it.}
+     \\
+\ayat{وَاسْکُتْ عَجْزاً عَنْ اُمُورِ کَثِيرَةٍ}
+     {I am silent from weakness on many a matter,}
+     \\
+\ayat{بِنُطْقِي لَنْ تُحْصىٰ وَ لُو قُلْتُ قَلَّتٍ}
+     {For my words could not reckon them and my speech would fall short.}
+     \\
+\ayat{اِی رَفيق تا بِحَديقِۀِ اين مَعانی نَرَسی اَز خَمرِ باقی اين وادی نَچِشی}
+     {O friend, till thou enter the garden of such mysteries, thou shalt never set lip to the undying wine of this Valley.}
+     \\
+\ayat{وَ اَگَر چِشی اَز غِير چَشم پوشی وَ اَز بادِۀِ اِستِغنا بِنوشی}
+     {And shouldst thou taste of it, thou wilt shield thine eyes from all things else, and drink of the wine of contentment;}
+     \\
+\ayat{وَ اَز هَمِه بُگسَلی وَ بِه او پِيوَندی وَ جان دَر رَهَش بازی وَ رَوان رايِگان بَر اَفشانی}
+     {and thou wilt loose thyself from all things else, and bind thyself to Him, and throw thy life down in His path, and cast thy soul away.}
+     \\
+\ayat{اَگَر چِه غِيری دَر اين مَقام نيست تا چَشم پوشی « کَانَ ٱلْلّٰهِ وَ لَمْ يَکُنْ مِعَهُ مِنْ شَيْئٍ »}
+     {However, there is no other in this region that thou need forget: “There was God and there was naught beside Him.”}
+     \\
+\ayat{زيرا کِه سالِک دَر اين رُتبِه جَمالِ دوست را دَر هَر شَيء بينَد}
+     {For on this plane the traveler witnesseth the beauty of the Friend in everything.}
+     \\
+\ayat{اَز نار رُخسارِ يار بينَد وَ دَر مَجاز رَمزِ حَقيقَت مُلاحِظِه کُنَد وَ اَز صِفات سِرِّ هُوييَت مُشاهِدِه نَمايَد}
+     {Even in fire, he seeth the face of the Beloved. He beholdeth in illusion the secret of reality, and readeth from the attributes the riddle of the Essence.}
+     \\
+\ayat{زيرا پَردِه ها را بِآهی سوختِه وَ حِجاب ها را بِنِگاهی بَر داشتِه}
+     {For he hath burnt away the veils with his sighing, and unwrapped the shroudings with a single glance;}
+     \\
+\ayat{بِبَصَرِ حَديد دَر صُنعِ جَديد سِير نَمايَد}
+     {with piercing sight he gazeth on the new creation;}
+     \\
+\ayat{وَ بِقَلبِ رَقيق آثارِ دَقِقّ اِدراک کُنَد}
+     {with lucid heart he graspeth subtle verities.}
+     \\
+\ayat{وَ جَعَلْنَا أَلْيُومْ بَصَرِکَ حَدِيداً شاهِدِ مَقال وَ کافی اَحوال اَست}
+     {This is sufficiently attested by: “And we have made thy sight sharp in this day.”}
+     \\
+\ayat{وادی حيرت}
+     {\heading{The Valley of Wonderment}{}}
+     \\
+\ayat{وَ سالِک بَعد اَز سِيرِ مَراتِبِ اِستِغنایِ بَحت دَر وادی حِيرَت واصِل ميشَوَد}
+     {After journeying through the planes of pure contentment, the traveler cometh to the Valley of Wonderment}
+     \\
+\ayat{وَ دَر بَحر هایِ عَظَمَت غوطِه ميخوُرَد وَ دَر هَر آن بَر حِيرَتَش مي اَفزايَد}
+     {and is tossed in the oceans of grandeur, and at every moment his wonder groweth.}
+     \\
+\ayat{گاهی هَيکَلِ غَنا را نَفسِ فَقر ميبينَد وَ جُوهَرِ اِستِغنا را صِرفِ عَجز}
+     {Now he seeth the shape of wealth as poverty itself, and the essence of freedom as sheer impotence.}
+     \\
+\ayat{گاهی مَحوِ جَمالِ ذو أَلْجَلال ميشَوَد وَ گاهی اَز وُجودِ خُود بيزار}
+     {Now is he struck dumb with the beauty of the All-Glorious; again is he wearied out with his own life.}
+     \\
+\ayat{اين صَرصَرِ حِيرَت چِه دَرَخت هایِ مَعانی را کِه اَز پا اَنداخت وَ چِه نُفوس ها را کِه اَز نَفس بَر اَنداخت}
+     {How many a mystic tree hath this whirlwind of wonderment snatched by the roots, how many a soul hath it exhausted.}
+     \\
+\ayat{زيرا کِه اين وادی سالِک را دَر اِنقِلاب آوَرَد}
+     {For in this Valley the traveler is flung into confusion,}
+     \\
+\ayat{وَ ليکَن اين ظُهورات دَر نَظَرِ واصِل بِسيار مَحبوب وَ مَرغوب اَست}
+     {albeit, in the eye of him who hath attained, such marvels are esteemed and well beloved.}
+     \\
+\ayat{وَ دَر هَر آن عالَمِ بَديعی وَ خَلقِ جَديدی مُشاهِدِه کُنَد}
+     {At every moment he beholdeth a wondrous world, a new creation,}
+     \\
+\ayat{وَ حِيرَت بَر حِيرَت اَفزايَد مَحوِ صُنعِ جَديدِ سُلطانِ اَحَدِيِّه شَوَد}
+     {and goeth from astonishment to astonishment, and is lost in awe at the works of the Lord of Oneness.}
+     \\
+\ayat{بَلی اِی بَرادَر اَگَر دَر هَر خَلقی تَفَکُر نَمائيم}
+     {Indeed, O Brother, if we ponder each created thing,}
+     \\
+\ayat{صَد هِزار حِکمَتِ بالِغِه بينيم وَ صَد هِزار عُلومِ بَديعِه بِياموزيم}
+     {we shall witness a myriad perfect wisdoms and learn a myriad new and wondrous truths.}
+     \\
+\ayat{اَز جُملِه مَخلوقات نُوم اَست}
+     {One of the created phenomena is the dream.}
+     \\
+\ayat{مُلاحِظِه کُن چِقَدر اَسرار دَر او وَديعِه گُذاستِه شُدِه اَست}
+     {Behold how many secrets are deposited therein,}
+     \\
+\ayat{وَ چِه حِکمَتها دَر او مَخزون گَشتِه اَست وَ چِه عَوالِم دَر او مَستور ماندِه}
+     {how many wisdoms treasured up, how many worlds concealed.}
+     \\
+\ayat{مُلاحِظِه فَرمائيد کِه شُما دَر بَيتی ميخوابيد وَ دَر هایِ آن بَيت بَستِه اَست}
+     {Observe, how thou art asleep in a dwelling, and its doors are barred;}
+     \\
+\ayat{يِک مَرتَبِه خُود را دَر شَهرِ بَعيدی مُشاهِدِه ميکُنيد بی حَرِکَتِ رِجل وَ تَعَبِ جَسَد بِآن شَهر داخِل ميشَويد}
+     {on a sudden thou findest thyself in a far-off city, which thou enterest without moving thy feet or wearying thy body;}
+     \\
+\ayat{وَ بی زَحمَتِ چَشم مُشاهِدِه ميکُنيد وَ بی مِحنَتِ گوش ميشِنَويد وِ بی لِسان تَکَلُم مينَمائيد}
+     {without using thine eyes, thou seest; without taxing thine ears, thou hearest; without a tongue, thou speakest.}
+     \\
+\ayat{وَ گاهَست کِه آنچِه اِمشَب ديدِه ايد دَه سال بَعد دَر عالَمِ زَمان بِحَسَبِ ظاهِر بِعِينِه آنچِه دَر خواب ديدِه ايد ميبينيد}
+     {And perchance when ten years are gone, thou wilt witness in the outer world the very things thou hast dreamed tonight.}
+     \\
+\ayat{حال چَند حِکمَت اَست کِه دَر اين نُوم مَشهود اَست}
+     {Now there are many wisdoms to ponder in the dream,}
+     \\
+\ayat{وَ غِيرِ اَهلِ اين وادی بَر کَماهِیَ اِدراک نِميکُنَند}
+     {which none but the people of this Valley can comprehend in their true elements.}
+     \\
+\ayat{اَوَّل آنکِه آن چِه عالَم اَست کِه بی چَشم وَ گوش وَ دَست وَ لِسان حُکمِ هَمِه اينها دَر او مَعمول ميشَوَد}
+     {First, what is this world, where without eye and ear and hand and tongue a man puts all of these to use?}
+     \\
+\ayat{وَ ثانی آنکِه دَر عالَمِ ظُهور اَثَرِ خواب را اِمروز مُشاهِدِه ميکُنی وَ ليکَن اين سِير را دَر عالَم نُوم دَر دَه سال قَبل ديدِهء}
+     {Second, how is it that in the outer world thou seest today the effect of a dream, when thou didst vision it in the world of sleep some ten years past?}
+     \\
+\ayat{حال تَفَکُّر نَما فَرقِ اين دو عالَم وَ اَسرارِ مُودِعِۀِ آن را تا بِتَأييدات وَ مُکاشِفاتِ سُبحانی فائِز شَوی وَ پِی بِعالَمِ قُدس بَری}
+     {Consider the difference between these two worlds and the mysteries which they conceal, that thou mayest attain to divine confirmations and heavenly discoveries and enter the regions of holiness.}
+     \\
+\ayat{وَ اين آيات را حَضرَتِ باری دَر خَلق گُذاشتِه تا مُحَقِّقين اِنکارِ اَسرارِ مُعاد نَکُنَند وَ بِآنچِه وَعدِه دادِه شُدِه اَند سَهل نَشمُرَند}
+     {God, the Exalted, hath placed these signs in men, to the end that philosophers may not deny the mysteries of the life beyond nor belittle that which hath been promised them.}
+     \\
+\ayat{مِثلِ اين کِه بَعضی تَمَسُک بِعَقل جُستِه وَ آنچِه بِعَقل نَيايَد اِنکار نَمايَند}
+     {For some hold to reason and deny whatever the reason comprehendeth not,}
+     \\
+\ayat{وَ حال آن کِه هَرگِز عُقولِ ضَعيفِه هَمين مَراتِبِ مَذکورِه را اِدراک نَکُنَد مَگَر عَقلِ کُلّی رَبّانی}
+     {and yet weak minds can never grasp the matters which we have related, but only the Supreme, Divine Intelligence can comprehend them:}
+     \\
+\ayat{عَقلِ جُزئی کِی تَوانَد گَشت بَر قُرءان مُحيط}
+     {How can feeble reason encompass the Qur’án,}
+     \\
+\ayat{عَنکَبوتی کِی تَوانَد کَرد سيمُرغی شِکار}
+     {Or the spider snare a phoenix in his web?}
+     \\
+\ayat{وَ اين عَوالِم کُلّ دَر وادی حِيرَت دَست دَهَد وَ مُشاهِدِه گَردَد}
+     {All these states are to be witnessed in the Valley of Wonderment,}
+     \\
+\ayat{وَ سالِک دَر هَر آن زيادَتی طَلَب نَمايَد وَ کَسِل نَشَوَد}
+     {and the traveler at every moment seeketh for more, and is not wearied.}
+     \\
+\ayat{اينَست کِه سِيِّدِ اَوَّلين وَ آخِرين دَر مَراتِبِ فِکرَت وَ اِظهارِ حِيرَت « رَبِّ زِدْنِي فِيکَ تَحَيُّرَا » فَرمودِه}
+     {Thus the Lord of the First and the Last in setting forth the grades of contemplation, and expressing wonderment hath said: “O Lord, increase my astonishment at Thee!”}
+     \\
+\ayat{وَ هَمچِنين تَفَکُر دَر تَمامِيَتِ خَلقِ اِنسان کُن}
+     {Likewise, reflect upon the perfection of man’s creation,}
+     \\
+\ayat{کِه اين هَمِه عَوالِم وَ اين هَمِه مَراتِب دَر او مُنطَوی وَ مَستور شُدِه}
+     {and that all these planes and states are folded up and hidden away within him.}
+     \\
+\ayat{اَتَحْسْبَ اِنِّکَ جُرْمٍ صَغِيرْ}
+     {Dost thou reckon thyself only a puny form}
+     \\
+\ayat{وَ فِيکَ اَنْطَوىٰ أَلْعَالَمَ ٱلْاَکْبَرْ}
+     {When within thee the universe is folded?}
+     \\
+\ayat{پَس جَهدی بايَد کِه رُتبِۀِ حِيوانی مَعدوم کُنيم تا مَعنی اِنسانی ظاهِر شَوَد}
+     {Then we must labor to destroy the animal condition, till the meaning of humanity shall come to light.}
+     \\
+\ayat{هَمچِنين لُقمان کِه اَز چَشمِۀِ حِکمَت نوشيدِه وَ اَز بَحرِ رَحمَت چَشيدِه}
+     {Thus, too, Luqmán, who had drunk from the wellspring of wisdom and tasted of the waters of mercy,}
+     \\
+\ayat{بِپِسَرَش ناتان بِجَهَتِ اِثباتِ مَقاماتِ حَشر وَ مُوت هَمين خواب را دَليل آوُردِه وَ مَثَل زَدِه}
+     {in proving to his son Nathan the planes of resurrection and death, advanced the dream as an evidence and an example.}
+     \\
+\ayat{دَرين مَقام ذِکر مينَمائيم تا ذِکری اَز آن جَوانِ مَصطَبِۀِ تُوحيد وَ پيرِ مَراتِبِ تَعليم وَ تَجريد اَز اين بَندِۀِ فانی باقی بِمانَد}
+     {We relate it here, that through this evanescent Servant a memory may endure of that youth of the school of Divine Unity, that elder of the art of instruction and the Absolute.}
+     \\
+\ayat{فَرمود اِی پِسَر اَگَر قادِر باشی کِه نَخوابی پَس قادِری بَر آنکِه نَميری}
+     {He said: “O Son, if thou art able not to sleep, then thou art able not to die.}
+     \\
+\ayat{وَ اَگَر بِتَوانی بَعد اَز خواب بيدار نَشَوی ميتَوانی کِه بَعد اَز مَرگ مَحشور نَگَردی}
+     {And if thou art able not to waken after sleep, then thou shalt be able not to rise after death.”}
+     \\
+\ayat{اِی دوست دِل کِه مُحَلِّ اَسرارِ باقِيِه اَست}
+     {O friend, the heart is the dwelling of eternal mysteries,}
+     \\
+\ayat{مُحَلِّ اَفکارِ فانيِه مَکُن وَ سَرمايِۀِ عُمرِ گِران مايِه را بِاِشتِغالِ دُنيایِ فانيِه اَز دَست مَدِه}
+     {make it not the home of fleeting fancies; waste not the treasure of thy precious life in employment with this swiftly passing world.}
+     \\
+\ayat{اَز عالَمِ قُدسی بِتُراب دِل مَبَند}
+     {Thou comest from the world of holiness—bind not thine heart to the earth;}
+     \\
+\ayat{وَ اَهلِ بَساطِ اُنسی وَطَنِ خاکی مَپَسَند}
+     {thou art a dweller in the court of nearness—choose not the homeland of the dust.}
+     \\
+\ayat{باری ذِکرِ اين مَراتِب را اِنتِهائی نَه}
+     {In sum, there is no end to the description of these stages,}
+     \\
+\ayat{وَ اين بَندِه را اَز صَدَمِۀِ اَهلِ روزِ گار اَحوالی نَه}
+     {but because of the wrongs inflicted by the peoples of the earth, this Servant is in no mood to continue:}
+     \\
+\ayat{اين سُخَن ناقِص بِماند وَ بيقَرار}
+     {The tale is still unfinished and I have no heart for it—}
+     \\
+\ayat{دِل نَدارَم بيدِلَم مَعذور دار}
+     {Then pray forgive me.}
+     \\
+\ayat{قَلَم نالِه ميکُنَد وَ مِداد ميگِريَد وَ جِيحونِ دِل خون مُوج ميزَنَد}
+     {The pen groaneth and the ink sheddeth tears, and the river of the heart moveth in waves of blood.}
+     \\
+\ayat{« لَنْ يُصِيبَنَا اِلَا مَاکِتَبَ ٱلْلّٰهِ لَنَا »}
+     {“Nothing can befall us but what God hath destined for us.”}
+     \\
+\ayat{وَ ٱلْسَّلَامُ عَلىٰ مَنْ اِتَّبَعَ ٱلْهُدىٰ}
+     {Peace be upon him who followeth the Right Path!}
+     \\
+\ayat{وادی فقر حقيقی و فنای اصلی}
+     {\heading{The Valley of True Poverty and Absolute Nothingness}{}}
+     \\
+\ayat{وَ سالِک بَعد اَز اِرتِقایِ بِمَراتِبِ بُلَندِ حِيرَت بِوادی فَقرِ حَقيقی وَ فَنایِ اَصلی وارِد شَوَد}
+     {After scaling the high summits of wonderment the wayfarer cometh to the Valley of True Poverty and Absolute Nothingness.}
+     \\
+\ayat{وَ اين رُتبِه مَقامِ فَنایِ اَز نَفس وَ بَقایِ بِأَلْلّٰه اَست}
+     {This station is the dying from self and the living in God,}
+     \\
+\ayat{وَ فَقر اَز خُود وَ غَنایِ بِمَقصود اَست}
+     {the being poor in self and rich in the Desired One.}
+     \\
+\ayat{وَ دَر اين مَقام کِه ذِکرِ فَقر ميشَوَد يَعنی فَقير اَست اَز آنچِه دَر عالَمِ خَلق اَست وَ غَنی اَست بِآنچِه دَر عَوالِمِ حَق اَست}
+     {Poverty as here referred to signifieth being poor in the things of the created world, rich in the things of God’s world.}
+     \\
+\ayat{زيرا کِه عاشِقِ صادِق وَ حَبيبِ مُوافِق چون بِلِقایِ مَحبوب وَ مَعشوق رَسيد}
+     {For when the true lover and devoted friend reacheth to the presence of the Beloved,}
+     \\
+\ayat{اَز پَرتُوِ جَمالِ مَحبوب وَ آتِشِ قَلبِ حَبيب ناری مُشتَعِل شَوَد وَ جَميعِ سَرادِقات وَ حُجُبات را بِسوزانَد}
+     {the sparkling beauty of the Loved One and the fire of the lover’s heart will kindle a blaze and burn away all veils and wrappings.}
+     \\
+\ayat{بَلکِه آنچِه با او اَست حَتّىٰ مَغز وَ پوست مُحتَرِق گَردَد وَ جُز دوست چيزی نَمانَد}
+     {Yea, all he hath, from heart to skin, will be set aflame, so that nothing will remain save the Friend.}
+     \\
+\ayat{چون تَجَلّی کَرد اُوصافِ قَديم}
+     {When the qualities of the Ancient of Days stood revealed,}
+     \\
+\ayat{پَس بِسوزَد وَصفِ حادِث را کَليم}
+     {Then the qualities of earthly things did Moses burn away.}
+     \\
+\ayat{وَ دَر اين مَقام واصِل مُقَدَّس اَست اَز آنچِه مُتَعَلِّق بِدُنيا ست}
+     {He who hath attained this station is sanctified from all that pertaineth to the world.}
+     \\
+\ayat{پَس اَگَر دَر نَزدِ واصِلينِ بَحرِ وِصال اَز اَشيای مَحدودِه کِه مُتَعَلِّق بِعالَمِ فانی اَست يافت نَشَوَد}
+     {Wherefore, if those who have come to the sea of His presence are found to possess none of the limited things of this perishable world,}
+     \\
+\ayat{چِه اَز اَموالِ ظاهِرِيِّه باشَد وَ چِه اَز تَفَکُّراتِ نَفسِيِّه بَأسی نيست}
+     {whether it be outer wealth or personal opinions, it mattereth not.}
+     \\
+\ayat{زيرا کِه آنچِه نَزدِ خَلق اَست مَحدود اَست بِحَدودِ ايشان وَ آنچِه نَزدِ حَق اَست مُقَدَّس اَز آن}
+     {For whatever the creatures have is limited by their own limits, and whatever the True One hath is sanctified therefrom;}
+     \\
+\ayat{اين بَيان را بِسيار فِکر بايَد تا پايان آشکار شَوَد}
+     {this utterance must be deeply pondered that its purport may be clear.}
+     \\
+\ayat{« اِنَّ ٱلْاَبْرَارْ يَشْرِبُونَ مِنْ کَأْسِ کَانَ مِزَاجِهَا کَافُورَا »}
+     {“Verily the righteous shall drink of a winecup tempered at the camphor fountain.”}
+     \\
+\ayat{اَگَر مَعنی کافور مَعلوم شَوَد مَقصودِ حَقيقی مَعلوم گَردَد}
+     {If the interpretation of “camphor” become known, the true intention will be evident.}
+     \\
+\ayat{اين مَقام اَز فَقر اَست کِه ميفَرمايَد « أَلْفَقْرُ فَخْرِي »}
+     {This state is that poverty of which it is said, “Poverty is My glory.”}
+     \\
+\ayat{وَ اَز بَرایِ فَقرِ باطِنی وَ ظاهِری مَراتِبها وَ مَعنیها اَست کِه ذِکر آن را مُناسِبِ اين مَقام نَديدَم}
+     {And of inward and outward poverty there is many a stage and many a meaning which I have not thought pertinent to mention here;}
+     \\
+\ayat{لِهٰذا بِعُهدِۀِ وَقتی گُذاشتَم تا خُدا چِه خواهَد وَ قَضا چِه اِمضا نَمايَد}
+     {hence I have reserved these for another time, dependent on what God may desire and fate may seal.}
+     \\
+\ayat{وَ اين مَقام اَست کِه کَثَراتِ کُلِّ شَيء دَر سالِک هالِک شَوَد}
+     {This is the plane whereon the vestiges of all things are destroyed in the traveler,}
+     \\
+\ayat{وَ طَلعَتِ وَجه اَز مَشرِقِ بَقا سَر اَز غِطا بيرون آوَرَد}
+     {and on the horizon of eternity the Divine Face riseth out of the darkness,}
+     \\
+\ayat{وَ مَعنی « کُلِّ شَيْئٍ هَالَکْ اِلَّا وَجْهِهُ » مَشهود گَردَد}
+     {and the meaning of “All on the earth shall pass away, but the face of thy Lord…” is made manifest.}
+     \\
+\ayat{اِی حَبيبِ مَن نَغَماتِ روح را بِجان وَ دِل گوش کُن وَ چون بَصَر حِفظَش نَما}
+     {O My friend, listen with heart and soul to the songs of the spirit, and treasure them as thine own eyes.}
+     \\
+\ayat{کِه هَميشِۀِ اَيّام مَعارِفِ اِلٰهی بِمَثابِه اَبرِ نِيسانی بَر اَراضی قُلوبِ اِنسانی جاری نيست}
+     {For the heavenly wisdoms, like the clouds of spring, will not rain down on the earth of men’s hearts forever;}
+     \\
+\ayat{اَگَر چِه فِيضِ فَيّاض را تَعطيلی وَ تَعويقی نَه}
+     {and though the grace of the All-Bounteous One is never stilled and never ceasing,}
+     \\
+\ayat{وَ لٰکِن هَر زَمان وَ عَصر را رِزقی مَعلوم وَ نِعمَتی مُقَدَّر اَست وَ بِقَدر وَ اَندازِه اِفاضِه ميشَوَد}
+     {yet to each time and era a portion is allotted and a bounty set apart, this in a given measure.}
+     \\
+\ayat{« وَ اِنْ مِنْ شَيْئٍ اِلَّا عِنْدَنَا خَزَا اِئْنَهُ وَ مَا نَزَّلَهُ اِلَّا بِقَدْرٍ مَعْلُومْ »}
+     {“And no one thing is there, but with Us are its storehouses; and We send it not down but in settled measure.”}
+     \\
+\ayat{سَحابِ رَحمَتِ جانان جُز بَر رياضِ جان نَبارَد وَ دَر غِيرِ بَهاران اين کَرَم نَفَرمايَد}
+     {The cloud of the Loved One’s mercy raineth only on the garden of the spirit, and bestoweth this bounty only in the season of spring.}
+     \\
+\ayat{فُصول ديگَر را اَز اين فَضلِ اَکبَر نَصيبی نيست وَ اَراضی جَرزِه را اَز اين کَرَم قِسمَتی نَه}
+     {The other seasons have no share in this greatest grace, and barren lands no portion of this favor.}
+     \\
+\ayat{اِی بَرادَر هَر بَحری لُؤلُؤ نَدارَد وَ هَر شاخی گُل نَيارَد وَ بُلبُل بَر آن نَسَرايَد}
+     {O Brother! Not every sea hath pearls; not every branch will flower, nor will the nightingale sing thereon.}
+     \\
+\ayat{پَس تا بُلبُلِ بوستانِ مَعنَوی بِگُلِستانِ اِلٰهی باز نَگَشت}
+     {Then, ere the nightingale of the mystic paradise repair to the garden of God,}
+     \\
+\ayat{وَ اَنوارِ صُبحِ مَعانی بِشَمسِ حَقيقی راجِع نَشُد}
+     {and the rays of the heavenly morning return to the Sun of Truth—}
+     \\
+\ayat{سَعی کُنيد کِه شايَد دَر اين گُلخَنِ فانی بوئی اَز گُلشِنِ باقی بِشنَويد}
+     {make thou an effort, that haply in this dustheap of the mortal world thou mayest catch a fragrance from the everlasting garden,}
+     \\
+\ayat{وَ دَر ظِلِ اَهلِ اين مَدينِۀِ جاويد بِمانيد}
+     {and live forever in the shadow of the peoples of this city.}
+     \\
+\ayat{وَ چون بِاين رُتبِۀِ بُلَندِ اَعلىٰ رَسيدی وَ بِاين دَرَجِۀِ عُظمىٰ فائِز شُدی}
+     {And when thou hast attained this highest station and come to this mightiest plane,}
+     \\
+\ayat{يار بينی وَ اَغيار فَراموش کُنی}
+     {then shalt thou gaze on the Beloved, and forget all else.}
+     \\
+\ayat{يار بيپَردِه اَز دَر و ديوار}
+     {The Beloved shineth on gate and wall}
+     \\
+\ayat{دَر تَجَلّي اَست يا اولی أَلْاَبصار}
+     {Without a veil, O men of vision.}
+     \\
+\ayat{اَز قَطرِۀِ جان گُذَشتی وَ بِبَحرِ جانان واصِل شُدی}
+     {Now hast thou abandoned the drop of life and come to the sea of the Life-Bestower.}
+     \\
+\ayat{اينَست مَقصودی کِه طَلَب فَرمودی اِنشا أَلْلّٰه بِآن فائِز شَوی}
+     {This is the goal thou didst ask for; if it be God’s will, thou wilt gain it.}
+     \\
+\ayat{دَر اين مَدينِه حُجِباتِ نور هَم خَرق ميشَوَد وَ زائِل ميگَردَد}
+     {In this city, even the veils of light are split asunder and vanish away.}
+     \\
+\ayat{« لَا لِجَمَالِهُ حِجَابٍ سَوىٰ أَلْنُّورْ وَ لَا لِوَجْهِهِ نِقَابٍ اِلَّا أَلْظُّهُورْ »}
+     {“His beauty hath no veiling save light, His face no covering save revelation.”}
+     \\
+\ayat{اِی عَجَب کِه يار چون شَمس آشکار وَ اَغيار دَر طَلَبِ زَخارُف وَ دينار}
+     {How strange that while the Beloved is visible as the sun, yet the heedless still hunt after tinsel and base metal.}
+     \\
+\ayat{بَلی اَز شِدَّتِ ظُهور پِنهان ماندِه وَ اَز کِثرَت بُروز مَخفی گَشتِه}
+     {Yea, the intensity of His revelation hath covered Him, and the fullness of His shining forth hath hidden Him.}
+     \\
+\ayat{حَق عَيان چون مِهرِ رَخشان آمَدِه}
+     {Even as the sun, bright hath He shined,}
+     \\
+\ayat{حِيف کَندَر شَهرِ کوران آمَدِه}
+     {But alas, He hath come to the town of the blind!}
+     \\
+\ayat{دَر اين وادی سالِک مَراتِبِ وَحدَتِ وُجود وَ شُهود را طِی نَمايَد}
+     {In this Valley, the wayfarer leaveth behind him the stages of the “oneness of Being and Manifestation”}
+     \\
+\ayat{وَ بِوَحدَتی کِه مُقَدَّس اَز اين دو مَقام اَست واصِل گَردَد}
+     {and reacheth a oneness that is sanctified above these two stations.}
+     \\
+\ayat{اَحوال پِی بِاين مَقال بَرَد نَه بَيان وَ جِدال}
+     {Ecstasy alone can encompass this theme, not utterance nor argument;}
+     \\
+\ayat{وَ هَر کَس دَرين مَحفِل مَنزِل گُزيدِه وَ يا اَز اين رياض نَسيمی يافتِه ميدانَد چِه عَرض ميشَوَد}
+     {and whosoever hath dwelt at this stage of the journey, or caught a breath from this garden land, knoweth whereof We speak.}
+     \\
+\ayat{وَ سالِک بايَد دَر جَميعِ اين اَسفار بِقَدرِ شَعری اَز شَريعَت کِه فی أَلْحَقيقِه سِرِّ طَريقَت وَ ثَمَرِۀِ شَجرِۀِ حَقيقَت اَست اِنحِراف نَوَرزَد}
+     {In all these journeys the traveler must stray not the breadth of a hair from the “Law,” for this is indeed the secret of the “Path” and the fruit of the Tree of  “Truth”;}
+     \\
+\ayat{وَ دَر هَمِۀِ مَراتِب بِذِيلِ اِطاعَتِ اَوامِر مُتَشَبِّث باشَد}
+     {and in all these stages he must cling to the robe of obedience to the commandments,}
+     \\
+\ayat{وَ بِحَبلِ اِعراض اَز مَناهی مُتَمَسِّک تا اَز کَأسِ شَريعَت مَرزوق شَوَد وَ بَر اَسرارِ حَقيقَت واقِف گَردَد}
+     {and hold fast to the cord of shunning all forbidden things, that he may be nourished from the cup of the Law and informed of the mysteries of Truth.}
+     \\
+\ayat{وَ هَر چِه اَز بَياناتِ اين بَندِه مَفهوم نَشَوَد وَ تَزَلزُلی اِحداث کُنَد بايَد مُجَدَّد سُؤال شَوَد تا شُبهِه نَمانَد}
+     {If any of the utterances of this Servant may not be comprehended, or may lead to perturbation, the same must be inquired of again, that no doubt may linger,}
+     \\
+\ayat{وَ مَقصود چون طَلعَتِ مَحبوب اَز مَقامِ مَحمود ظاهِر گَردَد}
+     {and the meaning be clear as the Face of the Beloved One shining from the “Glorious Station.”}
+     \\
+\ayat{وَ اين اَسفار کِه آن را دَر عالَمِ زَمان اِنتِهائی پَديد نيست}
+     {These journeys have no visible ending in the world of time,}
+     \\
+\ayat{سالِکِ مُنقَطِع را اَگَر اِعانَتِ غِيبی بِرَسَد وَ وَلی اَمر مَدَد فَرمايَد}
+     {but the severed wayfarer—if invisible confirmation descend upon him and the Guardian of the Cause assist him—}
+     \\
+\ayat{اين هَفت رُتبِه را دَر هَفت قَدَم طِی نَمايَد بَلکِه دَر هَفت نَفَس بَلکِه دَر يِک نَفَس اِذَا شَاءْ أَلْلّٰهَ}
+     {may cross these seven stages in seven steps, nay rather in seven breaths, nay rather in a single breath, if God will and desire it.}
+     \\
+\ayat{وَ اَرَادَ وَذٰلِکَ مِنْ فَضْلِهِ عَلىٰ مَنْ يَشَاءْ}
+     {And this is of “His grace on such of His servants as He pleaseth.”}
+     \\
+\ayat{طايِرانِ هَوایِ تُوحيد وَ واصِلانِ لُجِّۀِ تَجريد اين مَقام را کِه مَقامِ بَقاء بِأَلْلّٰه اَست}
+     {They who soar in the heaven of singleness and reach to the sea of the Absolute, reckon this city—which is the station of life in God—}
+     \\
+\ayat{دَر اين مَدينِه مُنتَهىٰ رُتبِۀِ عارِفان وَ مُنتَهىٰ وَطَنِ عاشِقان شُمُردِه اَند}
+     {as the furthermost state of mystic knowers, and the farthest homeland of the lovers.}
+     \\
+\ayat{وَ نَزدِ اين فانی بَحرِ مَعنی اين مَقام اَوَّل شَهر بَندِ دِل اَست}
+     {But to this evanescent One of the mystic ocean, this station is the first gate of the heart’s citadel,}
+     \\
+\ayat{يَعَنی اَوَّل وَرودِ اِنسان اَست بِمَدينِۀِ قَلب}
+     {that is, man’s first entrance to the city of the heart;}
+     \\
+\ayat{وَ قَلب را چِهار رُتبِه مُقَرَّر اَست}
+     {and the heart is endowed with four stages}
+     \\
+\ayat{اَگَر اَهلَش يافت شُد مَذکور آيَد}
+     {which would be recounted should a kindred soul be found.}
+     \\
+\ayat{چون قَلَم دَر وَصفِ اين حالَت رَسيد}
+     {When the pen set to picturing this station,}
+     \\
+\ayat{هَم قَلَم بِشِکَست و هَم کاغَذ دَريد}
+     {It broke in pieces and the page was torn.}
+     \\
+\ayat{وَ ٱلْسَّلَامْ}
+     {Salám!}
+     \\
+\ayat{مؤخره}
+     {\heading{Epilogue}{}}
+     \\
+\ayat{اِی حَبيبِ مَن اين غَزالِ صَحرایِ اَحَدِيِّه را کَلابی چَند دَر پِی}
+     {O My friend! Many a hound pursueth this gazelle of the desert of oneness;}
+     \\
+\ayat{وَ اين بُلبُلِ بُستانِ صَمَدِيِّه را مَنقاری چَند دَر تَعاقُب}
+     {many a talon claweth at this thrush of the eternal garden.}
+     \\
+\ayat{وَ اين طايِرِ هَوایِ اِلٰهی را غُرابِ کين دَر کَمين وَ اين صِيدِ بَرِّ عِشق را صَيّادِ حَسَد دَر عَقَب}
+     {Pitiless ravens do lie in wait for this bird of the heavens of God, and the huntsman of envy stalketh this deer of the meadow of love.}
+     \\
+\ayat{اِی شِيخ هِمَت را زُجاج کُن کِه شايَد اين سِراج را اَز باد هایِ مُخالِف حِفظ نَمايَد}
+     {O Shaykh! Make of thine effort a glass, perchance it may shelter this flame from the contrary winds;}
+     \\
+\ayat{اَگَر چِه اين سِراج را اُميد چِنان اَست کِه دَر زُجاجِۀِ اِلٰهی مُشتَعِل گَردَد وَ دَر مُشکوةِ مَعنَوی بَر اَفروزَد}
+     {albeit this light doth long to be kindled in the lamp of the Lord, and to shine in the globe of the spirit.}
+     \\
+\ayat{زيرا گَردَنی کِه بِعِشقِ اِلٰهی بُلَند شُد اَلبَتِه بِشَمشير اُفتَد}
+     {For the head raised up in the love of God will certainly fall by the sword,}
+     \\
+\ayat{وَ سَری کِه بِحُبّ بَر اَفراخت اَلبَتِّه بِباد رَوَد}
+     {and the life that is kindled with longing will surely be sacrificed,}
+     \\
+\ayat{وَ قَلبی کِه بِذِکر مَحبوب پِيوَست اَلبَتِّه پُر خون گَردَد}
+     {and the heart which remembereth the Loved One will surely brim with blood.}
+     \\
+\ayat{فَنَعَمْ مَا قَالْ}
+     {How well is it said:}
+     \\
+\ayat{وَعَشْ خَالِياً فَٱلْحُبِّ رَاحَتاً عَنَا}
+     {Live free of love, for its very peace is anguish;}
+     \\
+\ayat{فَاَوَّلَهُ سُقْمٍ وَ آخِرِهُؤْ قَتْلٍ}
+     {Its beginning is pain, its end is death.}
+     \\
+\ayat{وَ ٱلْسَّلَامُ عَلىٰ مَنْ اِتَّبَعَ ٱلْهُدىٰ}
+     {Peace be upon him who followeth the Right Path!}
+     \\
+\ayat{آنچِه اَز بَدايِعِ فِکر دَر مَعنی طَيرِ مَعروف کِه بِفارسی گُنجِشک مينامَند ذِکر فَرمودَند مَعلوم وَ مُحَقَّق شُد}
+     {The thoughts thou hast expressed as to the interpretation of the common species of bird that is called in Persian Gunjishk (sparrow) were considered.}
+     \\
+\ayat{گويا بَر اَسرارِ مَعانی واقِف شُدِه اَند}
+     {Thou appearest to be well-grounded in mystic truth.}
+     \\
+\ayat{وَ لٰکِن هَر حَرفی را دَر هَر عالَمی بِاِقتِضایِ آن مَقصودی مُقَرَّر اَست}
+     {However, on every plane, to every letter a meaning is allotted which relateth to that plane.}
+     \\
+\ayat{بَلی سالِکين اَز هَر اِسمی رَمزی وَ اَز هَر حَرفی سِرّی اِدراک مينَمايَند}
+     {Indeed, the wayfarer findeth a secret in every name, a mystery in every letter.}
+     \\
+\ayat{وَ اين حُروفات دَر مَقامی اِشارِه بِتَقديس اَست}
+     {In one sense, these letters refer to holiness.}
+     \\
+\ayat{کْ اَيْ کَفَّ نَفْسِکَ عَمَّا يَشْتَهِيهُ هُوَ أَکَ ثُمَّ اَقْبِلْ اِلىٰ مُوْلٰئِکَ}
+     {Káf or Gáf (K or G) referreth to Kuffih (“free”), that is, “Free thyself from that which thy passion desireth; then advance unto thy Lord.”}
+     \\
+\ayat{نْ نَزِهْ نَفْسِکَ عَمَّا سَوَئِهْ لِتَفْدِيَ بِرُوحِکَ فِي هَوَئِهْ}
+     {Nún referreth to Nazzih (“purify”), that is, “Purify thyself from all else save Him, that thou mayest surrender thy life in His love.”}
+     \\
+\ayat{جْ جَانِبِ جِنَابُ ٱلْحَقّْ اِنْ بَقِيَ فِيکَ مِنْ صِفَاتِ ٱلْخَلْقْ}
+     {Jím is Jánb (“draw back”), that is, “Draw back from the threshold of the True One if thou still possessest earthly attributes.”}
+     \\
+\ayat{شْ اَشْکُرْ رَبِّکَ فِي اَرْضِهُ لِيَشْکُرِکَ فِي سَمَائِهُ وَ اِنْ کَانَتِ ٱلْسَّمَاءْ فِي عَالَمُ ٱلْاَحَدِيِّهْ نَفْسِ اَرْضَهُ}
+     {Shín is Ashkur (“thank”)—“Thank thy Lord on His earth that He may bless thee in His heaven; albeit in the world of oneness, this heaven is the same as His earth.”}
+     \\
+\ayat{کْ کَفِّرْ عَنْکَ ٱلْحُجِبَاتِ ٱلْمَحْدُودَةِ لِتَعْرِفَ مَالَا عَرَفْتَهُ مِنْ أَلْمَقَامَاتِ ٱلْقُدْسِيَّةِ وَ اِنَکَ لُوْتَسْمَعَ نَغَمَاتْ}
+     {Káf referreth to Kaffir, that is: “Take off from thyself the wrappings of limitations, that thou mayest come to know what thou hast not known of the states of Sanctity.”}
+     \\
+\ayat{هٰذَهِ ٱلْطِّيْرِ ٱلْفَانِيَةْ لِتَطْلُبَ مِنْ أَلْکُؤُسِ ٱلْبَاقِيَّةِ ٱلْدَّائِمَةْ وَ تَتْرَکَ ٱلْکُؤُبِ ٱلْفَانِيَّةِ ٱلْزَّائِلَةْ}
+     {Wert thou to harken to the melodies of this mortal Bird, then wouldst thou seek out the undying chalice and pass by every perishable cup.}
+     \\
+\ayat{وَ ٱلْسَّلَامُ عَلىٰ مَنْ اِتَّبَعَ ٱلْهُدىٰ}
+     {Peace be upon those who walk in the Right Path!}
+     \\
+\end{word}
+
+\end{document}

@@ -1,0 +1,238 @@
+% -*- bidi-paragraph-direction: left-to-right -*-
+
+\documentclass[11pt]{article}
+
+\usepackage[margin=0.5in,top=1.25in,bottom=0in]{geometry}
+\usepackage{soul}
+\usepackage{tabularx}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{setspace}
+\usepackage{arabxetex}
+\usepackage{geometry}
+\usepackage{morefloats}
+
+\setuldepth{sh}
+\geometry{paperwidth=120mm, paperheight=2380pt, left=0pt, top=40pt,
+  textwidth=280pt, marginparsep=0pt, marginparwidth=0pt,
+  textheight=2380pt, footskip=0pt}
+\setcounter{totalnumber}{100}
+
+\setmainfont[Ligatures=TeX]{GaramondPremrPro}[
+  Path           = /Users/johnw/Library/Fonts/ ,
+  Extension      = .otf ,
+  BoldFont       = *-Smbd ,
+  ItalicFont     = *-It ,
+  BoldItalicFont = *-SmbdIt
+]
+
+\newfontfamily\arabicfont{Scheherazade}[
+  Path        = /Users/johnw/Library/Fonts/ ,
+  Extension   = .ttf ,
+  UprightFont = *RegOT ,
+  Script      = Arabic
+]
+
+\newfontfamily\headwordfont[Ligatures=TeX]{Georgia}[
+  Path           = /Users/johnw/Library/Fonts/ ,
+  Extension      = .ttf ,
+  UprightFont    = * ,
+  BoldFont       = * Bold ,
+  ItalicFont     = * Italic ,
+  BoldItalicFont = * Bold Italic ,
+  Script         = Arabic
+]
+
+\newenvironment{orig}
+  {\begin{farsi}[voc]}
+  {\end{farsi}}
+
+\newenvironment{trans}
+  {\Large\begin{spacing}{1.2}\raggedright}
+  {\end{spacing}}
+
+\newenvironment{word}{}{}
+
+\newcommand{\ayat}[1]{\vspace{4ex}\begin{orig}#1\end{orig}}
+\newcommand{\heading}[2]{\textsc{\textbf{#1}} % \ (\##2)
+}
+\newcommand{\define}[3]{\textfarsi[voc]{\Huge
+    \textbf{#1}}\hspace{3mm}{\headwordfont \large
+    \textit{#2}}\hspace{3mm}{\Large #3} \\[3ex]}
+\newcommand{\fulldefine}[3]{\textfarsi[voc]{\Huge
+    \textbf{#1}}\hspace{3mm}{\headwordfont \large
+    \textit{#2}}\vspace{-1ex}\begin{quote}\Large #3\end{quote}\vspace{1ex}}
+
+\begin{document}
+
+\fontsize{24}{32}
+
+\thispagestyle{empty}
+
+\begin{word}
+\ayat{
+هو الله
+}
+
+\ayat{
+رَشحِ عَما از جَذبِۀ ما میریزد
+
+سِرِّ وَفا از نَغمِۀ ما میریزد
+}
+
+\ayat{
+از باد صَبا مُشگ خَطا گَشته پدید
+
+وین نَفخِۀ خوش از جَعدِۀ ما میریزد
+}
+
+\ayat{
+شَمسِ طَراز از طَلعَتِ حَقّ کرده طُلوع
+
+سرّ حقیقت بین کَز وَجهِۀ ما میریزد
+}
+
+\ayat{
+بَحرِ صَفا از موجِ لِقا کرده خُروش
+
+وین طُرفِهْ عطا از جذبۀ ما میریزد
+}
+
+\ayat{
+گَنجینۀ حُبّ در سینۀ فا گشته نَهان
+
+زین گَنجِ مُحَبَّت دُرِّ وفا ميريزد
+}
+
+\ayat{
+بِهجَتِ مُل از نَظرِۀ گُل شد ظاهر
+
+این رَمزِ مَلیح از رَنِّۀ را میریزد
+}
+
+\ayat{
+نُقرِۀ ناقوریْ جذبۀ لاهوتی
+
+این هر دو بیک نفخه از جَوِّ سَما میریزد
+}
+
+\ayat{
+دَورِ اَنَا هُو از چِهرِۀ ما کرده بُروز
+
+کَورِ هُوَ هُو از نفخۀ ما میریزد
+}
+
+\ayat{
+کوثرِ حَقّ از کاسِۀ دِل گشته هُویدا
+
+وین ساغرِ شَهْد از لَعلِ بها میریزد
+}
+
+\ayat{
+یومِ خدا از جِلوِۀ رَبّ شد کامل
+
+این نَغزِ حَدیث از غَنِّۀ طا میریزد
+}
+
+\ayat{
+طَفحِ بهائی بین
+
+رشح عمائی بین
+
+کِاین جُمله زِ یک نغمه
+
+از لَحنِ خدا میریزد
+}
+
+\ayat{
+ماهیِ سَرمَد بین
+
+طَلعِ مُنَزَّه بین
+
+صَدرِ مُمَرَّد بین
+
+کز عَرشِ عَلا میریزد
+}
+
+\ayat{
+نَخلِۀ طوبیٰ بین
+
+رنّۀ ورقا بین
+
+غنّۀ ابهی بین
+
+کَز لَمْعِ صفا میریزد
+}
+
+\ayat{
+آهنگِ عَراقی بین
+
+دَفِّ حِجازی بین
+
+کَفِّ الهی بین
+
+کز جذبۀ لا میریزد
+}
+
+\ayat{
+طلعة لاهوتی بین
+
+حوریِ هاهوتی بین
+
+جلوۀ ناسوتی بین
+
+کز سرّ عما میریزد
+}
+
+\ayat{
+وجهۀ باقی بین
+
+چهرۀ ساقی بین
+
+رَقِّ زُجاجی بین
+
+کز کوبۀ ما میریزد
+}
+
+\ayat{
+آتشِ موسیٰ بین
+
+بَیضِۀ بَیضا بین
+
+سینۀ سینا بین
+
+کز کفّ سَنا میریزد
+}
+
+\ayat{
+نالِۀ مَستان بین
+
+حالتِ بُستان بین
+
+جذبۀ هَستان بین
+
+کز صَحنِ لقا میریزد
+}
+
+\ayat{
+غُنچۀ هائی بین
+
+طُرِّۀ بائی بین
+
+رنّۀ نائی بین
+
+کز کِلکِ بها میریزد
+}
+
+\ayat{
+طفحِ طَهور است این
+
+رَشح طَهور است این
+
+غَن طُیور است این
+
+کز عِینِ فَنا میریزد
+}
+\end{word}
+
+\end{document}

@@ -1,0 +1,340 @@
+% -*- bidi-paragraph-direction: left-to-right -*-
+
+% -*- bidi-paragraph-direction: left-to-right -*-
+
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in,top=1.25in,bottom=1.25in]{geometry}
+\usepackage{soul}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{setspace}
+\usepackage{arabxetex}
+
+\setuldepth{sh}
+
+\setmainfont[Ligatures=TeX]{GaramondPremrPro}[
+  Path           = /Users/johnw/Library/Fonts/ ,
+  Extension      = .otf ,
+  BoldFont       = *-Smbd ,
+  ItalicFont     = *-It ,
+  BoldItalicFont = *-SmbdIt
+]
+
+\newfontfamily\arabicfont{Scheherazade}[
+  Path        = /Users/johnw/Library/Fonts/ ,
+  Extension   = .ttf ,
+  UprightFont = *RegOT ,
+  Script      = Arabic
+]
+
+\newfontfamily\headwordfont[Ligatures=TeX]{Georgia}[
+  Path           = /Users/johnw/Library/Fonts/ ,
+  Extension      = .ttf ,
+  UprightFont    = * ,
+  BoldFont       = * Bold ,
+  ItalicFont     = * Italic ,
+  BoldItalicFont = * Bold Italic ,
+  Script         = Arabic
+]
+
+\newenvironment{orig}
+  {\begin{farsi}[voc]}
+  {\end{farsi}}
+
+\newenvironment{trans}
+  {\Large\begin{spacing}{1.2}\raggedright}
+  {\end{spacing}}
+
+\newenvironment{word}
+  {\begin{longtable}[t]{p{2.75in}@{\hspace{3em}}p{2.875in}}}
+  {\end{longtable}}
+
+\newcommand{\ayat}[2]{\begin{orig}#1\end{orig} & \begin{trans}#2\end{trans}}
+\newcommand{\heading}[2]{\textsc{\textbf{#1}} % \ (\##2)
+}
+\newcommand{\define}[3]{\textfarsi[voc]{\Huge
+    \textbf{#1}}\hspace{3mm}{\headwordfont \large
+    \textit{#2}}\hspace{3mm}{\Large #3} \\[3ex]}
+\newcommand{\fulldefine}[3]{\textfarsi[voc]{\Huge
+    \textbf{#1}}\hspace{3mm}{\headwordfont \large
+    \textit{#2}}\vspace{-1ex}\begin{quote}\Large #3\end{quote}\vspace{1ex}}
+
+\begin{document}
+
+\fontsize{24}{32}
+
+\begin{word}
+\ayat{به بلندای خیال}{Beyond the Limits of Imagination
+
+by Said Reza'i} \vspace{-1ex}\\
+
+\ayat{در قَفَس می مانم
+
+تا تو پَرواز کنی
+
+تا که پِژواکِ صدایم باشی
+
+در جهانی که صدائی نشنید}{
+\vspace{1em}
+I remain caged
+
+so you may take your flight
+
+and become my voice’s echo
+
+in a world that hears no voice.} \vspace{-1ex}\\
+
+\ayat{من اگر در بندم
+
+از صدایِ زنجیر
+
+تو بساز آوازی}{
+\vspace{1em}
+Though I be chained up,
+
+use the sound of my chains
+
+to compose your melody:
+} \vspace{-1ex}\\
+
+\ayat{واژه هائی از عشق
+
+نغمۀ آزادی
+
+یک ترانه از صُلح
+
+بهرِ هر سرخ و سیاه
+
+یا که هر زرد و سِپید}{
+\vspace{1em}
+Words of love;
+
+A paean of freedom;
+
+A song of peace:
+
+for every black and red one,
+
+for every white and yellow.
+} \vspace{-1ex}\\
+
+\ayat{طَرْحی از پَیوَستَن
+
+دست هائی در هم
+
+نه که مُشتی بر هم}{
+\vspace{1em}
+A plan of connection:
+
+Hand in hand;
+
+not fist on fist.
+} \vspace{-1ex}\\
+
+\ayat{پِلِه هائی از امید
+
+به بلندای خیال
+
+راهی از قَطعِۀ خاک
+
+در گُذَر از افلاک
+
+رو به آن سِرِّ وجود}{
+\vspace{1em}
+A stairway of hope
+
+beyond the limits of imagination.
+
+A path from this plot of earth
+
+to beyond the heavens;
+
+towards the Mystery of existence.
+} \vspace{-1ex}\\
+
+\ayat{}{*} \vspace{-1ex}\\
+
+\ayat{گر به پُشتِ میله
+
+مانده ام در پیله
+
+تو بشو پروانه}{
+\vspace{1em}
+If, behind bars I am cocooned,
+
+may you become the butterfly.
+} \vspace{-1ex}\\
+
+\ayat{در گُذَر از هر باغ
+
+رنگ و عَطْرَش دریاب}{
+\vspace{1em}
+Wing your way through every garden!
+
+Revel in the colors and bouquets!
+} \vspace{-1ex}\\
+
+\ayat{عَطْرها در کِثرَت
+
+همه گلها خوش بو}{
+\vspace{1em}
+For the perfumes are manifold;
+
+and every flower lends its sweetness...
+} \vspace{-1ex}\\
+
+\ayat{نقش ها رنگارنگ
+
+همه رنگِ وحدت
+
+رازِ کَثرَت دریاب
+
+راهِ وحدت بِسپار}{
+\vspace{1em}
+A pattern of colors,
+
+each some shade of unity;
+
+Learn the secret of diversity!
+
+Pave the path to oneness.
+} \vspace{-1ex}\\
+
+\ayat{رازهای این باغ
+
+در دلِ خاک ببین}{
+\vspace{1em}
+The mysteries of this garden
+
+are found in the soil’s heart:
+} \vspace{-1ex}\\
+
+\ayat{یک نِگَه بر خورشید
+
+باد و آب و مهتاب
+
+باغبانی پُرکار}{
+\vspace{1em}
+One eye upon the sun;
+
+wind and rain and light of moon;
+
+the gardener’s travail.
+} \vspace{-1ex}\\
+
+\ayat{در یکی گوشۀ باغ
+
+کِرمِ شب تابی بین}{
+\vspace{1em}
+In a corner of this garden
+
+observe the firefly:
+} \vspace{-1ex}\\
+
+\ayat{در حِصارِ ناگُزیر
+
+در گُریز از ظُلمت
+
+نورِ خود می تابد
+
+سَهْمِ خود می جوید}{
+\vspace{1em}
+Always upon the fence
+
+he escapes the darkness
+
+by his glimmering alone
+
+and seeks his share.
+} \vspace{-1ex}\\
+
+\ayat{*}{} \vspace{-1ex}\\
+
+\ayat{سَهْمِ تو از دُنیا
+
+یک صدا و آواز
+
+کوششی در پَرواز
+
+دست هائی پُربار
+
+فکر و اندیشۀ ناب
+
+پایمَردی در راه}{
+\vspace{1em}
+Your share of the world:
+
+A song and a melody;
+
+the effort of flight;
+
+hands ever-occupied;
+
+pure thoughts and reflections;
+
+steadfastness along the way.
+} \vspace{-1ex}\\
+
+\ayat{*}{} \vspace{-1ex}\\
+
+\ayat{و بدان ، در میانِ دیوار
+
+یا که زنجیر و حصار
+
+من تو را می شِنَوَم
+
+دستِ تو می بینم
+
+ذِهنِ تو می یابم}{
+\vspace{1em}
+Know that whether from walls
+
+or chains or fences:
+
+I hear you.
+
+I see your hands.
+
+I discern your thoughts.
+} \vspace{-1ex}\\
+
+\ayat{و بدانم
+
+که تَرَک بردارد
+
+هر حصار و پیله
+
+صدهزاران میله}{
+\vspace{1em}
+And I know
+
+that cracks will form
+
+in every wall and cocoon
+
+and hundred thousand bars...
+} \vspace{-1ex}\\
+
+\ayat{و در آغوش کِشیم
+
+روزِ دیدار و وصال
+
+هر چه خوش بختی را
+
+طَعْمِ آزادی را}{
+\vspace{1em}
+And at last we shall embrace:
+
+the day of our reunion;
+
+every good and fortunate thing;
+
+the taste of freedom.
+}
+
+\end{word}
+
+\end{document}

@@ -5,7 +5,6 @@
 \usepackage[margin=1in,top=1.25in,bottom=1.25in]{geometry}
 \usepackage{soul}
 \usepackage{tabularx}
-\usepackage{longtable}
 \usepackage{fontspec}
 \usepackage{xunicode}
 \usepackage{setspace}
@@ -47,8 +46,8 @@
   {\end{spacing}}
 
 \newenvironment{word}
-  {\begin{longtable}[t]{p{3.5in}@{\hspace{3em}}p{2in}}}
-  {\end{longtable}}
+  {\begin{tabular}[t]{p{2.75in}@{\hspace{3em}}p{2.875in}}}
+  {\end{tabular}}
 
 \newcommand{\ayat}[2]{\begin{orig}#1\end{orig} & \begin{trans}#2\end{trans}}
 \newcommand{\heading}[2]{\textsc{\textbf{#1}} % \ (\##2)
@@ -120,17 +119,24 @@ the Sacred Writings \\
 
 مَأویٰ گیرید
 }{and abide ye in the meads of sanctity and of detachment,} \\ \ayat{
-تا از نَفَحاتِ اَعمالِیِّه کُلّ بَرِیِّه
+تا از نَفَحاتِ اَعمالِیِّه
 
-بشاطیِ عِزِّ اَحَدِیِّه تَوَجُّه نمایند
+کُلّ بَرِیِّه
+
+بشاطیِ عِزِّ اَحَدِیِّه
+
+تَوَجُّه نمایند
 }{that the fragrance of your deeds may lead the whole of mankind to the ocean
   of God’s unfading glory.} \vspace{-1ex}\\ \ayat{
-اَبَداً در اُمورِ دُنیا و مَا یَتَعَلَّقُ بها
+اَبَداً در اُمورِ دُنیا
 
-و رُؤسایِ ظاهِرۀِ آن تَکَلُّم جایز نه
+و مَا یَتَعَلَّقُ بها
 }{Forbear ye from concerning yourselves with the affairs of this world and all
-  that pertaineth unto it, or from meddling with the activities of those who
-  are its outward leaders.}
+  that pertaineth unto it,} \vspace{-1ex}\\ \ayat{
+و رُؤسایِ ظاهِرۀِ آن
+
+تَکَلُّم جایز نه
+}{or from meddling with the activities of those who are its outward leaders.}
 \end{word}
 
 % \newpage
@@ -200,6 +206,66 @@ the Sacred Writings \\
 
 \begin{word}
 \ayat{
+ای جان‌فشانِ يارِ بی‌نشان
+}{O heart-surrendered lover of the traceless Friend!} \vspace{-1ex}\\ \ayat{
+هزار عارفان در جستجوی او
+}{A thousand mystic knowers have wandered far in search of Him,} \vspace{-1ex}\\ \ayat{
+ولی محروم و مهجور از روی او
+}{though all remained bereft and were kept back from beholding his Face---} \vspace{-1ex}\\ \ayat{
+امّا تو يافتی تو شناختی
+}{yet thou hast found Him; thou hast recognized Him.} \vspace{-1ex}\\ \ayat{
+تو نردِ خدمت باختی
+}{You have won the contest through service} \vspace{-1ex}\\ \ayat{
+و کار خود ساختی
+}{and established yourself thereby,} \vspace{-1ex}\\ \ayat{
+و عَلَمِ فَوز و فلاح افراختی
+}{raising up the standards of fortune and well-being.} \vspace{-1ex}\\ \ayat{
+طُرفهْ حکايتی و غَريبْ بشارتی
+}{What amazing news and marvelous tidings!} \vspace{-1ex}\\ \ayat{
+آنانکه جستند نيافتند
+}{So many, who sought but found nothing,} \vspace{-1ex}\\ \ayat{
+آنانکه نِشستند يافتند
+}{whilst these others, who sought after nothing, discovered all.}
+\end{word}
+
+\newpage
+
+\begin{word}
+\ayat{
+استغفر الله
+}{By God!} \vspace{-1ex}\\ \ayat{
+جستجويشان
+
+جستجوی سيراب بود
+
+نه تشنگان
+}{Those had longed with sated hearts, devoid of hunger;} \vspace{-1ex}\\ \ayat{
+و طلبشان
+
+طلبِ عاقلان بود
+
+نه عاشقان
+}{theirs was a quest of knowers, not the love-stricken.} \vspace{-1ex}\\ \ayat{
+عاقلانِ خُوشه‌چين
+
+از سِرِّ ليلی غافلند
+}{The learned who reap their harvest know nothing of Laylí's secret:} \vspace{-1ex}\\ \ayat{
+کاين کِرامت نيست
+
+جز مجنونِ خرمن‌سوز را
+}{that the real boon is not theirs, but with Majnún and his burnt remains.} \vspace{-1ex}\\ \ayat{
+عاشقِ نشسته بِهْ
+
+از عاقلِ متحرّک
+}{A lover in repose doth excel the deeds of those who know.} \vspace{-1ex}\\ \ayat{
+و البهاء عليک
+}{The glory of God rest upon thee.}
+\end{word}
+
+\newpage
+
+\begin{word}
+\ayat{
 حکایت آورده‌اند
 }{The story is told} \vspace{-1ex}\\ \ayat{
 که عارف الهی با عالم نحوی
@@ -258,6 +324,27 @@ the Sacred Writings \\
 }{With renunciation, not with grammar’s rules, one must be armed:} \vspace{-1ex}\\ \ayat{
 گر تو محوی بی خطر در آب ران
 }{Be nothing, then, and cross this sea unharmed.}
+\end{word}
+
+\newpage
+
+\begin{word}
+\ayat{
+أَشْهَدُ يا إِلهِي
+}{I bear witness, O my God,} \vspace{-1ex}\\ \ayat{
+بِأَنَّكَ خَلَقْتَنِيْ
+}{that Thou hast created me} \vspace{-1ex}\\ \ayat{
+لِعِرْفانِكَ وَعِبادَتِكَ،
+}{to know Thee and to worship Thee.} \vspace{-1ex}\\ \ayat{
+أَشْهَدُ فِي هذا الْحِيْنِ
+}{I testify, at this moment,} \vspace{-1ex}\\ \ayat{
+بِعَجْزِيْ وَقُوَّتِكَ
+
+وَضَعْفِيْ وَاقْتِدارِكَ
+}{to my powerlessness and to Thy might,} \vspace{-1ex}\\ \ayat{
+وَفَقْرِيْ وَغَنائِكَ
+}{to my poverty and to Thy wealth.} \vspace{-1ex}\\ \ayat{
+لا إِلهَ إِلاَّ أَنْتَ المُهَيْمِنُ القَيُّومُ}{There is none other God but Thee, the Help in Peril, the Self-Subsisting.}
 \end{word}
 
 \newpage

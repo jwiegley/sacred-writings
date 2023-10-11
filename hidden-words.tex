@@ -20,11 +20,18 @@
   BoldItalicFont = *-SmbdIt
 ]
 
-\newfontfamily\arabicfont{Scheherazade}[
-  Path        = /Users/johnw/Library/Fonts/ ,
-  Extension   = .ttf ,
-  UprightFont = *RegOT ,
-  Script      = Arabic
+% \newfontfamily\arabicfont{Scheherazade}[
+%   Path        = /Users/johnw/Library/Fonts/ ,
+%   Extension   = .ttf ,
+%   UprightFont = *RegOT ,
+%   Script      = Arabic
+% ]
+\newfontfamily\arabicfont{ScheherazadeNew}[
+  Path           = /Users/johnw/Library/Fonts/ ,
+  Extension      = .ttf ,
+  UprightFont    = *-Regular ,
+  BoldFont       = *-Bold ,
+  Script         = Arabic
 ]
 
 \newfontfamily\headwordfont[Ligatures=TeX]{Georgia}[
@@ -52,10 +59,10 @@
 \newcommand{\ayat}[2]{\begin{orig}#1\end{orig} & \begin{trans}#2\end{trans}}
 \newcommand{\heading}[2]{\textsc{\textbf{#1}} % \ (\##2)
 }
-\newcommand{\define}[3]{\textfarsi[voc]{\Huge
+\newcommand{\define}[3]{\textfarsi[voc]{\Large
     \textbf{#1}}\hspace{3mm}{\headwordfont \large
     \textit{#2}}\hspace{3mm}{\Large #3} \\[3ex]}
-\newcommand{\fulldefine}[3]{\textfarsi[voc]{\Huge
+\newcommand{\fulldefine}[3]{\textfarsi[voc]{\Large
     \textbf{#1}}\hspace{3mm}{\headwordfont \large
     \textit{#2}}\vspace{-1ex}\begin{quote}\Large #3\end{quote}\vspace{1ex}}
 
@@ -79,13 +86,13 @@ The Hidden Words \\
 
 \newpage
 
-\fontsize{24}{32}
+\fontsize{16}{24}
 
 \vspace*{3in}
 
 \begin{word}
 \ayat{
-به نام گویندۀ توانا
+به نامِ گویندۀ توانا
 }{
 In the Name of the Lord of Utterance, The Mighty.
 }
@@ -193,15 +200,15 @@ In the Name of the Lord of Utterance, The Mighty.
 در روضۀِ قلبْ
 
 جز گُلِ عشق مکار
-}{In the garden of thy heart plant naught but the rose of love,} \\ \ayat{
+}{In the garden of thy heart plant naught but the rose of love,} \vspace{-1ex}\\ \ayat{
 و از ذيلِ بلبلِ حُبّ و شُوق
 
 دست مدار
-}{and from the nightingale of affection and desire loosen not thy hold.} \\ \ayat{
+}{and from the nightingale of affection and desire loosen not thy hold.} \vspace{-1ex}\\ \ayat{
 مُصاحِبَّتِ اَبرار را
 
 عَنیمَت دان
-}{Treasure the companionship of the righteous} \\ \ayat{
+}{Treasure the companionship of the righteous} \vspace{-1ex}\\ \ayat{
 و از مُرافِقَتِ اَشرار
 
 دست و دل هر دو بردار
@@ -215,11 +222,11 @@ In the Name of the Lord of Utterance, The Mighty.
 کدام عاشق
 
 که جز در وطنِ معشوق محلّ گيرد
-}{Whither can a lover go but to the land of his beloved?} \\ \ayat{
+}{Whither can a lover go but to the land of his beloved?} \vspace{-1ex}\\ \ayat{
 و کدام طالب
 
 که بی مطلوبْ راحت جوید
-}{and what seeker findeth rest away from his heart's desire?} \\ \ayat{
+}{and what seeker findeth rest away from his heart's desire?} \vspace{-1ex}\\ \ayat{
 عاشقِ صادق را
 
 حَيات در وِصال است
@@ -229,7 +236,7 @@ In the Name of the Lord of Utterance, The Mighty.
 صَدرشان از صَبرْ خالی
 
 و قلوبشان از اِصطِبارْ مقدّس
-}{His breast is void of patience and his heart hath no peace.} \\ \ayat{
+}{His breast is void of patience and his heart hath no peace.} \vspace{-1ex}\\ \ayat{
 از صد هزار جان درگُذَرَند
 
 و به کویِ جانان شتابند
@@ -247,7 +254,7 @@ In the Name of the Lord of Utterance, The Mighty.
 كه در قولْ مجادله نمايد
 
 و بر برادرِ خود تَفَوُّق جويد
-}{that disputeth idly and seeketh to advance himself over his brother.} \\ \ayat{
+}{that disputeth idly and seeketh to advance himself over his brother.} \vspace{-1ex}\\ \ayat{
 بگو ای برادران
 
 به اعمالْ خود را بيارائيد
@@ -1041,44 +1048,45 @@ In the Name of the Lord of Utterance, The Mighty.
 
 \pagebreak
 
-%%TODO
-
 \begin{word}
-\ayat{ای پسر ارض}{\heading{31.~O Son of Earth!}{}} \\ \ayat{
+\ayat{ای پسرِ ارض}{\heading{31.~O Son of Earth!}{}} \\ \ayat{
 اگر مرا خواهی جز مرا مخواه
 }{Wouldst thou have Me, seek none other than Me;} \vspace{-1ex}\\ \ayat{
-و اگر اراده جمالم داری
-
+و اگر ارادۀ جمالم داری
+}{and wouldst thou gaze upon My beauty,} \vspace{-1ex}\\ \ayat{
 چشم از عالميان بردار
-}{wouldst thou gaze upon My beauty, close thine eyes to the world and all that
-  is therein;} \vspace{-1ex}\\ \ayat{
-زيرا که اراده من و غير من
-
+}{close thine eyes to the world and all that is therein;} \vspace{-1ex}\\ \ayat{
+زيرا که ارادۀ من و غيرِ من
+}{for My will and the will of another than Me,} \vspace{-1ex}\\ \ayat{
 چون آب و آتش
-}{for My will and the will of another than Me, even as fire and water,} \vspace{-1ex}\\ \ayat{
+
 در يک دل و قلب نگنجد
-}{cannot dwell together in one heart.}
+}{even as fire and water, cannot dwell together in one heart.}
 \end{word}
 
 \pagebreak
 
 \begin{word}
 \ayat{ای بيگانۀ با يگانه}{\heading{32.~O Befriended Stranger!}{}} \\ \ayat{
-شمعِ دلت برافروخته
+شمعِ دِلت
 
-دستِ قدرتِ منست
+برافروختۀ دستِ قُدرتِ مَنست
 }{The candle of thine heart is lighted by the hand of My power,} \\ \ayat{
-آن را به بادهایِ مخالفِ
+آن را به بادهایِ مُخالفِ
 
-نفس و هوی خاموش مکن
+نفس و هوی
+
+خاموش مکن
 }{quench it not with the contrary winds of self and passion.} \\ \ayat{
-و طبيبِ جميعِ علّتهایِ تو
+و طبيبِ جميعِ عِلَّتهایِ تو
 
-ذکرِ منست فراموشش منما
+ذکرِ مَنست
+
+فراموشش منما
 }{The healer of all thine ills is remembrance of Me, forget it not.} \\ \ayat{
-حبِّ مرا سرمايۀِ خود کن
+حُبِّ مرا سَرمايِۀ خود کن
 }{Make My love thy treasure} \vspace{-1ex}\\ \ayat{
-و چون بصر و جان
+و چون بَصَر و جان
 
 عزيزش دار
 }{and cherish it even as thy very sight and life.}
@@ -1086,9 +1094,11 @@ In the Name of the Lord of Utterance, The Mighty.
 
 \pagebreak
 
+%%TODO
+
 \begin{word}
-\ayat{ای برادر من}{\heading{33.~O My Brother!}{}} \\ \ayat{
-از لسان شکرينم
+\ayat{ای برادرِ من}{\heading{33.~O My Brother!}{}} \\ \ayat{
+از لِسانِ شِکرينم
 
 کلمات نازنينم شنو
 }{Hearken to the delightsome words of My honeyed tongue,} \\ \ayat{

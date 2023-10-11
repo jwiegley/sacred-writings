@@ -1,0 +1,80 @@
+\usepackage[margin=1.25in,top=1in,bottom=1in]{geometry}
+
+\usepackage{biblatex-chicago}
+\bibliography{bahai}
+
+\usepackage{lettrine}
+\usepackage{endnotes}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{fontspec}
+\usepackage{parskip}
+\usepackage{environ}
+\usepackage{arabxetex}
+
+\setmainfont{GaramondPremrPro}[
+  Path           = /Users/johnw/Library/Fonts/ ,
+  Extension      = .otf ,
+  BoldFont       = *-Smbd ,
+  ItalicFont     = *-It ,
+  BoldItalicFont = *-SmbdIt
+]
+
+\newfontfamily\arabicfont{Scheherazade}[
+  Path        = /Users/johnw/Library/Fonts/ ,
+  Extension   = .ttf ,
+  UprightFont = *RegOT ,
+  Script      = Arabic
+]
+
+\newlength{\quotesep}
+\newlength{\quoteparskip}
+\newlength{\quoteparindent}
+\newlength{\afterquote}
+
+\setlength{\quotesep}{-0.5ex}
+\setlength{\quoteparskip}{1ex}
+\setlength{\quoteparindent}{1.5em}
+\setlength{\afterquote}{1ex}
+
+\def\notestyle{inline}
+\def\quotestyleinline{inline}
+\def\quotestylefootnote{footnote}
+\def\quotestyleendnote{endnote}
+\def\quotestylenonote{nonote}
+
+\NewEnviron{hafez}[2]{
+  \setlength{\parskip}{\quoteparskip}
+  \setlength{\parindent}{\quoteparindent}
+  \noindent \BODY\ifx\notestyle\quotestyleinline
+  \vspace{\quotesep}
+  {\begin{flushright}{\footnotesize \cite[#2]{#1}}\end{flushright}}
+  \else\ifx\notestyle\quotestylefootnote\footcite[#2]{#1}
+       \else\ifx\notestyle\quotestyleendnote\endnote{\cite[#2]{#1}}
+            \else
+            \fi
+       \fi
+  \fi
+  \vspace{\afterquote}
+}
+
+\newcommand{\Bab}{Báb}
+\newcommand{\Bahaullah}{Bahá'u'lláh}
+\newcommand{\Bahai}{Bahá'í}
+\newcommand{\Bahais}{Bahá'ís}
+\newcommand{\AbdulBaha}{`Abdu'l-Bahá}
+\newcommand{\ShoghiEffendi}{Shoghi Effendi}
+\newcommand{\UHJ}{Universal House of Justice}
+\newcommand{\BWC}{\Bahai\ World Centre}
+\newcommand{\ITC}{International Teaching Centre}
+\newcommand{\NSA}{National Spiritual Assembly}
+\newcommand{\LSA}{Local Spiritual Assembly}
+\newcommand{\RBC}{Regional \Bahai\ Council}
+\newcommand{\TIB}{Training Institute Board}
+\newcommand{\RIC}{Regional Institute Coordinator}
+\newcommand{\RDF}{Regional Development Facilitator}
+\newcommand{\ABM}{Auxiliary Board Member}
+\newcommand{\Kitab}{Kitáb}
+\newcommand{\KitabAqdas}{\Kitab-i-Aqdas}
+\newcommand{\KitabIqan}{\Kitab-i-Íqán}
+\newcommand{\Ridvan}{Ridván}

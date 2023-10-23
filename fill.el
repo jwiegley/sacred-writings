@@ -1,0 +1,23 @@
+(defun fill-seven-valleys-paragraph ()
+  (interactive)
+  (save-excursion
+    (search-backward "{" nil t)
+    (let ((beg (match-end 0)))
+      (search-forward "}" nil t)
+      (let* ((end (match-beginning 0))
+             (str (buffer-substring-no-properties beg end))
+             (result
+              (with-temp-buffer
+                (insert str)
+                (goto-char (point-min))
+                (let ((fill-column (- fill-column 6)))
+                  (fill-paragraph))
+                (forward-line 1)
+                (while (not (eobp))
+                  (insert "      ")
+                  (forward-line 1))
+                (buffer-string))))
+        (delete-region beg end)
+        (goto-char beg)
+        (insert result)
+        t))))

@@ -1,0 +1,125 @@
+% -*- bidi-paragraph-direction: left-to-right -*-
+
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in,top=1.25in,bottom=1.25in]{geometry}
+\usepackage{soul}
+\usepackage{tabularx}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{setspace}
+\usepackage{arabxetex}
+
+\setuldepth{sh}
+
+\setmainfont[Ligatures=TeX]{GaramondPremrPro}[
+  Path           = /Users/johnw/Library/Fonts/ ,
+  Extension      = .otf ,
+  BoldFont       = *-Smbd ,
+  ItalicFont     = *-It ,
+  BoldItalicFont = *-SmbdIt
+]
+
+% \newfontfamily\arabicfont{Scheherazade}[
+%   Path        = /Users/johnw/Library/Fonts/ ,
+%   Extension   = .ttf ,
+%   UprightFont = *RegOT ,
+%   Script      = Arabic
+% ]
+\newfontfamily\arabicfont{ScheherazadeNew}[
+  Path           = /Users/johnw/Library/Fonts/ ,
+  Extension      = .ttf ,
+  UprightFont    = *-Regular ,
+  BoldFont       = *-Bold ,
+  Script         = Arabic
+]
+
+\newfontfamily\headwordfont[Ligatures=TeX]{Georgia}[
+  Path           = /Users/johnw/Library/Fonts/ ,
+  Extension      = .ttf ,
+  UprightFont    = * ,
+  BoldFont       = * Bold ,
+  ItalicFont     = * Italic ,
+  BoldItalicFont = * Bold Italic ,
+  Script         = Arabic
+]
+
+\newenvironment{orig}
+  {\begin{farsi}[voc]}
+  {\end{farsi}}
+
+\newenvironment{trans}
+  {\Large\begin{spacing}{1.2}\raggedright}
+  {\end{spacing}}
+
+\newenvironment{word}
+  {\begin{tabular}[t]{p{2.75in}@{\hspace{3em}}p{2.875in}}}
+  {\end{tabular}}
+
+\newcommand{\ayat}[2]{\begin{orig}#1\end{orig} & \begin{trans}#2\end{trans}}
+\newcommand{\heading}[2]{\textsc{\textbf{#1}} % \ (\##2)
+}
+\newcommand{\define}[3]{\textfarsi[voc]{\Large
+    \textbf{#1}}\hspace{3mm}{\headwordfont \large
+    \textit{#2}}\hspace{3mm}{\Large #3} \\[3ex]}
+\newcommand{\fulldefine}[3]{\textfarsi[voc]{\Large
+    \textbf{#1}}\hspace{3mm}{\headwordfont \large
+    \textit{#2}}\vspace{-1ex}\begin{quote}\Large #3\end{quote}\vspace{1ex}}
+
+\title{
+\Huge
+\vspace*{2in}
+The Hidden Words \\
+\vspace{.25in}
+\fontsize{48}{36}
+\begin{arab}
+کلمات مکنونه
+\end{arab}
+\vspace{1in}}
+\author{\LARGE by Bahá’u’lláh}
+\date{}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\newpage
+
+\fontsize{16}{24}
+
+\vspace*{3in}
+
+\begin{minipage}[t]{0.48\textwidth}
+\define{صاحبان}{sá\d{h}ibán}{owners}
+\define{هوش}{hú\ul{sh}}{mind}
+\define{گوش}{gú\ul{sh}}{ear}
+\define{سروش}{surú\ul{sh}}{song}
+\define{بلبل}{bulbul}{nightingale}
+\define{معنوی}{ma`naví}{}
+\define{گُلبُن}{gulbun}{}
+\define{معانی}{ma`ání}{meaning}
+\define{مَگُزين}{maguzín}{}
+\fulldefine{هدهد}{hudhud}{The hoopoe bird, often a guide in Sufi literature.}
+\define{سلیمان}{Sulaymán}{King Solomon}
+\define{عشق}{`i\ul{sh}q}{love}
+\define{سبا}{Sabá}{Sheba}
+\end{minipage}
+\begin{minipage}[t]{0.48\textwidth}
+\define{جانان}{jánán}{The Beloved}
+\define{وطن}{va\d{t}an}{homeland}
+\define{عَنقا}{`anqá}{phoenix}
+\define{بقا}{baqá}{eternity}
+\fulldefine{قاف}{Qáf}{The fabled mount Qáf, thought to symbolize the Holy Qur'án.}
+\define{وفا}{vafá}{faithfulness}
+\define{محلّ}{ma\d{h}all}{place}
+\define{مپذیر}{mapa\ul{dh}ír}{}
+\define{مکان}{makán}{place}
+\define{بِلامَکان}{bi-lá-makán}{lit.~``to no place''}
+\define{آهنگ}{áhang}{}
+\fulldefine{مقام}{maqám}{Station, often used in Sufism to denote a degree of
+  spiritual understanding.}
+\define{رایگان نمودن}{ráygán namúdan}{}
+\end{minipage}
+
+\end{document}

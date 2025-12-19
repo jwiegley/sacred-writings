@@ -13,9 +13,9 @@
 \usepackage{morefloats}
 
 \setuldepth{sh}
-\geometry{paperwidth=120mm, paperheight=2380pt, left=0pt, top=40pt,
+\geometry{paperwidth=120mm, paperheight=1940pt, left=0pt, top=40pt,
   textwidth=280pt, marginparsep=0pt, marginparwidth=0pt,
-  textheight=2380pt, footskip=0pt}
+  textheight=1940pt, footskip=0pt}
 \setcounter{totalnumber}{100}
 
 \setmainfont[Ligatures=TeX]{GaramondPremrPro}[
@@ -26,20 +26,11 @@
   BoldItalicFont = *-SmbdIt
 ]
 
-\newfontfamily\arabicfont{Scheherazade}[
-  Path        = /Users/johnw/Library/Fonts/ ,
-  Extension   = .ttf ,
-  UprightFont = *RegOT ,
-  Script      = Arabic
-]
-
-\newfontfamily\headwordfont[Ligatures=TeX]{Georgia}[
-  Path           = /Users/johnw/Library/Fonts/ ,
+\newfontfamily\arabicfont{ScheherazadeNew}[
+  Path           = /Library/Fonts/Nix Fonts/vf95r7q0kpvp4nb88qnm8ljhfwsnnvbv-scheherazade-new-4.400/share/fonts/truetype/ ,
   Extension      = .ttf ,
-  UprightFont    = * ,
-  BoldFont       = * Bold ,
-  ItalicFont     = * Italic ,
-  BoldItalicFont = * Bold Italic ,
+  UprightFont    = *-Regular ,
+  BoldFont       = *-Bold ,
   Script         = Arabic
 ]
 
@@ -56,16 +47,16 @@
 \newcommand{\ayat}[1]{\vspace{4ex}\begin{orig}#1\end{orig}}
 \newcommand{\heading}[2]{\textsc{\textbf{#1}} % \ (\##2)
 }
-\newcommand{\define}[3]{\textfarsi[voc]{\Huge
+\newcommand{\define}[3]{\textfarsi[voc]{\Large
     \textbf{#1}}\hspace{3mm}{\headwordfont \large
     \textit{#2}}\hspace{3mm}{\Large #3} \\[3ex]}
-\newcommand{\fulldefine}[3]{\textfarsi[voc]{\Huge
+\newcommand{\fulldefine}[3]{\textfarsi[voc]{\Large
     \textbf{#1}}\hspace{3mm}{\headwordfont \large
     \textit{#2}}\vspace{-1ex}\begin{quote}\Large #3\end{quote}\vspace{1ex}}
 
 \begin{document}
 
-\fontsize{24}{32}
+\fontsize{16}{24}
 
 \thispagestyle{empty}
 

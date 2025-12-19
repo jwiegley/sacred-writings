@@ -20,20 +20,11 @@
   BoldItalicFont = *-SmbdIt
 ]
 
-\newfontfamily\arabicfont{Scheherazade}[
-  Path        = /Users/johnw/Library/Fonts/ ,
-  Extension   = .ttf ,
-  UprightFont = *RegOT ,
-  Script      = Arabic
-]
-
-\newfontfamily\headwordfont[Ligatures=TeX]{Georgia}[
-  Path           = /Users/johnw/Library/Fonts/ ,
+\newfontfamily\arabicfont{ScheherazadeNew}[
+  Path           = /Library/Fonts/Nix Fonts/vf95r7q0kpvp4nb88qnm8ljhfwsnnvbv-scheherazade-new-4.400/share/fonts/truetype/ ,
   Extension      = .ttf ,
-  UprightFont    = * ,
-  BoldFont       = * Bold ,
-  ItalicFont     = * Italic ,
-  BoldItalicFont = * Bold Italic ,
+  UprightFont    = *-Regular ,
+  BoldFont       = *-Bold ,
   Script         = Arabic
 ]
 
@@ -52,15 +43,15 @@
 \newcommand{\ayat}[2]{\begin{orig}#1\end{orig} & \begin{trans}#2\end{trans}}
 \newcommand{\heading}[2]{\textsc{\textbf{#1}} % \ (\##2)
 }
-\newcommand{\define}[3]{\textfarsi[voc]{\Huge
+\newcommand{\define}[3]{\textfarsi[voc]{\Large
     \textbf{#1}}\hspace{3mm}{\headwordfont \large
     \textit{#2}}\hspace{3mm}{\Large #3} \\[3ex]}
-\newcommand{\fulldefine}[3]{\textfarsi[voc]{\Huge
+\newcommand{\fulldefine}[3]{\textfarsi[voc]{\Large
     \textbf{#1}}\hspace{3mm}{\headwordfont \large
     \textit{#2}}\vspace{-1ex}\begin{quote}\Large #3\end{quote}\vspace{1ex}}
 
 \title{
-\Huge
+\Large
 \vspace*{2in}
 Selections from \\
 the Sacred Writings \\
@@ -79,7 +70,7 @@ the Sacred Writings \\
 
 \newpage
 
-\fontsize{24}{32}
+\fontsize{16}{24}
 
 \begin{word}
 \ayat{
@@ -110,11 +101,11 @@ the Sacred Writings \\
 \begin{word}
 \ayat{
 ای احبّای حقّ
-}{O ye the beloved of the one true God!} \vspace{-1ex}\\ \ayat{
+}{O ye the beloved of the one true God!} \\ \ayat{
 از مَفازَۀ ضَیِّقِۀ نفس و هویٰ
-}{Pass beyond the narrow retreats of your evil and corrupt desires,} \vspace{-1ex}\\ \ayat{
+}{Pass beyond the narrow retreats of your evil and corrupt desires,} \\ \ayat{
 به فَضاهایِ مُقَدَّسِۀ اَحَدِیِّه بشتابید
-}{and advance into the vast immensity of the realm of God,} \vspace{-1ex}\\ \ayat{
+}{and advance into the vast immensity of the realm of God,} \\ \ayat{
 و در حَدِیقِۀ تَقدیس و تَنزیه
 
 مَأویٰ گیرید
@@ -127,12 +118,12 @@ the Sacred Writings \\
 
 تَوَجُّه نمایند
 }{that the fragrance of your deeds may lead the whole of mankind to the ocean
-  of God’s unfading glory.} \vspace{-1ex}\\ \ayat{
+  of God’s unfading glory.} \\ \ayat{
 اَبَداً در اُمورِ دُنیا
 
 و مَا یَتَعَلَّقُ بها
 }{Forbear ye from concerning yourselves with the affairs of this world and all
-  that pertaineth unto it,} \vspace{-1ex}\\ \ayat{
+  that pertaineth unto it,} \\ \ayat{
 و رُؤَسایِ ظاهِرۀ آن
 
 تَکَلُّم جائز نه
@@ -151,29 +142,29 @@ the Sacred Writings \\
 \begin{word}
 \ayat{
 اللّه ابهی
-}{} \vspace{-1ex}\\ \ayat{
+}{} \\ \ayat{
 ای متوجّه اِلی اللّه
-}{O thou who art turning thy face towards God!} \vspace{-1ex}\\ \ayat{
+}{O thou who art turning thy face towards God!} \\ \ayat{
 چشم از جميعِ ماسِوی بَر بَند
-}{Close thine eyes to all things else,} \vspace{-1ex}\\ \ayat{
+}{Close thine eyes to all things else,} \\ \ayat{
 و به مَلَکوتِ ابهی بَر گشا
-}{and open them to the realm of the All-Glorious.} \vspace{-1ex}\\ \ayat{
+}{and open them to the realm of the All-Glorious.} \\ \ayat{
 آنچه خواهی از او خواه
-}{Ask whatsoever thou wishest of Him alone;} \vspace{-1ex}\\ \ayat{
+}{Ask whatsoever thou wishest of Him alone;} \\ \ayat{
 و آنچه طلبی از او طلب
-}{seek whatsoever thou seekest from Him alone.} \vspace{-1ex}\\ \ayat{
+}{seek whatsoever thou seekest from Him alone.} \\ \ayat{
 به نظری
 
 صد هزار حاجاتت روا نمايد
-}{With a look He granteth a hundred thousand hopes,} \vspace{-1ex}\\ \ayat{
+}{With a look He granteth a hundred thousand hopes,} \\ \ayat{
 و به التفاتی
 
 صد هزار درد بی درمان دوا کند
-}{with a glance He healeth a hundred thousand incurable ills,} \vspace{-1ex}\\ \ayat{
+}{with a glance He healeth a hundred thousand incurable ills,} \\ \ayat{
 و به انعطافی
 
 زخم‌ها را مَرهم نهد
-}{with a nod He layeth balm on every wound,} \vspace{-1ex}\\ \ayat{
+}{with a nod He layeth balm on every wound,} \\ \ayat{
 و به نگاهی
 
 دل‌ها را از قيدِ غم برهاند
@@ -185,17 +176,17 @@ the Sacred Writings \\
 \begin{word}
 \ayat{
 آنچه کند او کند
-}{He doeth as He doeth,} \vspace{-1ex}\\ \ayat{
+}{He doeth as He doeth,} \\ \ayat{
 ما چه توانيم کرد
-}{and what recourse have we?} \vspace{-1ex}\\ \ayat{
+}{and what recourse have we?} \\ \ayat{
 يَفعل ما يَشاء
-}{He carrieth out His Will,} \vspace{-1ex}\\ \ayat{
+}{He carrieth out His Will,} \\ \ayat{
 و يَحکُمُ ما يُريد است
-}{He ordaineth what He pleaseth.} \vspace{-1ex}\\ \ayat{
+}{He ordaineth what He pleaseth.} \\ \ayat{
 پس سَرِ تسليم نـِه
-}{Then better for thee to bow down thy head in submission,} \vspace{-1ex}\\ \ayat{
+}{Then better for thee to bow down thy head in submission,} \\ \ayat{
 و توکّل بر رَبِّ رحيم بـِه
-}{and put thy trust in the All-Merciful Lord.} \vspace{-1ex}\\ \ayat{
+}{and put thy trust in the All-Merciful Lord.} \\ \ayat{
 والبهاء عليک
 
 ع ع
@@ -207,23 +198,23 @@ the Sacred Writings \\
 \begin{word}
 \ayat{
 ای جان‌فشانِ يارِ بی‌نشان
-}{O heart-surrendered lover of the traceless Friend!} \vspace{-1ex}\\ \ayat{
+}{O heart-surrendered lover of the traceless Friend!} \\ \ayat{
 هزار عارفان در جستجوی او
-}{A thousand mystic knowers have wandered far in search of Him,} \vspace{-1ex}\\ \ayat{
+}{A thousand mystic knowers have wandered far in search of Him,} \\ \ayat{
 ولی محروم و مهجور از روی او
-}{though all remained bereft and were kept back from beholding his Face---} \vspace{-1ex}\\ \ayat{
+}{though all remained bereft and were kept back from beholding his Face---} \\ \ayat{
 امّا تو يافتی تو شناختی
-}{yet thou hast found Him; thou hast recognized Him.} \vspace{-1ex}\\ \ayat{
+}{yet thou hast found Him; thou hast recognized Him.} \\ \ayat{
 تو نردِ خدمت باختی
-}{You have won the contest through service} \vspace{-1ex}\\ \ayat{
+}{You have won the contest through service} \\ \ayat{
 و کار خود ساختی
-}{and established yourself thereby,} \vspace{-1ex}\\ \ayat{
+}{and established yourself thereby,} \\ \ayat{
 و عَلَمِ فَوز و فلاح افراختی
-}{raising up the standards of fortune and well-being.} \vspace{-1ex}\\ \ayat{
+}{raising up the standards of fortune and well-being.} \\ \ayat{
 طُرفهْ حکايتی و غَريبْ بشارتی
-}{What amazing news and marvelous tidings!} \vspace{-1ex}\\ \ayat{
+}{What amazing news and marvelous tidings!} \\ \ayat{
 آنانکه جستند نيافتند
-}{So many, who sought but found nothing,} \vspace{-1ex}\\ \ayat{
+}{So many, who sought but found nothing,} \\ \ayat{
 آنانکه نِشستند يافتند
 }{whilst these others, who sought after nothing, discovered all.}
 \end{word}
@@ -233,31 +224,31 @@ the Sacred Writings \\
 \begin{word}
 \ayat{
 استغفر الله
-}{By God!} \vspace{-1ex}\\ \ayat{
+}{By God!} \\ \ayat{
 جستجويشان
 
 جستجوی سيراب بود
 
 نه تشنگان
-}{Those had longed with sated hearts, devoid of hunger;} \vspace{-1ex}\\ \ayat{
+}{Those had longed with sated hearts, devoid of hunger;} \\ \ayat{
 و طلبشان
 
 طلبِ عاقلان بود
 
 نه عاشقان
-}{theirs was a quest of knowers, not the love-stricken.} \vspace{-1ex}\\ \ayat{
+}{theirs was a quest of knowers, not the love-stricken.} \\ \ayat{
 عاقلانِ خُوشه‌چين
 
 از سِرِّ ليلی غافلند
-}{The learned who reap their harvest know nothing of Laylí's secret:} \vspace{-1ex}\\ \ayat{
+}{The learned who reap their harvest know nothing of Laylí's secret:} \\ \ayat{
 کاين کِرامت نيست
 
 جز مجنونِ خرمن‌سوز را
-}{that the real boon is not theirs, but with Majnún and his burnt remains.} \vspace{-1ex}\\ \ayat{
+}{that the real boon is not theirs, but with Majnún and his burnt remains.} \\ \ayat{
 عاشقِ نشسته بِهْ
 
 از عاقلِ متحرّک
-}{A lover in repose doth excel the deeds of those who know.} \vspace{-1ex}\\ \ayat{
+}{A lover in repose doth excel the deeds of those who know.} \\ \ayat{
 و البهاء عليک
 }{The glory of God rest upon thee.}
 \end{word}
@@ -267,20 +258,20 @@ the Sacred Writings \\
 \begin{word}
 \ayat{
 حکایت آورده‌اند
-}{The story is told} \vspace{-1ex}\\ \ayat{
-که عارف الهی با عالم نحوی
+}{The story is told} \\ \ayat{
+که عارفِ الهی با عالمِ نحوی
 
-همراه شدند و همراز گشتند
+هَمراه شدند و هَمراز گشتند
 }{of a mystic knower who went on a journey with a learned grammarian for a
-  companion.} \vspace{-1ex}\\ \ayat{
-تا رسیدند بشاطی بحر العظمة
-}{They came to the shore of the Sea of Grandeur.} \vspace{-1ex}\\ \ayat{
-عارف بی ‌تأمّل توسّل فرموده
+  companion.} \\ \ayat{
+تا رسیدند بشاطیِ بحرُ العظمة
+}{They came to the shore of the Sea of Grandeur.} \\ \ayat{
+عارف بی ‌تَأَمُّل تَوَسُّل فرموده
 
 بر آب راند
 }{The knower, putting his trust in God, straightway ﬂung himself into the
-  waves,} \vspace{-1ex}\\ \ayat{
-و عالم نحو
+  waves,} \\ \ayat{
+و عالمِ نحو
 
 چون نقشِ بر آب محو گشته
 
@@ -298,31 +289,31 @@ the Sacred Writings \\
 \begin{word}
 \ayat{
 گفت
-}{The grammarian answered,} \vspace{-1ex}\\ \ayat{
+}{The grammarian answered,} \\ \ayat{
 ای برادر چه کنم
-}{“O brother, what can I do?} \vspace{-1ex}\\ \ayat{
+}{“O brother, what can I do?} \\ \ayat{
 چون پای رفتنم نیست
 
 سَرْ نَهادن اولیٰ بود
 }{As I dare not advance, I must needs go back again.”} \\ \ayat{
 گفت
-}{Then the mystic cried,} \vspace{-1ex}\\ \ayat{
+}{Then the mystic cried,} \\ \ayat{
 آنچه از سیبویه و قولویه
 
 اَخْذ نموده‌ئی
 
-و یا از مطالب ابن حاجب
+و یا از مطالبِ ابنِ حاجب
 
-و ابن مالک
+و ابنِ مالک
 
 حَمْل فرموده ئی
 
-بریز و از آب بگذر
+بریز و از آب بِگُذَر
 }{“Cast aside what thou hast learned from Síbavayh and Qawlavayh, from
   Ibn-i-Hájib and Ibn-i-Málik, and cross the water!”\vspace{15ex}} \\ \ayat{
 محو میباید نه نحو این را بدان
-}{With renunciation, not with grammar’s rules, one must be armed:} \vspace{-1ex}\\ \ayat{
-گر تو محوی بی خطر در آب ران
+}{With renunciation, not with grammar’s rules, one must be armed:} \\ \ayat{
+گر تو محوی بی خَطَر در آب ران
 }{Be nothing, then, and cross this sea unharmed.}
 \end{word}
 
@@ -331,19 +322,19 @@ the Sacred Writings \\
 \begin{word}
 \ayat{
 أَشْهَدُ يا إِلهِي
-}{I bear witness, O my God,} \vspace{-1ex}\\ \ayat{
+}{I bear witness, O my God,} \\ \ayat{
 بِأَنَّكَ خَلَقْتَنِيْ
-}{that Thou hast created me} \vspace{-1ex}\\ \ayat{
+}{that Thou hast created me} \\ \ayat{
 لِعِرْفانِكَ وَعِبادَتِكَ،
-}{to know Thee and to worship Thee.} \vspace{-1ex}\\ \ayat{
+}{to know Thee and to worship Thee.} \\ \ayat{
 أَشْهَدُ فِي هذا الْحِيْنِ
-}{I testify, at this moment,} \vspace{-1ex}\\ \ayat{
+}{I testify, at this moment,} \\ \ayat{
 بِعَجْزِيْ وَقُوَّتِكَ
 
 وَضَعْفِيْ وَاقْتِدارِكَ
-}{to my powerlessness and to Thy might,} \vspace{-1ex}\\ \ayat{
+}{to my powerlessness and to Thy might,} \\ \ayat{
 وَفَقْرِيْ وَغَنائِكَ
-}{to my poverty and to Thy wealth.} \vspace{-1ex}\\ \ayat{
+}{to my poverty and to Thy wealth.} \\ \ayat{
 لا إِلهَ إِلاَّ أَنْتَ المُهَيْمِنُ القَيُّومُ}{There is none other God but Thee, the Help in Peril, the Self-Subsisting.}
 \end{word}
 
@@ -408,11 +399,11 @@ the Sacred Writings \\
 \begin{word}
 \ayat{
 زبانِ خِرَد میگوید
-}{The Tongue of Wisdom proclaimeth:} \vspace{-1ex}\\ \ayat{
+}{The Tongue of Wisdom proclaimeth:} \\ \ayat{
 هر که دارایِ من نباشد
 
 دارایِ هیچ نه
-}{He that hath Me not is bereft of all things.} \vspace{-1ex}\\ \ayat{
+}{He that hath Me not is bereft of all things.} \\ \ayat{
 از هر چه هست بگذرید
 
 و مرا بیابید
@@ -420,7 +411,7 @@ the Sacred Writings \\
 منم آفتابِ بینش
 
 و دریایِ دانش
-}{I am the Sun of Wisdom and the Ocean of Knowledge.} \vspace{-1ex}\\ \ayat{
+}{I am the Sun of Wisdom and the Ocean of Knowledge.} \\ \ayat{
 پژمردگان را تازه نمایم
 
 و مردگان را زنده کنم
@@ -428,9 +419,9 @@ the Sacred Writings \\
 منم آن روشنائی
 
 که راهِ دیده بنمایم
-}{I am the guiding Light that illumineth the way.} \vspace{-1ex}\\ \ayat{
+}{I am the guiding Light that illumineth the way.} \\ \ayat{
 و منم شاهبازِ دستِ بینیاز
-}{I am the royal Falcon on the arm of the Almighty.} \vspace{-1ex}\\ \ayat{
+}{I am the royal Falcon on the arm of the Almighty.} \\ \ayat{
 پرِ بستگان را بگشایم
 
 و پرواز بیاموزم
@@ -444,188 +435,21 @@ the Sacred Writings \\
 \begin{word}
 \ayat{
 و بِه قَدَمِ یَقین
-}{Thus with steadfast steps} \vspace{-1ex}\\ \ayat{
+}{Thus with steadfast steps} \\ \ayat{
 در صِراطِ حَقُّ الیقین
 
 قَدَم گذاریم
 }{we may tread the Path of certitude,} \\ \ayat{
 که لِعَلّْ نسیمِ رضا
 }{that perchance the breeze that bloweth
-from the meads of the good-pleasure of God} \vspace{-1ex}\\ \ayat{
+from the meads of the good-pleasure of God} \\ \ayat{
 از ریاضِ قبولِ الهی بِوَزَد
 }{may waft upon us the sweet savours
-    of divine acceptance,} \vspace{-1ex}\\ \ayat{
+    of divine acceptance,} \\ \ayat{
 و این فانیان را
-}{and cause us, vanishing mortals that we are,} \vspace{-1ex}\\ \ayat{
+}{and cause us, vanishing mortals that we are,} \\ \ayat{
 بملکوتِ جاودانی رِساند
 }{to attain unto the Kingdom of everlasting glory.}
-\end{word}
-
-\newpage
-
-\begin{word}
-\ayat{
-هو الله
-}{} \\ \ayat{
-رشحِ عما از جذبۀ ما میریزد
-
-سرّ وفا از نغمۀ ما میریزد
-}{From Our rapture, the Clouds of the Pre-Eternal rain down...
-
-From Our melody the secrets of devotion rain down...
-} \\ \ayat{
-از باد صَبا مُشگ خطا گشته پدید
-
-وین نفخۀ خوش از جَعدِۀ ما میریزد
-}{
-A wind stirs from Sheba carrying the musk of Cathay,
-
-While from Our locks fragrant breezes rain down...
-} \\ \ayat{
-شمسِ طَراز از طَلعَت حَقّ کرده طُلوع
-
-سِرّ حقیقت بین کَز وجهۀ ما میریزد
-}{
-The Sun of adornment rises from the countenance of Truth
-
-Behold! From Our visage the mysteries of truth rain down...
-} \\ \ayat{
-بحرِ صَفا از موجِ لِقا کرده خُروش
-
-وین طُرفهْ عطا از جذبۀ ما میریزد
-}{
-The sea of purity surges through a wave of reunion
-
-From Our ecstasy these precious gifts rain down...
-} \\ \ayat{
-گنجینۀ حُبّ در سینۀ فا گشته نَهان
-
-زین گَنجِ مُحَبَّت دُرِّ وفا ميريزد
-}{
-Treasuries of love lay concealed in the breast of Fá
-
-From this trove of affection pearls of faith rain down...
-} \\ \ayat{
-بِهجَتِ مُل از نَظرِۀ گُل شد ظاهر
-
-این رَمزِ ملیح از رَنِّۀ را میریزد
-}{
-The choicest wine appears through a glance at this rose
-
-From the songs of Rá heart-stirring secrets rain down...
-} \\ \ayat{
-نُقرۀ ناقوری جذبۀ لاهوتی
-
-این هر دو بیک نَفخِه از جَوِّ سَما میریزد
-}{
-The silver-white trumpet and the rapture of the Divine
-
-Both of these, through one blow of heaven's breath, rain down...
-} \\ \ayat{
-دَورِ اَنَا هُو از چهرۀ ما کرده بُروز
-
-کَورِ هُوَ هُو از نَفخِۀ ما میریزد
-}{
-From Our appearence the Day of ``I am He'' beams forth;
-
-From Our breath the Age of ``He is He'' rains down...
-} \\ \ayat{
-کوثرِ حقّ از کاسۀ دل گشته هُویدا
-
-وین ساغرِ شَهْد از لَعلِ بها میریزد
-}{
-The Kuwthar of heaven flows from the cup of Our heart
-
-From the lips of Bahá sweet draughts of honey rain down...
-} \\ \ayat{
-یومِ خدا از جِلوِۀ ربّ شد کامل
-
-این نَغزِ حَدیث از غَنۀ طا میریزد
-}{
-The Day of God is fulfilled by Our Lord's unveiling
-
-From the riches of Tá what graceful tales rain down...
-} \\ \ayat{
-طَفحِ بهائی بین رشح عمائی بین
-
-کِاین جُمله زِ یک نغمه از لَحنِ خدا میریزد
-}{
-What overflowing glory! What showers from these clouds!
-
-From but one of God's songs do these words rain down...
-} \\ \ayat{
-ماهیِ سرمد بین طَلعِ مُنَزَّه بین
-
-صَدرِ مُمَرَّد بین کز عَرشِ علا میریزد
-}{
-Behold the great Leviathan! Behold His blameless countenance!
-
-Behold His lofty seat! that from the exalted throne rains down...
-} \\ \ayat{
-نَخلِۀ طوبیٰ بین رَنِّۀ ورقا بین
-
-غَنِّۀ ابهی بین کَز لَمْعِ صَفا میریزد
-}{
-Behold of the palm of paradise! Behold the melody of the dove!
-
-Heark the paeans of Abhá, that in pure splendor rain down...
-} \\ \ayat{
-آهنگِ عراقی بین دَفِّ حجازی بین
-
-کَفِّ الهیٰ بین کز جذبه لا میریزد
-}{
-Hear the Persian melody, and the Arab drum!
-
-The song of God that from the joy of Lá rains down...
-} \\ \ayat{
-طَلعَةِ لاهوتی بین حوریِ هاهوتی بین
-
-جِلوِۀ ناسوتی بین کز سِرِّ عما میریزد
-}{
-Behold the Divine Appearance, the Maid of His Threshold!
-
-By the secret of Pre-existence her mortal guise rains down...
-} \\ \ayat{
-وَجۀ باقی بین چِهرۀ ساقی بین
-
-رَقِّ زُجاجی بین کز کوبۀ ما میریزد
-}{
-Behold the Immortal Face, and the cup-bearer's glance!
-
-Behold our gleaming chalice whose crystal waters rain down...
-} \\ \ayat{
-آتَشِ موسیٰ بین بَیضِۀ بَیضا بین
-
-سینۀ سینا بین کز کفِّ سَنا میریزد
-}{
-Behold the flame of Moses! Behold its gleaming light!
-
-From our hand of splendor, how the heart of Sinai rains down...
-} \\ \ayat{
-نالِۀ مَستان بین حالتِ بُستان بین
-
-جذبۀ هَستان بین کز صحنِ لِقا میریزد
-}{
-Hear the lament of the drunkards; observe the state of the gardens;
-
-Witness how from our court the ecstasy of existence rains down...
-} \\ \ayat{
-غُنچۀ هائی بین طُرّۀ بائی بین
-
-رَنِّۀ نائی بین کز کِلکِ بها میریزد
-}{
-Behold the budding blooms of Há; the curling locks of Bá
-
-From the tresses of Bahá, hear the song of Ná rain down...
-} \\ \ayat{
-طَفحِ طَهور است این رَشح طَهور است این
-
-غَن طُیور است این کز عِین فَنا میریزد
-}{
-This is the overflowing ablution; this is the cleansing water!
-
-This is the trill of birds, that from annihilating eyes rain down...
-}
 \end{word}
 
 \end{document}

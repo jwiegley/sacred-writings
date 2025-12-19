@@ -22,20 +22,10 @@
 ]
 
 \newfontfamily\arabicfont{ScheherazadeNew}[
-  Path           = /Users/johnw/Library/Fonts/ ,
+  Path           = /Library/Fonts/Nix Fonts/vf95r7q0kpvp4nb88qnm8ljhfwsnnvbv-scheherazade-new-4.400/share/fonts/truetype/ ,
   Extension      = .ttf ,
   UprightFont    = *-Regular ,
   BoldFont       = *-Bold ,
-  Script         = Arabic
-]
-
-\newfontfamily\headwordfont[Ligatures=TeX]{Georgia}[
-  Path           = /Users/johnw/Library/Fonts/ ,
-  Extension      = .ttf ,
-  UprightFont    = * ,
-  BoldFont       = * Bold ,
-  ItalicFont     = * Italic ,
-  BoldItalicFont = * Bold Italic ,
   Script         = Arabic
 ]
 
@@ -52,21 +42,20 @@
   {\end{longtable}}
 
 \newcommand{\ayat}[2]{
-  \begin{orig}#1\end{orig} &
-  \vspace{1.5ex}\begin{trans}#2\end{trans} \vspace{-2ex}\\
+  \vspace{4ex}\begin{orig}#1\end{orig} & \vspace{5ex}\begin{trans}#2\end{trans} \\
 }
 
 \newcommand{\heading}[2]{\textsc{\textbf{#1}} % \ (\##2)
 }
-\newcommand{\define}[3]{\textfarsi[voc]{\Huge
+\newcommand{\define}[3]{\textfarsi[voc]{\Large
     \textbf{#1}}\hspace{3mm}{\headwordfont \large
     \textit{#2}}\hspace{3mm}{\Large #3} \\[3ex]}
-\newcommand{\fulldefine}[3]{\textfarsi[voc]{\Huge
+\newcommand{\fulldefine}[3]{\textfarsi[voc]{\Large
     \textbf{#1}}\hspace{3mm}{\headwordfont \large
     \textit{#2}}\vspace{-1ex}\begin{quote}\Large #3\end{quote}\vspace{1ex}}
 
 \title{
-\Huge
+\Large
 \vspace*{2in}
 The Seven Valleys \\
 \vspace{.25in}
@@ -146,13 +135,11 @@ The Seven Valleys \\
 والّا انّه تعالی منزّه من ان یشهد او یری
 
 لَا تُدْرِکُهُ ٱلْأَبْصَارُ وَهُوَ يُدْرِکُ ٱلْأَبْصَارَ وَهُوَ ٱلْلَّطِيفُ ٱلْخَبِيرُ}
-
      {This is the vision of the splendours which have been deposited within
       the realities of all things; for otherwise He, exalted be His glory,
       is entirely sanctiﬁed above being seen or witnessed: “No vision taketh
       in Him, but He taketh in all vision; He is the Subtile, the
       All-Perceiving.”}
-
 
 \ayat{وَ أَصَلّىٰ وَ أَسَلَّمَ عَلىٰ اَوَّلٍ بَحْرٍ تَشَعَّبَ مِنْ بَحْرِ ٱلْهَوِييَّهْ}
      {And I praise and glorify the first sea which hath branched from the
@@ -502,7 +489,7 @@ The Seven Valleys \\
      {Labor is needed, if we are to seek Him; ardor is needed, if we are to
       drink of the honey of reunion with Him;}
 
-\ayat{اگر از اين جام نوش کشيم
+\ayat{اگر از اين جام نوش کَشيم
 
 عالَمی فَراموش کنيم}
      {and if we taste of this cup, we shall cast away the world.}
